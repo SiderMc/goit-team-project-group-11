@@ -1,0 +1,49 @@
+.button-dark,
+.button-light {
+  display: inline-block;
+  font-family: 'Geometria Regular', sans-serif;
+  font-size: 14px;
+  line-height: 1.27;
+  letter-spacing: -0.048em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  padding: 7px 15px;
+  background-color: var(--second-color);
+  border: 0.8px solid var(--accent-color);
+  border-radius: 32px;
+  transition: background-color var(--animate), color var(--animate),
+    border var(--animate);
+}
+.button-light {
+  color: var(--second-color);
+  border: 0.8px solid var(--second-color);
+  background-color: var(--accent-color);
+}
+.button-light:focus,
+.button-light:hover {
+  color: var(--accent-color);
+  border: 0.8px solid var(--accent-color);
+  background-color: var(--second-color);
+}
+.button-dark:focus,
+.button-dark:hover {
+  background-color: var(--accent-color);
+  color: var(--second-color);
+  border: 0.8px solid var(--second-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button-dark,
+  .button-light {
+    line-height: 1.8;
+    padding: 7px 20.5px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .button-dark,
+  .button-light {
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 8px 20.5px;
+  }
+}

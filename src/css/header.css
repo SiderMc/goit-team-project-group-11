@@ -85,8 +85,13 @@ color: var(--second-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
+.header-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
 }
 @media screen and (min-width: 1440px) {
 }

@@ -1,5 +1,81 @@
 /*Header for pages Restaurant Page , Hotel Page , Room Page*/
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.pages__navigation {
+    display: none;
+}
+ /* ---------HEADER-Mobile-------- */
+.header {
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+}
+.header-nav {
+    display: none;
+}
+
+.header-soc-list {
+display: none;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.btn-menu-open-icon {
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.header-logo-container {
+position: absolute;
+top: 20px;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.logo-link {
+font-family: 'DM Sans Medium', sans-serif;
+font-size: 14px;
+line-height: 1.57;
+letter-spacing: 0.18em;
+color: var(--second-color);
+margin-bottom: 3px;
+}
+
+.header-logo-text {
+font-family: 'DM Sans Regular', sans-serif;
+font-size: 6px;
+line-height: 1.33;
+letter-spacing: 0.18em;
+color: var(--second-color);
+}
 @media screen and (min-width: 375px) {
+   
 }
 @media screen and (min-width: 768px) {
 }

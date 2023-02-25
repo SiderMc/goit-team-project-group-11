@@ -1,0 +1,16 @@
+/*styles for Paige Hotel */
+/*нічого не змінювати*/
+
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./variables/variables.css');
+@import url('./header.css');
+@import url('./hotel/hotel-hero.css');
+@import url('./hotel/hotel-luxory.css');
+@import url('./hotel/hotel-triple.css');
+@import url('./hotel/hotel-fourseater.css');
+@import url('./footer.css');
+@import url('./modals/book.css');
+@import url('./modals/prices.css');
+@import url('./modals/table.css');
+@import url('./menu/mobile-menu.css');

@@ -1,0 +1,5 @@
+:root {
+  --accent-color: #f6f6f6;
+  --second-color: #121212;
+  --animate: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

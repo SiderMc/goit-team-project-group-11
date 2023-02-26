@@ -17,9 +17,7 @@
 
 .room-hero-title {
     max-width:275px;
-    font-family: 'DM Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'DM Sans Regular', sans-serif;
     font-size: 40px;
     line-height: 1.0;
     letter-spacing: -0.02em;
@@ -58,9 +56,15 @@
     color: var(--accent-color)
 }
 
-.room-hero-list {}
 
-.room-hero-item {}
+.slider{
+
+}
+.slider-item {
+    background-color: aquamarine;
+    height: 429px;
+    width: 250px;
+}
 
 .room-hero-text {
     max-width: 289px;

@@ -1,7 +1,126 @@
 /* for Page Main Hotel’s details*/
+.container {
+    
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto ; 
+}
 @media screen and (min-width: 375px) {
+    .container {
+        width: 375px;  
+       
+    }
 }
 @media screen and (min-width: 768px) {
+    .container {
+        width: 768px;  
+        padding: 0 32px;
+       
+    }
 }
 @media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;  
+         
+    }
+}
+/*================= M O B A I L ====================*/
+@media screen and (min-width: 375px) {
+    .hotels {
+        display: block;
+        background-color: #121212;
+        color: #f6f6f6;
+    }
+    .hotel-title {
+        padding: 32px 0;
+        margin: 0;
+        font-family: 'DM Sans';
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+    }
+    .hotel-book {
+        padding: 0;
+        margin: 0;
+    }
+    .book {
+        margin: 0;
+        padding-bottom: 33px;
+        width: 335px;
+        height: auto;
+        font-family: 'DM Sans';
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.286;
+        letter-spacing: -0.02em;
+    }
+    .button-dark {
+        justify-content: center;
+        margin-top: 40px;
+        width: 78px;
+        height: 18px;
+        border: 2px solid transparent;
+        border-color: #f6f6f6;
+        background-color: #121212;
+        color: #f6f6f6;
+        cursor: pointer;
+        font-family: inherit;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.286;
+        letter-spacing: 0.02em;
+        border-radius: 50%;
+        
+    }
+
+}
+/*================= M O B A I L ====================*/
+
+/*================= T A B L E T ====================*/
+@media screen and (min-width: 768px) {
+    .hotel-title {
+        font-size: 68px;  
+        padding:0 32px 0 0;
+        margin: 0;
+        
+    }
+    .book {
+        margin: 0;
+        padding: 0;
+        width: 362px;
+    }
+    
+    .hotel-book {
+        display: flex;
+        align-items:center;
+        padding-top: 44px;
+        padding-bottom: 80px;
+
+    }
+
+    .list-img {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .img-details {
+        justify-content: center;
+        list-style: none;
+        flex-basis: calc((100% - 32px) / 3);
+    }
+    .button-dark {
+        width: 95px;
+        height: 24px;  
+    }
+}
+
+/*================= T A B L E T ====================*/
+
+/*================= D E S K T O P ====================*/
+@media screen and (min-width: 1440px) {
+
+    
 }

@@ -1,0 +1,17 @@
+/*styles for Paige Room */
+/*нічого не змінювати*/
+
+@import url('../base/reset.css');
+@import url('../base/fonts.css');
+@import url('../variables/variables.css');
+@import url('../base/body.css');
+@import url('../base/container.css');
+@import url('../components/buttons.css');
+@import url('../components/section-title.css');
+@import url('../css/layout/header/header.css');
+@import url('../css/layout/room/room-hero.css');
+@import url('../css/layout/room/amenities.css');
+@import url('../css/layout/footer/footer.css');
+@import url('../css/layout/modals/book.css');
+@import url('../css/layout/modals/prices.css');
+@import url('../css/layout/menu/mobile-menu.css');

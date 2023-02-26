@@ -1,8 +1,4 @@
 /*for page Room Page section Hero*/
-
-
-
-
 .container {
     max-width: 100%;
     padding: 0 20px;
@@ -12,8 +8,6 @@
     padding-top: 40px;
     padding-bottom: 64px;
 }
-
-.room-hero-container {}
 
 .room-hero-title {
     max-width:275px;

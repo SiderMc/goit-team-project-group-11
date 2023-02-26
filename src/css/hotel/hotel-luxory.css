@@ -9,9 +9,9 @@ img {
 .luxory-container {
     width: 100%;
 
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 
     /* border: 0.5px solid red; */
 }
@@ -26,8 +26,6 @@ img {
 .luxury-text, 
 .luxury-text-below {
     font-family: 'DM Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.25;
     
@@ -41,7 +39,6 @@ img {
 
 .luxury-text, 
 .luxury-text-below {
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.28;
     padding: 0;
@@ -54,15 +51,13 @@ img {
 
 .luxury-wrapp-btn {
     margin-right: auto;
-} 
+}
 
-.luxury-link-btn,
+/* .luxury-link-btn,
 .luxury-modal-btn {
     background-color: transparent;
     
     font-family: 'DM Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.28;
 
@@ -75,7 +70,15 @@ img {
 
     border: 0.8px solid #121212;
     border-radius: 32px;
+
+    transition: background-color var(--animate), color var(--animate);
 }
+
+.luxury-link-btn,
+.luxury-modal-btn:is(:hover, :focus) {
+    background-color: #121212;
+    color: #f7f7f7;
+} */
 
 .luxury-modal-btn {
     margin-left: 12px;

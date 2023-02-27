@@ -1,7 +1,120 @@
 /*for Page Main Header*/
+/*Header for pages Restaurant Page , Hotel Page , Room Page*/
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .pages__navigation {
+  display: none;
+} */
+/* ---------HEADER-Mobile-------- */
+.header {
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+  background-color: var(--second-color);
+}
+.header-nav {
+  display: none;
+}
+
+.header-soc-list {
+  display: none;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btn-menu-open-icon {
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.header-logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-link {
+  font-family: "DM Sans Medium", sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+  color: var(--accent-color);
+  margin-bottom: 3px;
+}
+
+.header-logo-text {
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+  color: var(--accent-color);
+}
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 768px) {
+  .logo-link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .header-logo-text {
+   font-size: 8px;
+   line-height: 1.25; 
+  }
+  .header-soc-list {
+    display: flex;
+  }
+  .header-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+  }
 }
 @media screen and (min-width: 1440px) {
+    .menu-btn {
+    display: none;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav-list {
+display: flex; 
+gap: 32px;
+margin-right: auto;
+}
+.header-nav-link {
+line-height: 1.29;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--accent-color);
+}
 }

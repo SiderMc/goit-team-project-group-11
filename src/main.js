@@ -1,1 +1,1 @@
-import './slick/slick';
+import "./slick/slick";

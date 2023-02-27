@@ -28,8 +28,8 @@
 @media screen and (min-width: 375px) {
     .hotels {
         display: block;
-        background-color: #121212;
-        color: #f6f6f6;
+        background-color: var(--second-color);
+        color:var(--accent-color);
     }
     .hotel-title {
         padding: 32px 0;
@@ -55,23 +55,11 @@
         line-height: 1.286;
         letter-spacing: -0.02em;
     }
-    .button-dark {
-        justify-content: center;
+    .button-hotel {
         margin-top: 40px;
         width: 78px;
         height: 18px;
-        border: 2px solid transparent;
-        border-color: #f6f6f6;
-        background-color: #121212;
-        color: #f6f6f6;
-        cursor: pointer;
-        font-family: inherit;
-        text-transform: uppercase;
-        font-size: 14px;
-        line-height: 1.286;
-        letter-spacing: 0.02em;
-        border-radius: 50%;
-        
+             
     }
 
 }
@@ -111,7 +99,8 @@
         list-style: none;
         flex-basis: calc((100% - 32px) / 3);
     }
-    .button-dark {
+    .button-hotel {
+        margin-top: 52px;
         width: 95px;
         height: 24px;  
     }
@@ -122,5 +111,12 @@
 /*================= D E S K T O P ====================*/
 @media screen and (min-width: 1440px) {
 
+
+
+    .button-hotel {
+        margin-top: 52px;
+        width: 122px;
+        height: 24px;  
+    }
     
 }

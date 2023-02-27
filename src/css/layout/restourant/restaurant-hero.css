@@ -5,7 +5,6 @@
     padding-bottom: 64px;
 }
 .hero-title {
-    font-family: 'DM Sans';
     font-weight: 400;
     font-size: 40px;
     line-height: 1;
@@ -22,7 +21,6 @@
     margin-bottom: 40px;
 }
 .hero-text {
-    font-family: 'DM Sans';
     font-size: 14px;
     line-height: 18px;
     color: var(--second-color);

@@ -1,4 +1,5 @@
 /*for page Restaurant Page section Hero*/
+
 .hero {
     padding-top: 40px;
     padding-bottom: 64px;
@@ -48,6 +49,7 @@
         max-width: 338px;
         position: absolute;
     }
+    
 }
 @media screen and (min-width: 1440px) {
     .hero {

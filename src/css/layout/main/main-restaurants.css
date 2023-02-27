@@ -7,23 +7,22 @@
   position: relative;
 }
 .restaurant-title {
-  /* font-family: 'DM Sans'; */
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'DM Sans Medium', sans-serif;
+  /* font-style: normal;
+  font-weight: 500; */
   font-size: 40px;
   line-height: 1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-
   color: var(--second-color);
 }
 .restaurant-text {
   width: 221px;
   height: 54px;
-  margin: 24px 0 32px 0;
-  /* font-family: 'DM Sans'; */
-  font-style: normal;
-  font-weight: 500;
+  margin: 24px 0 0 0;
+  font-family: 'DM Sans Medium', sans-serif;
+  /* font-style: normal;
+  font-weight: 500; */
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -31,50 +30,52 @@
 
   color: var(--second-color);
 }
+.block-slick-mob-tab-pc {
+  position: relative;
+}
 .block-responsive {
   display: flex;
   justify-content: center;
 }
+.block-responsive-tab {
+  margin-top: 32px;
+}
 .responsive {
   width: 100%;
+  height: auto;
   margin: 0 0 82px 0;
+}
+.responsive-tab {
+  width: 335px;
+  height: auto;
+}
+
+.restaurant-slick-arrow-block {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  width: 68px;
+  height: 24px;
+  margin: 18px 0 40px 0;
 }
-
-.responsive-img {
-  width: 100%;
-}
-
-.slick-prev {
+.restaurant-btn-prev {
   width: 24px;
   height: 24px;
-  top: 100%;
-  left: 8px;
-  transform: translateY(18px);
-}
-.slick-prev::before {
-  display: block;
-  content: '\2039';
-  width: 4.7px;
-  height: 9.33px;
+  border: none;
+  background: none;
   color: var(--second-color);
 }
-
-.slick-next {
+.restaurant-btn-prev:is(:hover, :focus) {
+  opacity: 0.3;
+}
+.restaurant-btn-next {
   width: 24px;
   height: 24px;
-  top: 100%;
-  left: 44px;
-  transform: translateY(18px);
-}
-.slick-next::before {
-  display: block;
-  content: '\203A';
-  width: 4.7px;
-  height: 9.33px;
+  border: none;
+  background: none;
   color: var(--second-color);
+}
+.restaurant-btn-next:is(:hover, :focus) {
+  opacity: 0.3;
 }
 
 .restaurant-btn-book {
@@ -123,27 +124,51 @@
   display: flex;
   justify-content: center;
 }
+.block-responsive {
+  display: none;
+}
 @media screen and (min-width: 375px) {
-  .responsive {
-    width: 325px;
+  .container {
+    padding: 0 20px;
   }
-  .responsive-img {
-    width: 157px;
+  .responsive-tab {
+    width: 345px;
   }
+
+  .block-responsive {
+    display: none;
+  }
+  /* .slick-arrow.slick-hidden {
+    display: block;
+  } */
 }
 @media screen and (min-width: 768px) {
-  .block-responsive {
-    margin-left: 32px;
+  .container {
+    padding: 0 32px;
   }
-  .responsive {
+  .block-responsive {
+    display: none;
+  }
+
+  .responsive-tab {
     width: 748px;
   }
   .responsive-item {
-    width: 336px;
     margin-right: 32px;
   }
-  .responsive-img {
-    width: 336px;
+
+  .restaurant-slick-arrow-block {
+    width: 104px;
+    height: 36px;
+    margin: 32px 0 40px 0;
+  }
+  .restaurant-btn-prev {
+    width: 36px;
+    height: 36px;
+  }
+  .restaurant-btn-next {
+    width: 36px;
+    height: 36px;
   }
   .block-restaurant-title {
     display: flex;
@@ -156,37 +181,48 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  /* .slick-next,
+  .slick-arrow {
+    display: none;
+  } */
+  .container {
+    padding: 44px 32px 26px;
+  }
+  .block-responsive-tab {
+    display: none;
+  }
   .block-responsive {
-    margin-left: 32px;
+    display: block;
   }
 
   .responsive {
-    width: 1400px;
+    width: 1408px;
+    margin: 0 0 51px 0;
   }
-  .responsive-item {
-    width: 266px;
-  }
-  .responsive-img {
-    width: 266px;
-  }
+
   .restaurant-btn-block {
     position: absolute;
-    top: 0;
+    top: -179px;
     right: 32px;
   }
   .block-restaurant-title {
     display: flex;
     justify-content: flex-start;
     gap: 32px;
-    margin-bottom: 132px;
+    margin-bottom: 125px;
   }
   .restaurant-text {
     margin: 0;
   }
-  .slick-next {
-    left: calc(50% + 10px);
+  .restaurant-slick-arrow-block {
+    margin: 0 auto;
   }
-  .slick-prev {
-    left: calc(50% - 10px);
+  .restaurant-btn-prev {
+    width: 36px;
+    height: 36px;
+  }
+  .restaurant-btn-next {
+    width: 36px;
+    height: 36px;
   }
 }

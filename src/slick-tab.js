@@ -1,10 +1,9 @@
-$('.responsive').slick({
+$('.responsive-tab').slick({
   infinite: true,
   arrows: true,
   prevArrow: '.restaurant-btn-prev',
   nextArrow: '.restaurant-btn-next',
-  customPaging: '30px',
-  slidesToShow: 4,
+  customPaging: '20px',
+  slidesToShow: 2,
   slidesToScroll: 1,
-  variableWidth: true,
 });

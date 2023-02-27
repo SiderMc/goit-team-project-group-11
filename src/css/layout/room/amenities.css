@@ -63,7 +63,6 @@
 }
 
 .amenities-img-first {
-    background-color: blue;
         position: absolute;
         right: 70px;
         top: 144px;
@@ -74,7 +73,6 @@
 }
 
 .amenities-img-second {
-    background-color: aqua;
     position: absolute;
     right:0;
     bottom:74px;

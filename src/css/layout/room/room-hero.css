@@ -51,14 +51,18 @@
 }
 
 
-.slider{
+.slider-item-first {}
+.slider-item-second{
+    display: none;
+}
 
-}
-.slider-item {
-    background-color: aquamarine;
-    height: 429px;
+.slider-img {
+    display: block;
     width: 250px;
+    height: 429px;
 }
+
+
 
 .room-hero-text {
     max-width: 289px;
@@ -89,7 +93,7 @@
             padding-bottom: 120px;
         }
     .room-hero-title{
-        max-width: 450px;
+        max-width: 440px;
         font-size: 60px;
     }
     .room-hero-btn{
@@ -98,20 +102,57 @@
             height: 40px;
             padding: 8px 24px;
         }
+        .slider-img {
+            width: 436px;
+            height: 548px;
+        }
 }
 @media screen and (min-width: 1440px) {
     .container {
             max-width: 1440px;
         }
+
+        .room-hero {
+            padding-top: 30px;
+            padding-bottom: 32px;
+        }
     .room-hero-title {
-        max-width: 592px;
-        font-size: 80px;
+    position: absolute;
+    top: 139px;
+    max-width: 580px;
+    font-size: 80px;
     }
+
     .room-hero-btn {
+        position: absolute;
+        top: 331px;
             font-size: 18px;
             line-height: 1.33;
             min-width: 152px;
             height: 42px;
             padding: 9px 24px;
+    }
+    
+    .room-hero-container{
+        position: relative;
+        min-height: 692px;
+    }
+
+    .slider{
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+    }
+    
+    
+
+    .slider-img {
+            width: 436px;
+            height: 580px;
+        }
+
+    .room-hero-text{
+        position: absolute;
+        bottom: 16px;
     }
 }

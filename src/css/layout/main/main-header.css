@@ -20,15 +20,19 @@
 .pages__navigation {
   display: none;
 } 
+.mob-menu {
+  display: none;
+}
 /* ---------HEADER-Mobile-------- */
 .header {
   text-transform: uppercase;
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2); 
   background-color: var(--second-color);
 }
+
 .header-nav {
   display: none;
 }
@@ -91,7 +95,6 @@
   }
   .header-flex-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   .header-soc-list {
@@ -99,6 +102,9 @@
     justify-content: center;
     gap: 14px;
   }
+  .menu-btn {
+  margin-right: 246px;
+}
 }
 @media screen and (min-width: 1440px) {
 .menu-btn {

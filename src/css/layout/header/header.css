@@ -16,9 +16,9 @@
   overflow: hidden;
 }
 
-/* .pages__navigation {
+.pages__navigation {
   display: none;
-} */
+}
 /* ---------HEADER-Mobile-------- */
 .header {
   text-transform: uppercase;
@@ -34,11 +34,17 @@
 .header-soc-list {
   display: none;
 }
+.header-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
 
+}
 .menu-btn {
   background-color: transparent;
   border: none;
   padding: 0;
+  margin-right: 83px;
 }
 
 .btn-menu-open-icon {
@@ -47,10 +53,6 @@
 }
 
 .header-logo-container {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translate(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,8 +81,8 @@
     line-height: 1.2;
   }
   .header-logo-text {
-    font-size: 8px;
-    line-height: 1.25;
+   font-size: 8px;
+   line-height: 1.25; 
   }
   .header-soc-list {
     display: flex;
@@ -103,6 +105,10 @@
   .header-nav {
     display: flex;
     justify-content: space-between;
+    margin-right: 370px;
+  }
+   .header-logo-container {
+    margin-right: 509px;
   }
   .header-nav-list {
     display: flex;
@@ -114,5 +120,19 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--second-color);
+  }
+  .current {
+    position: relative;
+  }
+  .current::after {
+    content: "";
+    bottom: -6px;
+    position: absolute;
+    transform: translateX(500%);
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--second-color);
   }
 }

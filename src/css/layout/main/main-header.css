@@ -3,26 +3,10 @@
 .link {
   text-decoration: none;
 }
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .pages__navigation {
   display: none;
 } 
-.mob-menu {
-  display: none;
-}
+
 /* ---------HEADER-Mobile-------- */
 .header {
   text-transform: uppercase;
@@ -40,17 +24,22 @@
 .header-soc-list {
   display: none;
 }
-.header-flex-container {
+.header-logo-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
   display: flex;
   align-items: center;
-  justify-content: start;
-
+  justify-content: center;
+  flex-direction: column;
 }
 .menu-btn {
   background-color: transparent;
   border: none;
   padding: 0;
-  margin-right: 83px;
+  color: var(--accent-color);
+  font-size: 20px;
 }
 
 .btn-menu-open-icon {
@@ -79,9 +68,76 @@
   letter-spacing: 0.18em;
   color: var(--accent-color);
 }
-@media screen and (min-width: 375px) {
+/* -----HEADER-MENU----- */
+.mob-menu {
+    background-color: var(--second-color);
+    padding-bottom: 24px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
 }
-@media screen and (min-width: 768px) {
+.logo-menu-link {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+  color: var(--accent-color);
+  margin-bottom: 3px;
+}
+.header-logo-menu-text {
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+  color: var(--accent-color);
+}
+.header-menu-container {
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+}
+.header-menu-container {
+  width: 100%;
+  padding: 20px 32px;
+  margin: 0 auto;
+  margin-bottom: 128px;
+}
+.header-menu-nav-link {
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--accent-color);
+}
+.header-menu-nav {
+  padding-right: 129px;
+  padding-left: 129px;
+}
+.header-menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.nav-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+@media screen and (min-width: 375px) {
+  .header-menu-container {
+    max-width: 100%; 
+  }
+}
+@media screen and (min-width: 768px) { 
+
+  .header-menu-container {
+    max-width: 100%;
+  }
   .logo-link {
     font-size: 20px;
     line-height: 1.2;
@@ -102,13 +158,18 @@
     justify-content: center;
     gap: 14px;
   }
-  .menu-btn {
-  margin-right: 246px;
-}
+ 
 }
 @media screen and (min-width: 1440px) {
-.menu-btn {
+  .mob-menu {
     display: none;
+  }
+  .menu-btn {
+    display: none;
+  } 
+  .header-logo-container {
+  position: static;
+  transform: translate(0);
   }
   .header-nav {
     display: flex;

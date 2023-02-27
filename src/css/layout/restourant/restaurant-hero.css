@@ -1,7 +1,71 @@
 /*for page Restaurant Page section Hero*/
+.hero {
+    padding-top: 40px;
+    padding-bottom: 64px;
+}
+.hero-title {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.hero-button {
+    display: flex;
+    gap: 12px;
+}
+.hero-slick {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.hero-text {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--second-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.font-italic {
+    font-style: italic;
+    font-weight: 400;
+}
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 768px) {
+    .hero {
+        padding-bottom: 40px;
+    }
+    .hero-thumb {
+        position: relative;
+    }
+    .hero-title {
+        font-size: 80px;
+    }
+    .hero-text {
+        max-width: 338px;
+        position: absolute;
+    }
 }
 @media screen and (min-width: 1440px) {
+    .hero {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .hero-half-thumb {
+        width: calc((100% - 121px) / 2);
+    }
+    .hero-thumb {
+        display: flex;
+        gap: 121px;
+    }
+    .hero-title {
+        margin-top: 204px;
+        margin-bottom: 32px;
+    }
+    .hero-text {
+        bottom: 18px;
+    }
 }

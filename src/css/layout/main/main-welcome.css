@@ -9,12 +9,15 @@
   width: 335px;
   font-family: 'DM Sans Medium', sans-serif;
   /* font-weight: 500; */
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.12;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 32px;
+}
+.welcome-title-italic {
+  font-style: italic;
 }
 .welcome-text,
 .welcome-description {
@@ -61,7 +64,7 @@
     width: 704px;
   }
   .welcome-title {
-    width: 404px;
+    width: 434px;
     margin-bottom: 50px;
   }
   .welcome-description {
@@ -91,7 +94,7 @@
     width: 672px;
   }
   .welcome-title {
-    width: 404px;
+    width: 434px;
   }
   .welcome-text {
     width: 437px;

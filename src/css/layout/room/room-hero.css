@@ -1,7 +1,117 @@
 /*for page Room Page section Hero*/
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.room-hero{
+    padding-top: 40px;
+    padding-bottom: 64px;
+}
+
+.room-hero-title {
+    max-width:275px;
+    font-family: 'DM Sans Regular', sans-serif;
+    font-size: 40px;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    
+    color: var(--second-color);
+    margin-bottom: 24px;
+}
+.room-hero-title>span{
+    font-style: italic;
+}
+
+.room-hero-btn {
+    display: block;
+    min-width: 117px;
+    height: 34px;
+    padding: 8px 18px;
+    border: 0.8px solid var(--second-color);
+    border-radius: 32px;
+    background-color: var(--accent-color);
+    margin-bottom: 40px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--second-color);
+    transition: background-color var(--animate), border-color var(--animate), color var(--animate);
+}
+
+.room-hero-btn:hover, .room-hero-btn:focus{
+    background-color: var(--second-color);
+    border-color:  var(--second-color);
+    color: var(--accent-color)
+}
+
+
+.slider{
+
+}
+.slider-item {
+    background-color: aquamarine;
+    height: 429px;
+    width: 250px;
+}
+
+.room-hero-text {
+    max-width: 289px;
+    margin-top: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+
+
+
 @media screen and (min-width: 375px) {
+    .container {
+            max-width: 375px;}
 }
 @media screen and (min-width: 768px) {
+    .container {
+            max-width: 768px;
+            padding: 0 32px;
+        }
+    .room-hero {
+            
+            padding-bottom: 120px;
+        }
+    .room-hero-title{
+        max-width: 450px;
+        font-size: 60px;
+    }
+    .room-hero-btn{
+            line-height: 1.71;
+            min-width: 129px;
+            height: 40px;
+            padding: 8px 24px;
+        }
 }
 @media screen and (min-width: 1440px) {
+    .container {
+            max-width: 1440px;
+        }
+    .room-hero-title {
+        max-width: 592px;
+        font-size: 80px;
+    }
+    .room-hero-btn {
+            font-size: 18px;
+            line-height: 1.33;
+            min-width: 152px;
+            height: 42px;
+            padding: 9px 24px;
+    }
 }

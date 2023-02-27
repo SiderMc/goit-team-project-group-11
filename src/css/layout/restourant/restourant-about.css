@@ -1,7 +1,79 @@
 /*for page Restaurant Page section About a kitchen*/
+.about-a-kitchen {
+    padding-bottom: 64px;
+}
+.sub-thumb {
+    margin-top: 20px;
+}
+.pic-wrapper {
+    display: flex;
+    gap: 20px;
+
+    margin-bottom: 32px;
+}
+.about-text {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: calc(18/14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.font-italic {
+    font-style: italic;
+    font-weight: 400;
+}
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 768px) {
+    .about-a-kitchen {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .thumb {
+        position: relative;
+    }
+    .chef {
+        position: absolute;
+        right: 0;
+    }
+    .pic-wrapper {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+    .about-list {
+        display: flex;
+        gap: 32px;
+    }
+    .about-text {
+        font-size: 18px;
+        line-height: calc(24/18);
+    }
 }
 @media screen and (min-width: 1440px) {
+    .about-a-kitchen{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .thumb {
+        display: flex;
+        gap: 32px;
+    }
+    .chef {
+        position: static;
+        width: 100%;
+    }
+    .pic-wrapper {
+        flex-direction: row;
+    }
+    .sup {
+        max-width: 334px;
+    }
+    .about-text {
+        font-weight: 500;
+    }
+    .font-italic {
+        font-weight: 500;
+    }
 }

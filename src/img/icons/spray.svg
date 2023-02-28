@@ -22,6 +22,11 @@
 </symbol>
 <symbol id="icon-prev" viewBox="0 0 18 32" fill="none">
 <path stroke="#121212" stroke-width="4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M16 30l-14-14 14-14"></path>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#f7f7f7" style="stroke: var(--color1, #f7f7f7)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16M8 8l16 16"></path>
+</symbol>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path fill="none" stroke="#f7f7f7" style="stroke: var(--color1, #f7f7f7)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 16h24M4 8h24M4 24h16"></path>
 </symbol>
 </defs>
 </svg>

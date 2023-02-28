@@ -31,21 +31,22 @@
 /*================= M O B A I L ====================*/
 @media screen and (min-width: 375px){
     .location-title {
-        padding: 32px 0;
+        padding: 64px 0 32px 0;
         margin: 0;
-        font-family: 'DM Sans';
         text-transform: uppercase;
         font-size: 40px;
         line-height: 1;
         letter-spacing: -0.02em;
     }
-
+    .map {
+        width: 335px;
+        height: 384px;
+        padding-bottom: 32px;
+    }
     .contact-address {
         display: block;
-        padding-top: 32 px;
         width: 214px;
         height: 48px;
-    
         font-style: normal;
         font-size: 18px;
         line-height: 1.333;
@@ -54,6 +55,7 @@
     }
     .contact-title {
         padding-top: 28px;
+        padding-bottom: 12px;
         font-style: normal;
         font-size: 14px;
         line-height: 1.286;
@@ -61,7 +63,6 @@
         text-transform: uppercase;
     }
     .contact-tel {
-        padding-top: 12px;
         font-style: normal;
         font-size: 14px;
         line-height: 1.286;
@@ -71,7 +72,27 @@
 /*================= M O B A I L ====================*/
 
 /*================= T A B L E T ====================*/
-
+@media screen and (min-width: 768px) {
+    .location-title {
+        padding: 80px 0 40px 0;
+        font-size: 68px;
+    }
+    .map {
+        width: 704px;
+        height: 576px;
+        padding-bottom: 48px;
+    }
+    .contact-tel {
+        font-style: normal;
+        font-size: 18px;
+        line-height: 1.333;
+    }
+    .location-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+}
 
 
 
@@ -81,7 +102,30 @@
 
 /*================= D E S K T O P ====================*/
 
-
+@media screen and (min-width: 1440px) {
+    .location-location {
+        position: relative;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .location-title {
+        padding:0 0 0 32px;
+    }
+    .map {
+        padding-left: 64px;
+        width: 640px;
+        height: 524px;
+        padding-bottom: 0;
+    } 
+    .location-contact {
+       justify-content: center;
+    }
+    .tel {
+        padding-left: 70px;
+    }
+}
 
 
 

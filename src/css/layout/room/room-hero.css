@@ -6,10 +6,18 @@
 }
 .room-hero{
     padding-top: 40px;
+    overflow: hidden;
     padding-bottom: 64px;
 }
 
+.room-hero-container {
+    position: relative;
+    min-height: 883px;
+}
+
 .room-hero-title {
+    position: absolute;
+    top: 40px;
     max-width:275px;
     font-family: 'DM Sans Regular', sans-serif;
     font-size: 40px;
@@ -26,6 +34,8 @@
 
 .room-hero-btn {
     display: block;
+    position: absolute;
+    top: 144px;
     min-width: 117px;
     height: 34px;
     padding: 8px 18px;
@@ -50,10 +60,20 @@
     color: var(--accent-color)
 }
 
+.slider{}
 
-.slider-item-first {}
+
+.slider-item-first {
+    position: absolute;
+    top: 218px;
+    left: 0;
+}
+
 .slider-item-second{
-    display: none;
+    display: block;
+    position: absolute;
+    left: 290px;
+    top:218px;
 }
 
 .slider-img {
@@ -66,6 +86,8 @@
 
 .room-hero-text {
     max-width: 289px;
+    position: absolute;
+    top: 747px;
     margin-top: 40px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
@@ -92,19 +114,39 @@
             
             padding-bottom: 120px;
         }
-    .room-hero-title{
-        max-width: 440px;
-        font-size: 60px;
+
+    .room-hero-container {
+        min-height: 1026px;
     }
     .room-hero-btn{
+        top: 178px;
             line-height: 1.71;
             min-width: 129px;
             height: 40px;
             padding: 8px 24px;
         }
+    
+    .room-hero-title{
+        max-width: 440px;
+        font-size: 60px;
+    }
+
+        .slider-item-first {
+            top: 248px;
+        }
+    
+        .slider-item-second {
+            top: 248px;
+            left: 500px;
+        }
+    
         .slider-img {
             width: 436px;
             height: 548px;
+        }
+
+        .room-hero-text {
+            top: 834px;
         }
 }
 @media screen and (min-width: 1440px) {
@@ -116,6 +158,11 @@
             padding-top: 30px;
             padding-bottom: 32px;
         }
+        
+        .room-hero-container{
+        position: relative;
+        min-height: 692px;
+    }
     .room-hero-title {
     position: absolute;
     top: 139px;
@@ -133,18 +180,20 @@
             padding: 9px 24px;
     }
     
-    .room-hero-container{
-        position: relative;
-        min-height: 692px;
+    
+
+    .slider{}
+    
+    .slider-item-first{
+        top: 30px ;
+        left: 736px;
+
     }
 
-    .slider{
-        position: absolute;
-        bottom: 50px;
-        right: 0;
+    .slider-item-second {
+    top: 30px;
+    left: 1204px;
     }
-    
-    
 
     .slider-img {
             width: 436px;
@@ -153,6 +202,6 @@
 
     .room-hero-text{
         position: absolute;
-        bottom: 16px;
+        top: 542px;
     }
 }

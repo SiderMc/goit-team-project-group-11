@@ -1,7 +1,10 @@
 <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
 <header class="header">
   <div class="container header-flex-container">
-    <button type="button" class="menu-btn">
+    <button type="button" 
+            class="menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
       O
       <svg class="btn-menu-open-icon" width="28" height="28">
         <use href="/src/img/icons/icons-sprite.svg#icon-menu-open-btn"></use>
@@ -40,9 +43,9 @@
   </div>
 
   <!-- -----MOB-MENU------ -->
-  <div class="mob-menu">
+  <div class="mob-menu js-menu-container" id="mobile-menu">
     <div class="header-flex-container header-menu-container">
-      <button type="button" class="menu-btn">
+      <button type="button" class="menu-btn js-close-menu">
         X
         <svg class="btn-menu-close-icon" width="28" height="28">
           <use href="/src/img/icons/icons-sprite.svg#icon-menu-close-btn"></use>

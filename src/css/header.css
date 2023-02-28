@@ -124,7 +124,7 @@ color: var(--accent-color);
 .nav-flex-container {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: space-between;
 }
 .header-menu-soc-list {
   display: flex;

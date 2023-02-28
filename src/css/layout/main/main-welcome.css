@@ -2,7 +2,7 @@
 .welcome {
   margin-top: 64px;
 }
-.container {
+.container-pc {
   display: flex;
 }
 .welcome-title {
@@ -38,10 +38,10 @@
 }
 
 @media screen and (min-width: 375px) {
-  .container {
+  .container-pc {
     flex-direction: column;
     gap: 32px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
   .welcome-text {
     width: 306px;
@@ -55,9 +55,9 @@
   .welcome {
     margin-top: 80px;
   }
-  .container {
+  .container-pc {
     gap: 40px;
-    padding: 0 32px;
+    /* padding: 0 32px; */
   }
 
   .welcome-img {
@@ -77,7 +77,6 @@
 }
 @media screen and (min-width: 1440px) {
   .container-pc {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 32px;

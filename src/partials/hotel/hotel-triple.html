@@ -2,28 +2,51 @@
 
 <section class="triple">
     <div class="container triple-container">
-        <img
-            srcset="./image/bedroom-triple-mobile@2x.jpg"
-            src="./image/bedroom-triple-mobile.jpg"
-            alt="triple bedroom"
-            width="335"
-            height="468"
-        />
-        <div class="triple-img-small">
-            <img
-                srcset="./images/bathroom-triple-mobile@2x.jpg"
-                src="./images/bathroom-triple-mobile.jpg"
-                alt= "triple bathroom"
-                width="158"
-                height="149"
-            />
-            <img
-                srcset="./images/kitchen-triple-mobile@2x.jpg"
-                src="./images/kitchen-triple-mobile.jpg"
-                alt="triple kitchen"
-                width="158"
-                height="149"
-            />
+        <div class="triple-img-first">
+            <picture>
+                <source
+                    srcset="
+                        ./img/hotel-mob-double-room1-1x.jpg 1x,
+                        ./img/hotel-mob-double-room1-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                />
+                <img 
+                    src="./img/hotel-mob-double-room1-1x.jpg"
+                    alt="double luxury bedroom"
+                    width="335"
+                    height="468"
+                >
+            </picture>
+        </div>
+        <div class="triple-img-second">
+            <picture class="triple-rooms">
+                <source
+                    srcset="
+                        ./img/hotel-mob-double-room2-1x.jpg 1x,
+                        ./img/hotel-mob-double-room2-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                />
+                <img
+                    src="./img/hotel-mob-double-room2-1x.jpg"
+                    alt="double triple bathroom"
+                    width="158"
+                    height="149"
+                >
+                <source class="source"
+                    srcset="
+                            ./img/hotel-mob-double-room3-1x.jpg 1x,
+                            ./img/hotel-mob-double-room3-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                />
+                <img
+                    src="./img/otel-mob-double-room3-1x.jpg"
+                    alt="double triple kitchen"
+                    width="158"
+                    height="149"
+                >
+            </picture>
         </div>
         <h2 class="triple-titel">
             Triple room
@@ -38,9 +61,9 @@
         </p>
         <div class="triple-wrapp-btn">
             <a href="../page-room.html">
-                <button class="triple-link-btn" type="button">More details</button>
+                <button class="button-light triple-link-btn" type="button">More details</button>
             </a>
-            <button class="triple-modal-btn" type="submit">View pricess</button>
+            <button class="button-light triple-modal-btn" type="submit">View pricess</button>
         </div>
     </div>
 </section>

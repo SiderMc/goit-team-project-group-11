@@ -3,23 +3,21 @@ img {
     border: 1px solid var(--second-color);
 }
 
-.luxory {
+.luxury {
     padding: 64px 20px 0px;
 }
-.luxory-container {
+.luxury-container {
     width: 100%;
-
-    /*display: flex;
-    flex-direction: column;
-    align-items: center; */
 
     /* border: 0.5px solid red; */
 }
 
-.luxory-img-small {
+.luxury-img-small {
     display: none;
-    column-gap: 20px;
-    margin-top: 20px;
+}
+
+.luxury-img {
+    margin-right: 20px;
 }
 
 .luxury-titel,
@@ -53,7 +51,7 @@ img {
     margin-right: auto;
 }
 
-/* .luxury-link-btn,
+.luxury-link-btn,
 .luxury-modal-btn {
     background-color: transparent;
     
@@ -78,15 +76,20 @@ img {
 .luxury-modal-btn:is(:hover, :focus) {
     background-color: #121212;
     color: #f7f7f7;
-} */
+}
 
 .luxury-modal-btn {
     margin-left: 12px;
 }
 
 @media screen and (min-width: 375px) {
-    .luxory-img-small {
+    .luxury-rooms {
         display: flex;
+        margin-top: 20px;
+    }
+
+    .source {
+        margin-left: 20px;
     }
     .luxury-titel {
         font-size: 32px;

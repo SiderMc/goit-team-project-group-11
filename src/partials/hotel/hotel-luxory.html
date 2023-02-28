@@ -1,29 +1,52 @@
 <!--for page Hotel section Double Luxury Room-->
 
-<section class="luxory">
-    <div class="container luxory-container">
-        <img
-            srcset="./img/bedroom-luxury-mobile@2x.jpg"
-            src="./img/bedroom-luxury-mobile.jpg"
-            alt="double luxury bedroom"
-            width="335"
-            height="468"
-        />
-        <div class="luxory-img-small">
-            <img
-                srcset="./img/bathroom-luxury-mobile@2x.jpg"
-                src="./img/bathroom-luxury-mobile.jpg"
-                alt= "double luxury bathroom"
-                width="158"
-                height="149"
-            />
-            <img
-                srcset="./img/kitchen-luxury-mobile@2x.jpg"
-                src="./img/kitchen-luxury-mobile.jpg"
-                alt="double luxury kitchen"
-                width="158"
-                height="149"
-            />
+<section class="luxury">
+    <div class="container luxury-container">
+        <div class="luxury-img-first">
+            <picture>
+                <source
+                    srcset="
+                        ./img/hotel-mob-double-room1-1x.jpg 1x,
+                        ./img/hotel-mob-double-room1-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                />
+                <img 
+                    src="./img/hotel-mob-double-room1-1x.jpg"
+                    alt="double luxury bedroom"
+                    width="335"
+                    height="468"
+                >
+            </picture>
+        </div>
+        <div class="luxury-img-second">
+            <picture class="luxury-rooms">
+                <source
+                    srcset="
+                        ./img/hotel-mob-double-room2-1x.jpg 1x,
+                        ./img/hotel-mob-double-room2-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                />
+                <img
+                    src="./img/hotel-mob-double-room2-1x.jpg"
+                    alt="double luxury bathroom"
+                    width="158"
+                    height="149"
+                >
+                <source class="source"
+                    srcset="
+                            ./img/hotel-mob-double-room3-1x.jpg 1x,
+                            ./img/hotel-mob-double-room3-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                />
+                <img
+                    src="./img/otel-mob-double-room3-1x.jpg"
+                    alt="double luxury kitchen"
+                    width="158"
+                    height="149"
+                >
+            </picture>
         </div>
         <h2 class="luxury-titel">
             Double<br/> luxury room

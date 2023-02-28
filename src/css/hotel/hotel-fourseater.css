@@ -10,17 +10,7 @@ img {
 .fourseater-container {
     width: 100%;
 
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-
-    border: 0.5px solid red;
-}
-
-.fourseater-img-small {
-    display: none;
-    column-gap: 20px;
-    margin-top: 20px;
+    /* border: 0.5px solid red; */
 }
 
 .fourseater-titel,
@@ -36,6 +26,10 @@ img {
     color: var(--second-color);
 
     padding: 32px 0;
+}
+
+.fourseater-rooms {
+    display: none;
 }
 
 .fourseater-text, 
@@ -88,12 +82,15 @@ img {
 }
 
 @media screen and (min-width: 375px) {
-    .fourseater-img-small {
-        display: flex;
-    }
     .fourseater-titel {
         font-size: 32px;
     }
+
+    .fourseater-rooms {
+        display: flex;
+        margin-top: 20px;
+    }
+
     .fourseater-text,
     .fourseater-text-below {
         font-size: 14px;

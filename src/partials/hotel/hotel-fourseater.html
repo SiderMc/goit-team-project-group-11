@@ -2,29 +2,53 @@
 
 <section class="fourseater">
     <div class="container fourseater-container">
-        <img
-            srcset="./img/bedroom-fourseater-mobile@2x.jpg"
-            src="./img/bedroom-fourseater-mobile.jpg"
-            alt="fourseater bedroom"
-            width="335"
-            height="468"
-        />
-        <div class="fourseater-img-small">
-            <img
-                srcset="./img/bathroom-fourseater-mobile@2x.jpg"
-                src="./img/bathroom-fourseater-mobile.jpg"
-                alt= "fourseater bathroom"
-                width="158"
-                height="149"
-            />
-            <img
-                srcset="./img/kitchen-fourseater-mobile@2x.jpg"
-                src="./img/kitchen-fourseater-mobile.jpg"
-                alt="fourseater kitchen"
-                width="158"
-                height="149"
-            />
+        <div class="fourseater-img-first">
+            <picture>
+                <source
+                    srcset="
+                        ./img/hotel-mob-double-room1-1x.jpg 1x,
+                        ./img/hotel-mob-double-room1-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                />
+                <img 
+                    src="./img/hotel-mob-double-room1-1x.jpg"
+                    alt="double fourseater bedroom"
+                    width="335"
+                    height="468"
+                >
+            </picture>
         </div>
+        <div class="fourseater-img-second">
+            <picture class="fourseater-rooms">
+                <source
+                    srcset="
+                        ./img/hotel-mob-double-room2-1x.jpg 1x,
+                        ./img/hotel-mob-double-room2-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                />
+                <img
+                    src="./img/hotel-mob-double-room2-1x.jpg"
+                    alt="double fourseater bathroom"
+                    width="158"
+                    height="149"
+                >
+                <source class="source"
+                    srcset="
+                            ./img/hotel-mob-double-room3-1x.jpg 1x,
+                            ./img/hotel-mob-double-room3-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                />
+                <img
+                    src="./img/otel-mob-double-room3-1x.jpg"
+                    alt="double fourseater kitchen"
+                    width="158"
+                    height="149"
+                >
+            </picture>
+        </div>
+    
         <h2 class="fourseater-titel">
             Four-seater room
         </h2>
@@ -35,9 +59,9 @@
         </p>
         <div class="fourseater-wrapp-btn">
             <a href="../page-room.html">
-                <button class="fourseater-link-btn" type="button">More details</button>
+                <button class="button-light fourseater-link-btn" type="button">More details</button>
             </a>
-            <button class="fourseater-modal-btn" type="submit">View pricess</button>
+            <button class="button-light fourseater-modal-btn" type="submit">View pricess</button>
         </div>
     </div>
 </section>

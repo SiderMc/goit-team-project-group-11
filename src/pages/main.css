@@ -1,0 +1,22 @@
+/*styles for Main Paige */
+/*нічого не змінювати*/
+
+@import url('../base/reset.css');
+@import url('../base/fonts.css');
+@import url('../variables/variables.css');
+@import url('../base/body.css');
+@import url('../base/container.css');
+@import url('../components/buttons.css');
+@import url('../components/section-title.css');
+@import url('../css/layout/main/main-header.css');
+@import url('../css/layout/main/main-hero.css');
+@import url('../css/layout/main/main-about.css');
+@import url('../css/layout/main/main-restaurants.css');
+@import url('../css/layout/main/main-welcome.css');
+@import url('../css/layout/main/main-hotels.css');
+@import url('../css/layout/main/main-location.css');
+@import url('../css/layout/footer/footer.css');
+@import url('../css/layout/modals/book.css');
+@import url('../css/layout/modals/prices.css');
+@import url('../css/layout/modals/table.css');
+@import url('../css/layout/menu/mobile-menu.css');

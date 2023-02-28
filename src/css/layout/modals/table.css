@@ -5,6 +5,7 @@
     left: 50%;
     transform: scale(1)translate(-50%)scale(1);
     padding: 24px;
+    padding-bottom: 40px;
     opacity: 1;
     width: 90%;
     max-width: 335px;
@@ -12,7 +13,7 @@
     z-index: 20;
     background: #121212;
     border-radius: 2px;
-    /* display: none; */
+    display: none;
 }
 
 .modal.is-show {
@@ -27,7 +28,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 10;
-    /* display: none; */
+    display: none;
 }
 
 .modal-cross {
@@ -153,6 +154,7 @@ svg.close-icon {
         padding-bottom: 60px;
         height: 476px;
         max-height: 476px;
+        display: none;
     }
 
     .modal-cross {

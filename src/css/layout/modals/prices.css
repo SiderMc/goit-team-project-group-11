@@ -1,1 +1,222 @@
 /*for modal window Prices per Room*/
+.modal-prices {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: scale(1)translate(-50%)scale(1);
+    padding: 24px;
+    padding-bottom: 40px;
+    opacity: 1;
+    width: 90%;
+    max-width: 335px;
+    max-height: 414px;
+    z-index: 20;
+    background: #121212;
+    border-radius: 2px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    display: none;
+}
+
+.btn-prices {
+    position: absolute;
+    display: flex;
+    top: 14px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.header-prices {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+    margin-bottom: 40px;
+}
+
+.header-double {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    margin-bottom: 24px;
+}
+
+.prices-form {
+    width: 100%;
+}
+
+/* .form-label-prices {
+    
+    
+} */
+
+.label-container-night {
+    margin-bottom: 32px;
+}
+
+.label-container-date {
+    margin-bottom: 40px;
+}
+
+.prices-select {
+    width: 100%;
+    height: 36px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    margin-bottom: 8px;
+    color: #F7F7F7;
+    padding-bottom: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.option-bott-text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #D8D7D7;
+    margin-bottom: 32px;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn-modal-prices {
+    width: 235px;
+    height: 46px;
+}
+
+@media screen and (max-width: 768px) {
+    .inpun-container-uah {
+        display: none;
+    }
+}
+
+/* ------------------Media tablet styles------------------ */
+@media screen and (min-width: 768px) { 
+    .modal-prices {
+        display: flex;
+        flex-wrap: wrap;
+        width: 628px;
+        max-width: 628px;
+        padding: 32px;
+        padding-bottom: 60px;
+        height: 430px;
+        max-height: 430px;
+    }
+    .btn-prices {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* svg.modal-icon {
+        width: 13.33;
+        height: 13.33;
+    } */
+
+    .header-prices {
+        width: 100%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+
+    .header-prices-room {
+        font-style: italic;
+    }
+
+    .header-double {
+        margin-bottom: 32px;
+    }
+
+    .label-container-date {
+        display: none;
+    }
+
+    .label-uah {
+        font-weight: 500;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+
+    /* .label-uah input[type=text] {
+        padding-bottom: 8px;
+    } */
+
+    .label-input {
+        margin-bottom: 8px;
+    }
+
+    .prices-form {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 32px;
+    }
+
+    .label-calc {
+        max-width: 266px;
+        flex-basis: calc((100% -32) / 2);
+        margin-bottom: 80px;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+
+    .btn-modal-prices {
+        width: 444px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.3;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+
+}
+
+/* --------------------media Descktop styles ----------------------*/
+
+@media screen and (min-width: 1439px) {
+    
+    
+}

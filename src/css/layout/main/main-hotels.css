@@ -27,6 +27,7 @@
 /*================= M O B A I L ====================*/
 @media screen and (min-width: 375px) {
     .hotels {
+        position: relative;
         display: block;
         background-color: var(--second-color);
         color:var(--accent-color);
@@ -57,10 +58,18 @@
     }
     .button-hotel {
         margin-top: 40px;
-        width: 78px;
-        height: 18px;
+        width: 150px;
+        height: 45px; 
              
     }
+    .list-img {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 27px;
+        justify-content: space-between;
+    }   
 
 }
 /*================= M O B A I L ====================*/
@@ -88,21 +97,16 @@
     }
 
     .list-img {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
         gap: 16px;
+         
     }
-    .img-details {
-        justify-content: center;
-        list-style: none;
-        flex-basis: calc((100% - 32px) / 3);
-    }
+  
     .button-hotel {
-        margin-top: 52px;
-        width: 95px;
-        height: 24px;  
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 48px;
+        margin-bottom: 52px;
+        
     }
 }
 
@@ -115,8 +119,8 @@
 
     .button-hotel {
         margin-top: 52px;
-        width: 122px;
-        height: 24px;  
+        width: 200px;
+        height: 50px; 
     }
     
 }

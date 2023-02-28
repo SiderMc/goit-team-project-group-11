@@ -76,7 +76,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
+  .container-pc {
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 32px;

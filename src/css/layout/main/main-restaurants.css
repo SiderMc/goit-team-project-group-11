@@ -74,6 +74,10 @@
   background: none;
   color: var(--second-color);
 }
+.restaurant-slick-icon {
+  width: 7px;
+  height: 14px;
+}
 .restaurant-btn-next:is(:hover, :focus) {
   opacity: 0.3;
 }

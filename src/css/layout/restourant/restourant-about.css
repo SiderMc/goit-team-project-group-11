@@ -60,6 +60,9 @@
         display: flex;
         gap: 32px;
     }
+    .sub-thumb {
+        margin-top: 0;
+    }
     .chef {
         position: static;
         width: 100%;

@@ -128,3 +128,19 @@ border: 0.5px solid rgba(18, 18, 18, 0.3);
 border-radius: 68px;
 
 }
+
+@media screen and (max-width: 375px) {
+  .footer-line{
+    margin:32px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+.footer-line{
+    margin:32px 0 48px 0;
+}
+}
+@media screen and (min-width: 1440px) {
+.footer-line{
+    margin:80px 0}
+
+}

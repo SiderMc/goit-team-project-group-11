@@ -90,27 +90,16 @@ padding-top: 3px;
 }
 
 .footer-sm-list{
-  display: flex;
-
-
-  /* align-items: center;
-  justify-content: flex-end;
-transform: translateY(-100%); */
-   
-   
+  display: flex;   
  }
+
 .footer-icon-box{
 display: inline-block;
   background-color: tomato;
   border-radius: 50%;
   width: 24px;
   height: 24px;
-margin-left: 16px;
-
-
-
-
- 
+margin-left: 16px; 
 }
  .footer-icon{
   width: 24px;

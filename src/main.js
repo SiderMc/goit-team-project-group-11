@@ -1,1 +1,0 @@
-import './slick-menu-rest';

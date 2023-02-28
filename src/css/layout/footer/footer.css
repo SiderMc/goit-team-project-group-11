@@ -90,25 +90,29 @@ padding-top: 3px;
 }
 
 .footer-sm-list{
-  display: flex;   
+  display: flex; 
  }
 
-.footer-icon-box{
-display: inline-block;
-  background-color: tomato;
+.footer-icon-box {
+  display: inline-block;
   border-radius: 50%;
   width: 24px;
   height: 24px;
-margin-left: 16px; 
+  margin-left: 16px;
+
 }
- .footer-icon{
+
+
+.footer-icon {
   width: 24px;
   height: 24px;
-  margin-top: 8px;
- 
+  fill: #fff;
+ stroke: #121212;
+stroke-width: 1.5px;
 
- 
- }
+}
+
+
  @media screen and (max-width: 768px) {
     .footer-icon{
         width: 20px;
@@ -116,9 +120,11 @@ margin-left: 16px;
     }
     
  }
-
 .footer-line{
-    padding-bottom: 80px;
-   border: 0.5px solid rgba(18, 18, 18, 0.3);
+    margin-top: 80px;
+    width: 100%;
+    height: 1px;
+border: 0.5px solid rgba(18, 18, 18, 0.3);
+border-radius: 68px;
 
 }

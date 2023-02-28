@@ -63,7 +63,6 @@
 }
 
 .amenities-img-first {
-    background-color: blue;
         position: absolute;
         right: 70px;
         top: 144px;
@@ -74,7 +73,6 @@
 }
 
 .amenities-img-second {
-    background-color: aqua;
     position: absolute;
     right:0;
     bottom:74px;
@@ -216,7 +214,7 @@
         }
     
         .amenities-img-first {
-            right: 409px;
+            right: 441px;
             top: 1020px;
             width: 439px;
             height: 219px;
@@ -227,13 +225,14 @@
             width: 496px;
             height: 636px;
             top: 812px;
+            right: 32px;
             
             
         }
     
         
         .amenities-btn {
-            left: 592px;
+            left: 560px;
             top: 1271px;
             min-width: 170px;
             height: 42px;

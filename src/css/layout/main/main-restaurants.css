@@ -53,6 +53,7 @@
 .restaurant-slick-arrow-block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 68px;
   height: 24px;
   margin: 18px 0 40px 0;

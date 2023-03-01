@@ -81,6 +81,16 @@ align-items: center;
     justify-content: space-between;
     overflow-y: auto;
 }
+.mob-menu {
+  transform: translateX(100%);
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+.mob-menu {
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .logo-menu-link {
   font-size: 14px;
   line-height: 1.57;

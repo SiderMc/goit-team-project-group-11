@@ -1,8 +1,12 @@
 /*for page Restaurant Page section Hero*/
-
 .hero {
     padding-top: 40px;
     padding-bottom: 64px;
+}
+.hero-container {
+    margin: 0 auto;
+    max-width: 375px;
+    padding-left: 20px;
 }
 .hero-title {
     font-weight: 400;
@@ -70,6 +74,10 @@
     .hero {
         padding-bottom: 40px;
     }
+    .hero-container {
+        padding-left: 34px;
+        max-width: 768px;
+    }
     .hero-title {
         font-size: 80px;
     }
@@ -104,6 +112,9 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    .hero-container {
+        max-width: 1440px;
+    }
     .hero-thumb {
         position: relative;
     }
@@ -125,6 +136,7 @@
     .hero-text {
         bottom: 18px;
         left: 34px ;
+        left: 0;
         position: absolute;
     }
 
@@ -133,6 +145,7 @@
     }
     .hero-slick {
         width: calc((100% - 110px) / 2);
+        width: 700px;
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -140,4 +153,6 @@
     .arrows-container {
         margin-left: 706px;
     }
+}
+
 }

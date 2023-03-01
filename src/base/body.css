@@ -1,0 +1,11 @@
+body {
+  font-family: 'DM Sans Regular', sans-serif;
+  font-size: 14px;
+  color: var(--second-color);
+  background-color: var(--accent-color);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

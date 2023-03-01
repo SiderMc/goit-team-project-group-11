@@ -6,4 +6,5 @@ $('.responsive-tab').slick({
   customPaging: '20px',
   slidesToShow: 2,
   slidesToScroll: 1,
+  variableWidth: true,
 });

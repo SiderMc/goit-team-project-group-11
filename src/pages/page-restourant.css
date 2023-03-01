@@ -1,0 +1,20 @@
+/*styles for Paige Restourant */
+/*нічого не змінювати*/
+
+@import url('../base/reset.css');
+@import url('../base/fonts.css');
+@import url('../variables/variables.css');
+@import url('../base/body.css');
+@import url('../base/container.css');
+@import url('../components/buttons.css');
+@import url('../components/section-title.css');
+@import url('../css/layout//header/header.css');
+@import url('../css/layout/restourant/restaurant-hero.css');
+@import url('../css/layout/restourant/restourant-about.css');
+@import url('../css/layout/restourant/restaurant-menu.css');
+@import url('../css/layout/footer/footer.css');
+@import url('../css/layout/modals/book.css');
+@import url('../css/layout/modals/prices.css');
+@import url('../css/layout/modals/table.css');
+@import url('../css/layout/menu/mobile-menu.css');
+@import url('../components/current.css');

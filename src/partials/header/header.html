@@ -1,7 +1,9 @@
 <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
 <header class="header">
   <div class="container header-flex-container">
-    <button type="button" class="menu-btn">
+    <button type="button" class="menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
       <svg class="btn-menu-open-icon" 
            width="28" 
            height="28">
@@ -52,9 +54,9 @@
       </ul>
   </div>
   <!-- -----MOB-MENU------ -->
-  <div class="mob-menu">
+  <div class="mob-menu js-menu-container" id="mobile-menu">
     <div class=" header-menu-container">
-      <button type="button" class="menu-btn">
+      <button type="button" class="menu-btn js-close-menu">
         <svg class="btn-menu-close-icon" width="28" height="28">
        <path d="M24 8L8 24M8 8L24 24"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -88,8 +90,6 @@
         </li>
       </ul>
     </div>
-
-  
 
       <nav class="header-menu-nav">
         <ul class="header-menu-nav-list list">

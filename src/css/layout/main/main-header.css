@@ -150,13 +150,16 @@ color: var(--accent-color);
 width: 20px;
 height: 20px;
 }
-
+.header-soc-link {
+ display: block;
+color: var(--accent-color);
+width: 20px;
+height: 20px;   
+}
 .header-menu-soc-top-list {
     display: none;
 }
-.mob-menu {
-    display: none;
-}
+
 @media screen and (min-width: 375px) {
   .header-menu-container {
     max-width: 100%; 
@@ -220,6 +223,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
 }
 
 @media screen and (min-width: 1440px) {

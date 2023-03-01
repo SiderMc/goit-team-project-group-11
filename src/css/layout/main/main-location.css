@@ -1,5 +1,5 @@
 /*for Page Main Location & contacts*/
-.container {
+.location-container {
     
     max-width: 100%;
     padding: 0 20px;
@@ -10,26 +10,26 @@
     background-color: var(--accent-color);
 }
 @media screen and (min-width: 375px) {
-    .container {
+    .location-container {
         width: 375px;  
        
     }
 }
 @media screen and (min-width: 768px) {
-    .container {
+    .location-container {
         width: 768px;  
         padding: 0 32px;
        
     }
 }
 @media screen and (min-width: 1440px) {
-    .container {
+    .location-container {
         width: 1440px;  
          
     }
 }
 /*================= M O B A I L ====================*/
-@media screen and (min-width: 375px){
+
     .location-title {
         padding: 64px 0 32px 0;
         margin: 0;
@@ -42,7 +42,9 @@
         width: 335px;
         height: 384px;
         padding-bottom: 32px;
-    }
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+     }
     .contact-address {
         display: block;
         width: 214px;
@@ -68,7 +70,7 @@
         line-height: 1.286;
         letter-spacing: -0.02em;
     }
-}
+
 /*================= M O B A I L ====================*/
 
 /*================= T A B L E T ====================*/
@@ -93,11 +95,6 @@
         align-items:center;
     }
 }
-
-
-
-
-
 /*================= T A B L E T ====================*/
 
 /*================= D E S K T O P ====================*/
@@ -122,14 +119,21 @@
     .location-contact {
        justify-content: center;
     }
-    .tel {
+    .tel-title {
+        display: flex;
+        align-items: flex-start;
         padding-left: 70px;
     }
+    .contact-title {
+        display: flex;
+        align-items: flex-end;
+        padding-top: 0;
+        padding-right: 12px;
+    }
+    .location-contact {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+    }
 }
-
-
-
-
-
-
 /*================= D E S K T O P ====================*/

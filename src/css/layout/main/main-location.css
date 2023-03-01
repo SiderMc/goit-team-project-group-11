@@ -1,7 +1,135 @@
 /*for Page Main Location & contacts*/
+.container {
+    
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto ; 
+}
+.location {
+    color: var(--second-color);
+    background-color: var(--accent-color);
+}
 @media screen and (min-width: 375px) {
+    .container {
+        width: 375px;  
+       
+    }
 }
 @media screen and (min-width: 768px) {
+    .container {
+        width: 768px;  
+        padding: 0 32px;
+       
+    }
 }
 @media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;  
+         
+    }
 }
+/*================= M O B A I L ====================*/
+@media screen and (min-width: 375px){
+    .location-title {
+        padding: 64px 0 32px 0;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+    }
+    .map {
+        width: 335px;
+        height: 384px;
+        padding-bottom: 32px;
+    }
+    .contact-address {
+        display: block;
+        width: 214px;
+        height: 48px;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 1.333;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    .contact-title {
+        padding-top: 28px;
+        padding-bottom: 12px;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.286;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    .contact-tel {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.286;
+        letter-spacing: -0.02em;
+    }
+}
+/*================= M O B A I L ====================*/
+
+/*================= T A B L E T ====================*/
+@media screen and (min-width: 768px) {
+    .location-title {
+        padding: 80px 0 40px 0;
+        font-size: 68px;
+    }
+    .map {
+        width: 704px;
+        height: 576px;
+        padding-bottom: 48px;
+    }
+    .contact-tel {
+        font-style: normal;
+        font-size: 18px;
+        line-height: 1.333;
+    }
+    .location-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+}
+
+
+
+
+
+/*================= T A B L E T ====================*/
+
+/*================= D E S K T O P ====================*/
+
+@media screen and (min-width: 1440px) {
+    .location-location {
+        position: relative;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .location-title {
+        padding:0 0 0 32px;
+    }
+    .map {
+        padding-left: 64px;
+        width: 640px;
+        height: 524px;
+        padding-bottom: 0;
+    } 
+    .location-contact {
+       justify-content: center;
+    }
+    .tel {
+        padding-left: 70px;
+    }
+}
+
+
+
+
+
+
+/*================= D E S K T O P ====================*/

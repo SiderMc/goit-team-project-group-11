@@ -86,7 +86,6 @@
 .book-table-btn {
   display: block;
   text-align: center;
-  padding: 8px 24px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -114,8 +113,6 @@
   }
   .restaurant-menu {
     align-items: baseline;
-    padding-right: 94px;
-    padding-left: 95px;
   }
   .restaurant-menu-meal-title {
     font-size: 18px;
@@ -136,6 +133,7 @@
     max-width: 80px;
   }
   .book-table-btn {
+    margin-left: 0;
     margin-right: auto;
   }
 }
@@ -154,18 +152,18 @@
     column-gap: 72px;
     row-gap: 50px;
   }
-  .restaurant-menu {
-    padding-right: 136px;
-    padding-left: 136px;
-  }
   .restaurant-menu-list {
     margin-top: 0;
     min-width: calc((100% - 74px) / 2);
+  }
+  .restaurant-menu-list:nth-child(3) {
+    align-self: flex-end;
   }
   .restaurant-menu-list-title {
     margin-top: 0;
   }
   .container-menu {
-    padding-left: 100px;
+   padding-left: 168px;
+   padding-right: 168px;
   }
 }

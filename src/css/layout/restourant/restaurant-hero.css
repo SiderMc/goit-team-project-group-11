@@ -135,6 +135,7 @@
     }
     .hero-text {
         bottom: 18px;
+        left: 34px ;
         left: 0;
         position: absolute;
     }
@@ -143,6 +144,7 @@
         height: 580px;
     }
     .hero-slick {
+        width: calc((100% - 110px) / 2);
         width: 700px;
         margin-bottom: 0;
         margin-top: 0;
@@ -151,4 +153,6 @@
     .arrows-container {
         margin-left: 706px;
     }
+}
+
 }

@@ -10,7 +10,6 @@
     padding: 0 32px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;

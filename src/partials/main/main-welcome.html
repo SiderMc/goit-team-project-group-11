@@ -1,5 +1,5 @@
 <section class="welcome">
-  <div class="container">
+  <div class="container welcome-container">
     <div class="welcome-block-title">
       <h2 class="welcome-title">
         Welcome to the epitome of
@@ -22,34 +22,19 @@
     </div>
     <!-- (min-width: 375px) and  -->
     <picture class="welcome-img">
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ../../img/main-welcome/welcome-mobile-1x.jpg 1x,
-          ../../img/main-welcome/welcome-mobile-2x.jpg 2x
-        "
-        type="image/jpeg"
-      />
-      <source
-        media="(min-width: 768px) and (max-width: 1439px)"
-        srcset="
-          ../../img/main-welcome/welcome-tablet-1x.jpg 1x,
-          ../../img/main-welcome/welcome-tablet-2x.jpg 2x
-        "
-        type="image/jpeg"
-      />
-      <source
-        media="(min-width: 1440px)"
-        srcset="
-          ../../img/main-welcome/welcome-pc-1x.jpg 1x,
-          ../../img/main-welcome/welcome-pc-2x.jpg 2x
-        "
-        type="image/jpeg"
-      />
-      <img
-        src="../../img/main-welcome/welcome-mobile-1x.jpg"
-        alt="welcome picture"
-      />
+      <source media="(max-width: 767px)" srcset="
+          ./img/main-welcome/welcome-mobile-1x.jpg 1x,
+          ./img/main-welcome/welcome-mobile-2x.jpg 2x
+        " type="image/jpeg" />
+      <source media="(min-width: 768px) and (max-width: 1439px)" srcset="
+          ./img/main-welcome/welcome-tablet-1x.jpg 1x,
+          ./img/main-welcome/welcome-tablet-2x.jpg 2x
+        " type="image/jpeg" />
+      <source media="(min-width: 1440px)" srcset="
+          ./img/main-welcome/welcome-pc-1x.jpg 1x,
+          ./img/main-welcome/welcome-pc-2x.jpg 2x
+        " type="image/jpeg" />
+      <img src="./img/main-welcome/welcome-mobile-1x.jpg" alt="welcome picture" />
     </picture>
   </div>
 </section>

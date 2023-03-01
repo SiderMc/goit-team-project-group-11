@@ -11,11 +11,6 @@
   overflow: auto;
 }
 
-.close-btn svg, .close-btn{
-    width: 28px;
-    height: 28px;
-  }
-
 .close-btn {
   position: absolute;
   top: 14px;

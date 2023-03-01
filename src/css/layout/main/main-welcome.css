@@ -2,13 +2,12 @@
 .welcome {
   margin-top: 64px;
 }
-.container {
+.welcome-container {
   display: flex;
 }
 .welcome-title {
   width: 335px;
   font-family: 'DM Sans Medium', sans-serif;
-  /* font-weight: 500; */
   font-size: 36px;
   line-height: 1.12;
   letter-spacing: -0.03em;
@@ -21,8 +20,7 @@
 }
 .welcome-text,
 .welcome-description {
-  font-family: 'DM Sans Medium', sans-serif;
-  /* font-weight: 400; */
+  font-family: 'DM Sans Regular', sans-serif;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -38,7 +36,7 @@
 }
 
 @media screen and (min-width: 375px) {
-  .container {
+  .welcome-container {
     flex-direction: column;
     gap: 32px;
     padding: 0 20px;
@@ -55,7 +53,7 @@
   .welcome {
     margin-top: 80px;
   }
-  .container {
+  .welcome-container {
     gap: 40px;
     padding: 0 32px;
   }
@@ -76,7 +74,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
+  .welcome-container {
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 32px;

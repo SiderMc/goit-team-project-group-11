@@ -13,6 +13,7 @@
     z-index: 20;
     background: #121212;
     border-radius: 2px;
+    display: none;
 }
 
 .overlay {
@@ -51,6 +52,12 @@
     color: #F7F7F7;
     margin-bottom: 40px;
 }
+
+@media screen and (max-width: 375px) {
+    .header-prices {
+        font-size: 24px;
+    }
+};
 
 .header-double {
     font-style: normal;
@@ -137,16 +144,18 @@
         padding-bottom: 60px;
         height: 430px;
         max-height: 430px;
+        display: none;
     }
+    
     .btn-prices {
         width: 32px;
         height: 32px;
     }
 
-    /* svg.modal-icon {
+    svg.modal-icon {
         width: 13.33;
         height: 13.33;
-    } */
+    }
 
     .header-prices {
         width: 100%;
@@ -177,13 +186,8 @@
         letter-spacing: -0.02em;
         text-transform: uppercase;
     }
-
-    /* .label-uah input[type=text] {
-        padding-bottom: 8px;
-    } */
-
-    .label-input {
-        margin-bottom: 8px;
+    .bott-text {
+        margin-top: 8px;
     }
 
     .prices-form {

@@ -15,8 +15,8 @@
     integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <script type="module" crossorigin src="/goit-team-project-group-11/assets/mobile-menu-1c4a5acd.js"></script>
-  <link rel="stylesheet" href="/goit-team-project-group-11/assets/index-30a7e027.css">
+  <script type="module" crossorigin src="/goit-team-project-group-11/assets/mobile-menu-1ee49b3c.js"></script>
+  <link rel="stylesheet" href="/goit-team-project-group-11/assets/index-d7d5ce21.css">
 </head>
 
 <body>
@@ -165,8 +165,131 @@
   </div>
 </header>
     <main>
-      <!--for Page Main section Hero-->
+      
+<!--for Page Main section Hero-->
+<section class="hero-header">
+  <picture>
+    <img
+      class="pictur"
+      srcset="/goit-team-project-group-11/assets/main-mob-hero-bg-1x-833eec63.jpg 1x, /goit-team-project-group-11/assets/main-mob-hero-bg-2x-249b4c80.jpg 2x"
+      alt="hero-hotel"
+      width="439"
+      height="335"
+    />
+  </picture>
+
+  <div class="hero-content">
+    <h1 class="hero-title">mimino</h1>
+    <div class="main-hero-btn">
+      <button type="button" data-modal-open class="hero-btn">
+        book a room
+      </button>
+      <button type="button" data-modal-open class="hero-btn">
+        book a table
+      </button>
+    </div>
+  </div>
+
+  <div class="hero-text">
+    <p class="hero-paragraf">
+      Whether you're in the mood for a hearty breakfast, a light lunch, or a
+      romantic dinner, our menu has something for everyone.
+    </p>
+    <p class="hero-paragraf second-hero-paragraf">
+      At Hotel Mimino, we believe that great food should be available to
+      everyone, no matter the time of day.
+    </p>
+  </div>
+</section>
+
       <!--for Page Main section About a complex-->
+
+<section class="hero-about">
+  <div class="pic1">
+    <picture>
+      <img
+        class="pictur"
+        srcset="/goit-team-project-group-11/assets/main-mob-about1-1x-93b2f771.jpg 1x, /goit-team-project-group-11/assets/main-mob-about1-2x-cab953d6.jpg 2x"
+        alt="heder-about"
+        width="442"
+        height="335"
+      />
+    </picture>
+
+    <div class="review-card maria">
+      <div class="img-review">
+        <img class="maria-back" src="./img-hero/review-maria.png" alt="maria" />
+      </div>
+      <div class="give-star">
+        <p class="p-maria">Maria</p>
+        <div class="p-maria-rating">
+          <p class="give-rating">give rating</p>
+          <p class="rating">4.5</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pic2">
+    <img
+      class="pictur"
+      srcset="/goit-team-project-group-11/assets/main-mob-about2-1x-58e5d0a3.jpg 1x, /goit-team-project-group-11/assets/main-mob-about2-2x-a0996c69.jpg 2x"
+      alt="heder-about"
+      width="153"
+      height="282"
+    />
+  </div>
+
+  <div class="hero-text">
+    <p class="hero-text-p">restaurant-hotel complex</p>
+    <p class="hero-paragraf-about">
+      Indulge in a taste of luxury with every bite at Hotel Mimino. From the
+      freshest seafood to the most succulent steaks, every dish is crafted with
+      care to ensure that you enjoy a truly memorable dining experience.
+    </p>
+    <p class="hero-paragraf-about second-hero-paragraf">
+      Treat yourself to a taste of the good life and come dine with us today!
+    </p>
+  </div>
+
+  <div class="pic3">
+    <img
+      class="pictur"
+      srcset="/goit-team-project-group-11/assets/main-mob-about3-1x-c2f9e589.jpg 1x, /goit-team-project-group-11/assets/main-mob-about3-2x-8e8438cd.jpg 2x"
+      alt="heder-about"
+    />
+
+    <div class="review-card-alex">
+      <div class="img-review">
+        <img class="maria-back" src="./img-hero/review-maria.png" alt="maria" />
+      </div>
+      <div class="give-star">
+        <p class="p-maria">Alexander</p>
+        <div class="p-maria-rating">
+          <p class="give-rating">give rating</p>
+          <p class="rating">5.5</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-text business">
+    <p class="hero-text-p">business class hotel</p>
+    <p class="hero-paragraf-about">
+      The Mimino hotel features spacious and stylish double luxury rooms with
+      modern amenities for a comfortable stay.
+    </p>
+  </div>
+
+  <div class="pic4">
+    <img
+      class="pictur"
+      srcset="/goit-team-project-group-11/assets/main-mob-about4-1x-53271a9e.jpg 1x, /goit-team-project-group-11/assets/main-mob-about4-2x-3453ad8a.jpg 2x"
+      alt="heder-about"
+    />
+  </div>
+</section>
+
       <!--for Page Main section  Restaurant’s details-->
 <section class="restaurants">
   <div class="container restaurants-container">
@@ -398,8 +521,107 @@
         </form>
     </div>
 </div>
+
     <!--for modal window Prices per Room-->
+<section>
+    <div class="modal-prices">
+        <button type="button" class="btn-prices js-modal-close" js-modal-close>
+            <svg class="close-icon" width="12px" height="12px">
+                <use href="../../img/icons/spray.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h3 class="header-prices">Prices per <span class="header-prices-room">room</span></h3>
+        <h4 class="header-double">Double suite</h4>
+        <form class="prices-form">
+            <div class="label-container-night label-calc">
+                <label class="form-label-prices" for="night">
+                    <select class="prices-select" id="night" name="night" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <span class="night-text-cont">
+                        <p class="option-bott-text">Number of nights</p>
+                    </span>
+                </label>
+            </div>
+            <div class="label-container-date label-calc">
+                <label class="form-label-prices" for="date">
+                    <select class="prices-select" id="date" name="date" aria-required="true">
+                        <option value="1">28/04/2023</option>
+                        <option value="2">01/05/2023</option>
+                        <option value="3">02/05/2023</option>
+                        <option value="4">03/05/2023</option>
+                    </select>
+                    <span class="date-text-cont">
+                        <p class="option-bott-text">Check-in date</p>
+                    </span>
+                </label>
+            </div>
+            <div class="label-calc inpun-container-uah">
+                <label class="form-label-prices label-uah" for="num-select" pattern="[1000-2000]">
+                    <input class="label-input" type="number" name="uah select" placeholder="1000">
+                </label>
+                <span class="date-text-cont">
+                    <p class="option-bott-text bott-text">UAH</p>
+                </span>
+            </div>
+            <div class="btn-submit">
+                <button type="submit" class="button-dark btn-modal-prices">MAKE A RESERVATION</button>
+            </div>
+        </form>
+    </div>
+    <div class="overlay js-modal-overlay" js-modal-overlay ></div>
+</section>
     <!--for modal window Book a Table-->
+<section>
+    <div>
+        <div class="modal js-modal" data-modal="1">
+            <button type="button" class="modal-cross js-modal-close" js-modal-close>
+                <svg class="close-icon" width="12px" height="12px">
+                    <use href="../../img/icons/spray.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h3 class="modal-header">BOOK <span class="modal-header-two">A TABLE</span></h3>
+            <form class="modal-form">
+                <label class="form-label">
+                    <input class="label-input" type="text" pattern="[A-Za-z]" name="userName" placeholder="Your name">
+                    <span class="text-container">
+                        <p class="input-bot-text">Who should book a table for?</p>
+                    </span>
+                </label>
+                <label class="form-label label-num-select" for="num-select" pattern="[0-9]">
+                    <select class="label-input label-select" name="pets" id="num-select">
+                        <option value="one">number of people</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                    </select>
+                </label>
+                <label class="form-label" for="num-select">
+                    <select class="label-input label-select" name="date select" id="num-select">
+                        <option value="today">Today</option>
+                        <option value="Tomorrow">Tomorrow</option>
+                    </select>
+                    <span class="text-container">
+                        <p class="input-bot-text">What date to book?</p>
+                    </span>
+                </label>
+                <label class="form-label">
+                    <input class="label-input" type="tel" pattern="2-[0-9]{3}-[0-9]{3}" name="userphone" placeholder="+ 38 () " >
+                    <span class="text-container-end">
+                        <p class="input-bot-text">Phone number</p>
+                    </span>
+                </label>
+                <div class="btn-position">
+                    <button type="submit" class="button-dark btn-modal-submit">MAKE A RESERVATION</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="overlay js-modal-overlay" js-modal-overlay ></div>
+</section>
     <style>
    #chek:checked~.chek__conteiner {
       display: none;
@@ -428,6 +650,8 @@ bottom:100%; right: 0; transform: translateY(100%);">
    </label>
 </div>
   </div>
+
+  <script src="./main.js"></script>
   
 
   

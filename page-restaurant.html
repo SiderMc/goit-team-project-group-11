@@ -15,9 +15,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   
-  <script type="module" crossorigin src="/goit-team-project-group-11/assets/mobile-menu-1c4a5acd.js"></script>
-  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-restaurant-28338287.css">
+  
+  <script type="module" crossorigin src="/goit-team-project-group-11/assets/mobile-menu-1ee49b3c.js"></script>
+  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-restaurant-8621a20d.css">
 </head>
 
 <body>
@@ -168,6 +174,7 @@
     <main>
       <!--for Restaurant Page section Hero-->
 <section class="hero">
+    <div class="container hero-container">
     <div class="hero-container">
         <div class="hero-thumb">
             <div class="hero-content">
@@ -178,6 +185,12 @@
                         <a class="button-light" href="#view-a-menu">View a menu</a>
                     </div>
                 </div>
+                <div class="hero-slick">
+                    <div class="slider-card">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="/goit-team-project-group-11/assets/rest-slyader-table-1-1x-aa098734.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-table-1-2x-e9f5b1fc.jpg 2x">
+                            <source media="(min-width: 1440px)" srcset="./img/img-restourant/rest-slyader-desctop-1-1x.jpg 1x, ./img/img-restourant/rest-slyader-desctop-1-2x.jpg 2x">
+                            <img srcset="/goit-team-project-group-11/assets/rest-slyader-mob-1-1x-68e0e906.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-mob-1-2x-98f25d77.jpg 2x" src="/goit-team-project-group-11/assets/rest-slyader-mob-1-1x-68e0e906.jpg" alt="Glasses">
                 <div class="hero-slick hotel-hero-slider">
                     <div class="slider-card">
                         <picture>
@@ -191,6 +204,9 @@
                     </div>
                     <div class="slider-card">
                         <picture>
+                            <source media="(min-width: 768px)" srcset="/goit-team-project-group-11/assets/rest-slyader-table-2-1x-9b4cb8b1.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-table-2-2x-4783ab6b.jpg 2x">
+                            <source media="(min-width: 1440px)" srcset="./img/img-restourant/rest-slyader-desctop-2-1x.jpg 1x, ./img/img-restourant/rest-slyader-desctop-2-2x.jpg 2x">
+                            <img srcset="/goit-team-project-group-11/assets/rest-slyader-mob-2-1x-1f794583.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-mob-2-2x-4a1e34e3.jpg 2x" src="/goit-team-project-group-11/assets/rest-slyader-mob-2-1x-1f794583.jpg" alt="Glasses">
                             <source media="(min-width: 1440px)"
                                 srcset="/goit-team-project-group-11/assets/rest-slyader-desktop-2-1x-36ecd279.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-desktop-2-2x-9ab79deb.jpg 2x">
                             <source media="(min-width: 768px)"
@@ -201,6 +217,9 @@
                     </div>
                     <div class="slider-card">
                         <picture>
+                            <source media="(min-width: 768px)" srcset="/goit-team-project-group-11/assets/rest-slyader-table-3-1x-9cbb8196.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-table-3-2x-c82a3601.jpg 2x">
+                            <source media="(min-width: 1440px)" srcset="/goit-team-project-group-11/assets/rest-slyader-desctop-3-1x-08356435.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-desctop-3-2x-118340c4.jpg 2x">
+                            <img srcset="/goit-team-project-group-11/assets/rest-slyader-mob-3-1x-9c683cc2.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-mob-3-2x-9ad3371f.jpg 2x" src="/goit-team-project-group-11/assets/rest-slyader-mob-3-1x-9c683cc2.jpg" alt="Glasses">
                             <source media="(min-width: 1440px)"
                                 srcset="/goit-team-project-group-11/assets/rest-slyader-desctop-3-1x-08356435.jpg 1x, /goit-team-project-group-11/assets/rest-slyader-desctop-3-2x-118340c4.jpg 2x">
                             <source media="(min-width: 768px)"
@@ -214,6 +233,7 @@
             <div class="hero-bottom">
                 <div class="arrows-container"></div>
                 <p class="hero-text">
+                    Whether you're in the mood for a hearty breakfast, a light lunch, or a <strong class="font-italic">romantic dinner</strong>, our menu has something for everyone.
                     Whether you're in the mood for a hearty breakfast, a light lunch, or a <strong
                         class="font-italic">romantic dinner</strong>, our menu has something for everyone.
                 </p>
@@ -221,6 +241,8 @@
         </div>
     </div>
 </section>
+
+
       <!--for Restaurant Page section About a kitchen-->
 <section class="about-a-kitchen">
     <div class="container">
@@ -597,8 +619,107 @@
         </form>
     </div>
 </div>
+
     <!--for modal window Prices per Room-->
+<section>
+    <div class="modal-prices">
+        <button type="button" class="btn-prices js-modal-close" js-modal-close>
+            <svg class="close-icon" width="12px" height="12px">
+                <use href="../../img/icons/spray.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h3 class="header-prices">Prices per <span class="header-prices-room">room</span></h3>
+        <h4 class="header-double">Double suite</h4>
+        <form class="prices-form">
+            <div class="label-container-night label-calc">
+                <label class="form-label-prices" for="night">
+                    <select class="prices-select" id="night" name="night" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <span class="night-text-cont">
+                        <p class="option-bott-text">Number of nights</p>
+                    </span>
+                </label>
+            </div>
+            <div class="label-container-date label-calc">
+                <label class="form-label-prices" for="date">
+                    <select class="prices-select" id="date" name="date" aria-required="true">
+                        <option value="1">28/04/2023</option>
+                        <option value="2">01/05/2023</option>
+                        <option value="3">02/05/2023</option>
+                        <option value="4">03/05/2023</option>
+                    </select>
+                    <span class="date-text-cont">
+                        <p class="option-bott-text">Check-in date</p>
+                    </span>
+                </label>
+            </div>
+            <div class="label-calc inpun-container-uah">
+                <label class="form-label-prices label-uah" for="num-select" pattern="[1000-2000]">
+                    <input class="label-input" type="number" name="uah select" placeholder="1000">
+                </label>
+                <span class="date-text-cont">
+                    <p class="option-bott-text bott-text">UAH</p>
+                </span>
+            </div>
+            <div class="btn-submit">
+                <button type="submit" class="button-dark btn-modal-prices">MAKE A RESERVATION</button>
+            </div>
+        </form>
+    </div>
+    <div class="overlay js-modal-overlay" js-modal-overlay ></div>
+</section>
     <!--for modal window Book a Table-->
+<section>
+    <div>
+        <div class="modal js-modal" data-modal="1">
+            <button type="button" class="modal-cross js-modal-close" js-modal-close>
+                <svg class="close-icon" width="12px" height="12px">
+                    <use href="../../img/icons/spray.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h3 class="modal-header">BOOK <span class="modal-header-two">A TABLE</span></h3>
+            <form class="modal-form">
+                <label class="form-label">
+                    <input class="label-input" type="text" pattern="[A-Za-z]" name="userName" placeholder="Your name">
+                    <span class="text-container">
+                        <p class="input-bot-text">Who should book a table for?</p>
+                    </span>
+                </label>
+                <label class="form-label label-num-select" for="num-select" pattern="[0-9]">
+                    <select class="label-input label-select" name="pets" id="num-select">
+                        <option value="one">number of people</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                    </select>
+                </label>
+                <label class="form-label" for="num-select">
+                    <select class="label-input label-select" name="date select" id="num-select">
+                        <option value="today">Today</option>
+                        <option value="Tomorrow">Tomorrow</option>
+                    </select>
+                    <span class="text-container">
+                        <p class="input-bot-text">What date to book?</p>
+                    </span>
+                </label>
+                <label class="form-label">
+                    <input class="label-input" type="tel" pattern="2-[0-9]{3}-[0-9]{3}" name="userphone" placeholder="+ 38 () " >
+                    <span class="text-container-end">
+                        <p class="input-bot-text">Phone number</p>
+                    </span>
+                </label>
+                <div class="btn-position">
+                    <button type="submit" class="button-dark btn-modal-submit">MAKE A RESERVATION</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="overlay js-modal-overlay" js-modal-overlay ></div>
+</section>
     <!--for Mobile Menu -->
     <style>
    #chek:checked~.chek__conteiner {
@@ -627,6 +748,13 @@ bottom:100%; right: 0; transform: translateY(100%);">
       </div>
    </label>
 </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    
+  </div>
   </div>
   
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

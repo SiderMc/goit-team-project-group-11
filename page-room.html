@@ -10,7 +10,7 @@
       integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    
-  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-room-3487fdc6.css">
+  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-room-b94ecbf6.css">
 </head>
 
 <body>
@@ -323,6 +323,57 @@
 </footer>
       <!--for Mobile Menu -->
       <!--for modal window Prices per Room-->
+<section>
+    <div class="modal-prices">
+        <button type="button" class="btn-prices js-modal-close" js-modal-close>
+            <svg class="close-icon" width="12px" height="12px">
+                <use href="../../img/icons/spray.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h3 class="header-prices">Prices per <span class="header-prices-room">room</span></h3>
+        <h4 class="header-double">Double suite</h4>
+        <form class="prices-form">
+            <div class="label-container-night label-calc">
+                <label class="form-label-prices" for="night">
+                    <select class="prices-select" id="night" name="night" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <span class="night-text-cont">
+                        <p class="option-bott-text">Number of nights</p>
+                    </span>
+                </label>
+            </div>
+            <div class="label-container-date label-calc">
+                <label class="form-label-prices" for="date">
+                    <select class="prices-select" id="date" name="date" aria-required="true">
+                        <option value="1">28/04/2023</option>
+                        <option value="2">01/05/2023</option>
+                        <option value="3">02/05/2023</option>
+                        <option value="4">03/05/2023</option>
+                    </select>
+                    <span class="date-text-cont">
+                        <p class="option-bott-text">Check-in date</p>
+                    </span>
+                </label>
+            </div>
+            <div class="label-calc inpun-container-uah">
+                <label class="form-label-prices label-uah" for="num-select" pattern="[1000-2000]">
+                    <input class="label-input" type="number" name="uah select" placeholder="1000">
+                </label>
+                <span class="date-text-cont">
+                    <p class="option-bott-text bott-text">UAH</p>
+                </span>
+            </div>
+            <div class="btn-submit">
+                <button type="submit" class="button-dark btn-modal-prices">MAKE A RESERVATION</button>
+            </div>
+        </form>
+    </div>
+    <div class="overlay js-modal-overlay" js-modal-overlay ></div>
+</section>
       <!--for modal window Book a Room-->
 <div data-modal class="modal-overlay is-hidden">
     <div  class="modal">
@@ -368,6 +419,7 @@
         </form>
     </div>
 </div>
+
       <!--for Mobile Menu -->
       <style>
    #chek:checked~.chek__conteiner {

@@ -1,11 +1,9 @@
 /*for page Hotel section Double Luxury Room*/
 .luxury {
-    padding: 64px 20px 0px;
+    padding-top: 64px;
 }
 .luxury-container {
     width: 100%;
-
-    /* border: 0.5px solid red; */
 }
 
 .luxury-rooms {
@@ -20,8 +18,8 @@
 .luxury-text, 
 .luxury-text-below {
     font-family: 'DM Sans', sans-serif;
-    font-size: 26px;
-    line-height: 1.25;
+    font-size: 20px;
+    line-height: 0.93;
     
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -37,8 +35,8 @@
 
 .luxury-text, 
 .luxury-text-below {
-    font-size: 12px;
-    line-height: 1.28;
+    font-size: 10px;
+    line-height: 1.8;
     padding: 0;
 }
 
@@ -57,7 +55,6 @@
     background-color: transparent;
     
     font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
     line-height: 1.28;
 
     letter-spacing: -0.02em;
@@ -71,12 +68,6 @@
     border-radius: 32px;
 
     transition: background-color var(--animate), color var(--animate);
-}
-
-.luxury-link-btn,
-.luxury-modal-btn:is(:hover, :focus) {
-    background-color: #121212;
-    color: #f7f7f7;
 }
 
 .luxury-modal-btn {
@@ -94,15 +85,11 @@
     }
     .luxury-titel {
         font-size: 32px;
+        line-height: 1.25;
         width: 100%;
     }
     .luxury-text,
     .luxury-text-below {
-        font-size: 14px;
-    }
-
-    .luxury-link-btn,
-    .luxury-modal-btn {
         font-size: 14px;
     }
 }

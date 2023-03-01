@@ -1,12 +1,10 @@
 /*for page Hotel section Triple Room*/
 .triple {
-    padding: 64px 20px 0px;
+    padding-top: 64px;
 }
 
 .triple-container {
     width: 100%;
-
-    /* border: 0.5px solid red; */
 }
 
 .triple-rooms {
@@ -17,8 +15,8 @@
 .triple-text, 
 .triple-text-below {
     font-family: 'DM Sans', sans-serif;
-    font-size: 26px;
-    line-height: 1.25;
+    font-size: 20px;
+    line-height: 0.93;
     
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -30,8 +28,8 @@
 
 .triple-text, 
 .triple-text-below {
-    font-size: 12px;
-    line-height: 1.28;
+    font-size: 10px;
+    line-height: 1.8;
     padding: 0;
 }
 
@@ -50,7 +48,6 @@
     background-color: transparent;
     
     font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
     line-height: 1.28;
 
     letter-spacing: -0.02em;
@@ -66,12 +63,6 @@
     transition: background-color var(--animate), color var(--animate);
 }
 
-.triple-link-btn,
-.triple-modal-btn:is(:hover, :focus) {
-    background-color: #121212;
-    color: #f7f7f7;
-}
-
 .triple-modal-btn {
     margin-left: 12px;
 }
@@ -84,6 +75,7 @@
 
     .triple-titel {
         font-size: 32px;
+        line-height: 1.25;
     }
 
     .triple-kitchen {
@@ -93,12 +85,6 @@
     .triple-text-below {
         font-size: 14px;
     }
-
-    .triple-link-btn,
-    .triple-modal-btn {
-        font-size: 14px;
-    }
-
 }
 
 @media screen and (min-width: 768px) {

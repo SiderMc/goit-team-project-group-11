@@ -1,51 +1,24 @@
 <section class="fourseater">
     <div class="container fourseater-container">
-        <div class="fourseater-img-first">
-            <picture>
-                <source
-                    srcset="
-                        ./img/hotel-mob-double-room1-1x.jpg 1x,
-                        ./img/hotel-mob-double-room1-2x.jpg 2x"
-                    media="(max-width: 767px)"
-                />
-                <img 
-                    src="./img/hotel-mob-double-room1-1x.jpg"
-                    alt="double fourseater bedroom"
-                    width="335"
-                    height="468"
-                >
+        <div class="fourseater-pictures">
+            <picture class="fourseater-badroom">
+                <source srcset="./img/img-hotel/hotel-desktop-triple-room2-1x.jpg 1x, ./img/img-hotel/hotel-desktop-triple-room2-2x.jpg 2x" media="(min-width:1440px)" width="331" height="468">
+                <source srcset="./img/img-hotel/hotel-tablet-about3-1x.jpg 1x, ./img/img-hotel/hotel-tablet-about3-1x.jpg 2x" media="(min-width:768px)" >      
+                <img srcset="./img/img-hotel/hotel-mob-triple-room1-1x.jpg 1x, ./img/img-hotel/hotel-mob-triple-room1-1x.jpg 2x" alt="fourseater-bedroom" width="331" height="468">
             </picture>
-        </div>
-        <div class="fourseater-img-second">
-            <picture class="fourseater-rooms">
-                <source
-                    srcset="
-                        ./img/hotel-mob-double-room2-1x.jpg 1x,
-                        ./img/hotel-mob-double-room2-2x.jpg 2x
-                    "
-                    media="(max-width: 767px)"
-                />
-                <img
-                    src="./img/hotel-mob-double-room2-1x.jpg"
-                    alt="double fourseater bathroom"
-                    width="158"
-                    height="149"
-                >
-                <source class="source"
-                    srcset="
-                            ./img/hotel-mob-double-room3-1x.jpg 1x,
-                            ./img/hotel-mob-double-room3-2x.jpg 2x
-                    "
-                    media="(max-width: 767px)"
-                />
-                <img
-                    src="./img/otel-mob-double-room3-1x.jpg"
-                    alt="double fourseater kitchen"
-                    width="158"
-                    height="149"
-                >
-            </picture>
-        </div>
+            <div class="fourseater-rooms">
+                <picture class="fourseater-bathroom">
+                    <source srcset="./img/img-hotel/hotel-desktop-triple-room3-1x.jpg 1x, ./img/img-hotel/hotel-desktop-triple-room3-1x.jpg 2x" media="(min-width:1440px)">
+                    <source srcset="./img/img-hotel/hotel-tablet-about1-1x.jpg 1x, ./img/img-hotel/hotel-tablet-about1-2x.jpg 2x" media="(min-width:768px)" width="226" height="261">
+                    <img srcset="./img/img-hotel/hotel-mob-triple-room2-1x.jpg 1x, ./img/img-hotel/hotel-mob-triple-room2-2x.jpg 2x" alt="fourseater bathroom" width="158" height="149">
+                </picture>
+                <picture class="fourseater-kitchen">
+                    <source srcset="./img/img-hotel/hotel-desktop-triple-room1-1x.jpg 1x, ./img/img-hotel/hotel-desktop-triple-room1-2x.jpg 2x" media="(min-width:1440px)">
+                    <source srcset="./img/img-hotel/hotel-tablet-about2-1x.jpg 1x, ./img/img-hotel/hotel-tablet-about2-2x.jpg 2x" media="(min-width:768px)" width="341" height="175">
+                    <img srcset="./img/img-hotel/hotel-mob-triple-room3-1x.jpg 1x, ./img/img-hotel/hotel-mob-triple-room3-1x.jpg 2x" alt="triple kitchen" width="158" height="149">
+                </picture>
+            </div>
+        </div > 
     
         <h2 class="fourseater-titel">
             Four-seater room

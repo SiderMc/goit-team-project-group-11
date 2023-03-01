@@ -1,38 +1,39 @@
 <section class="triple">
     <div class="container triple-container">
-        <div class="triple-img-first">
-            <picture>
-                <source srcset="
-                        ./img/hotel-mob-double-room1-1x.jpg 1x,
-                        ./img/hotel-mob-double-room1-2x.jpg 2x" media="(max-width: 767px)" />
-                <img src="./img/hotel-mob-double-room1-1x.jpg" alt="double luxury bedroom" width="335" height="468">
+        <div class="triple-pictures">
+            <picture class="triple-badroom">
+                <source srcset="./img/img-hotel/hotel-desktop-double-room1-1x.jpg 1x, ./img/img-hotel/hotel-desktop-double-room1-2x.jpg 2x" media="(min-width:1440px)">
+                <source srcset="./img/img-hotel/hotel-tablet-double-room1-1x.jpg 1x, ./img/img-hotel/hotel-tablet-about3-2x.jpg 2x" media="(min-width:768px)" width="331" height="468">
+                <img srcset="./img/img-hotel/hotel-mob-double-room1-1x.jpg 1x, ./img/img-hotel/hotel-mob-double-room1-2x.jpg 2x" alt="double luxury bedroom" width="335" height="468">
             </picture>
+            <div class="triple-rooms">
+                <picture class="triple-bathroom">
+                    <source srcset="./img/img-hotel/hotel-desktop-double-room2-1x.jpg 1x, ./img/img-hotel/hotel-desktop-double-room2-2x.jpg 2x" media="(min-width:1440px)">
+                    <source srcset="./img/img-hotel/hotel-tablet-double-room2-1x.jpg 1x, ./img/img-hotel/hotel-tablet-double-room2-2x.jpg 2x" media="(min-width:768px)" width="223" height="261">
+                    <img srcset="./img/img-hotel/hotel-mob-double-room2-1x.jpg 1x, ./img/img-hotel/hotel-mob-double-room2-2x.jpg 2x" alt="double luxury bathroom" width="158" height="149">
+                </picture>
+                <picture class="triple-kitchen">
+                    <source srcset="./img/img-hotel/hotel-desktop-double-room1-1x.jpg 1x, ./img/img-hotel/hotel-desktop-double-room1-2x.jpg 2x" media="(min-width:1440px)">
+                    <source srcset="./img/img-hotel/hotel-tablet-double-room3-1x.jpg 1x, ./img/img-hotel/hotel-tablet-double-room3-2x.jpg 2x" media="(min-width:768px)" width="341" height="175">
+                    <img srcset="./img/img-hotel/hotel-mob-double-room3-1x.jpg 1x, ./img/img-hotel/hotel-mob-double-room3-2x.jpg 2x" alt="double luxury kitchen" width="158" height="149">
+                </picture>
+            </div>
         </div>
-        <div class="triple-img-second">
-            <picture class="triple-rooms">
-                <source srcset="
-                        ./img/hotel-mob-double-room2-1x.jpg 1x,
-                        ./img/hotel-mob-double-room2-2x.jpg 2x
-                    " media="(max-width: 767px)" />
-                <img src="./img/hotel-mob-double-room2-1x.jpg" alt="double triple bathroom" width="158" height="149">
-                <source class="source" srcset="
-                            ./img/hotel-mob-double-room3-1x.jpg 1x,
-                            ./img/hotel-mob-double-room3-2x.jpg 2x
-                    " media="(max-width: 767px)" />
-                <img src="./img/otel-mob-double-room3-1x.jpg" alt="double triple kitchen" width="158" height="149">
-            </picture>
+            <h2 class="triple-titel">
+                Triple room
+            </h2>
+            <div class="text-wrapper">
+                <p class="triple-text">
+                    Escape to our spacious Triple Room, perfect for families or groups.
+                    Enjoy comfort with three beds, seating area, stunning views,
+                    flat-screen TVs, Wi-Fi, and mini-fridge.
+                </p>
+            <p class="triple-text-below">
+                Rejuvenate in the en-suite bathroom with plush towels and toiletries. Book now for a memorable stay.
+            </p>
         </div>
-        <h2 class="triple-titel">
-            Triple room
-        </h2>
-        <p class="triple-text">
-            Escape to our spacious Triple Room, perfect for families or groups.
-            Enjoy comfort with three beds, seating area, stunning views,
-            flat-screen TVs, Wi-Fi, and mini-fridge.
-        </p>
-        <p class="triple-text-below">
-            Rejuvenate in the en-suite bathroom with plush towels and toiletries. Book now for a memorable stay.
-        </p>
+
+
         <div class="triple-wrapp-btn">
             <a href="../page-room.html">
                 <button class="button-light triple-link-btn" type="button">More details</button>

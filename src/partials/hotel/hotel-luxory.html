@@ -1,39 +1,40 @@
 <section class="luxury">
     <div class="container luxury-container">
-        <div class="luxury-img-first">
-            <picture>
-                <source srcset="
-                        ./img/hotel-mob-double-room1-1x.jpg 1x,
-                        ./img/hotel-mob-double-room1-2x.jpg 2x" media="(max-width: 767px)" />
-                <img src="./img/hotel-mob-double-room1-1x.jpg" alt="double luxury bedroom" width="335" height="468">
+        <div class="luxury-pictures">
+            <picture class="luxury-badroom">
+                <source srcset="./img/img-hotel/hotel-desktop-about1-1x.jpg 1x, ./img/img-hotel/hotel-desktop-about1-2x.jpg 2x" media="(min-width:1440px)" width="331" height="468">
+                <source srcset="./img/img-hotel/hotel-tablet-about3-1x.jpg 1x, ./img/img-hotel/hotel-tablet-about3-1x.jpg 2x" media="(min-width:768px)" >      
+                <img srcset="./img/img-hotel/hotel-mob-about1-1x.jpg 1x, ./img/img-hotel/hotel-mob-about1-2x.jpg 2x" alt="triple bedroom" width="331" height="468">
             </picture>
-        </div>
-        <div class="luxury-img-second">
-            <picture class="luxury-rooms">
-                <source srcset="
-                        ./img/hotel-mob-double-room2-1x.jpg 1x,
-                        ./img/hotel-mob-double-room2-2x.jpg 2x
-                    " media="(max-width: 767px)" />
-                <img src="./img/hotel-mob-double-room2-1x.jpg" alt="double luxury bathroom" width="158" height="149">
-                <source class="source" srcset="
-                            ./img/hotel-mob-double-room3-1x.jpg 1x,
-                            ./img/hotel-mob-double-room3-2x.jpg 2x
-                    " media="(max-width: 767px)" />
-                <img src="./img/otel-mob-double-room3-1x.jpg" alt="double luxury kitchen" width="158" height="149">
-            </picture>
-        </div>
+            <div class="luxury-rooms">
+                <picture class="luxury-bathroom">
+                    <source srcset="./img/img-hotel/hotel-desktop-about3-1x.jpg 1x, ./img/img-hotel/hotel-desktop-about3-2x.jpg 2x" media="(min-width:1440px)">
+                    <source srcset="./img/img-hotel/hotel-tablet-about1-1x.jpg 1x, ./img/img-hotel/hotel-tablet-about1-2x.jpg 2x" media="(min-width:768px)" width="226" height="261">
+                    <img srcset="./img/img-hotel/hotel-mob-about2-1x.jpg 1x, ./img/img-hotel/hotel-mob-about2-2x.jpg 2x" alt="double triple bathroom" width="158" height="149">
+                </picture>
+                <picture class="luxury-kitchen">
+                    <source srcset="./img/img-hotel/hotel-desktop-double-room1-1x.jpg 1x, ./img/img-hotel/hotel-desktop-about2-2x.jpg 2x" media="(min-width:1440px)">
+                    <source srcset="./img/img-hotel/hotel-tablet-about2-1x.jpg 1x, ./img/img-hotel/hotel-tablet-about2-2x.jpg 2x" media="(min-width:768px)" width="341" height="175">
+                    <img srcset="./img/img-hotel/hotel-mob-about3-1x.jpg 1x, ./img/img-hotel/hotel-mob-about3-2x.jpg 2x" alt="triple kitchen" width="158" height="149">
+                </picture>
+            </div>
+        </div > 
+        
         <h2 class="luxury-titel">
-            Double<br /> luxury room
+            Double luxury room
         </h2>
-        <p class="luxury-text">
-            Experience luxury in our Double Luxury Room at Mimino Hotel.
-            This spacious room features a comfortable bed, private bathroom, flat-screen TV,
-            and high-speed Wi-Fi. Climate control, blackout curtains, and soundproofing ensure
-            a peaceful night's sleep.
-        </p>
-        <p class="luxury-text-below">
-            Relax after a busy day at the writing desk or armchair. Book now for a convenient and comfortable stay.
-        </p>
+        <div class="text-wrapper">
+            <p class="luxury-text">
+                Experience luxury in our Double Luxury Room at Mimino Hotel.
+                This spacious room features a comfortable bed, private bathroom, flat-screen TV,
+                and high-speed Wi-Fi. Climate control, blackout curtains, and soundproofing ensure
+                a peaceful night's sleep.
+            </p>
+            <p class="luxury-text-below">
+                Relax after a busy day at the writing desk or armchair. Book now for a convenient and comfortable stay.
+            </p> 
+        </div>
+        
         <div class="luxury-wrapp-btn">
             <a href="../page-room.html">
                 <button class="button-light luxury-link-btn" type="button">More details</button>

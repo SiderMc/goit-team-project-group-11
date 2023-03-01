@@ -1,4 +1,3 @@
-/*for Page Main Header*/
 /*Header for pages Restaurant Page , Hotel Page , Room Page*/
 .link {
   text-decoration: none;
@@ -17,6 +16,7 @@ padding: 0 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+  background-color: #fff;
 }
 .header-nav {
   display: none;
@@ -193,6 +193,14 @@ padding: 0 32px;
     justify-content: space-between;
     max-width: 100%;
   }
+  .logo-menu-link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .header-logo-menu-text {
+    font-size: 8px;
+    line-height: 1.25;
+  }
   .logo-link {
     font-size: 20px;
     line-height: 1.2;
@@ -200,6 +208,10 @@ padding: 0 32px;
   .header-logo-text {
    font-size: 8px;
    line-height: 1.25; 
+  }
+  .header-menu-nav-link {
+    font-size: 28px;
+    line-height: 1.14;
   }
   .header-soc-list {
     display: flex;

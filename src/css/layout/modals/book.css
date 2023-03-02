@@ -1,4 +1,3 @@
-/*for modal window Book a Room*/
 .modal {
   position: absolute;
   top: 0;
@@ -121,6 +120,11 @@ input[id="input-date"]::-webkit-calendar-picker-indicator {
 .submit-btn {
   margin-left: 26px;
   margin-right: 26px;
+}
+
+.submit-btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 @media(min-width:768px){

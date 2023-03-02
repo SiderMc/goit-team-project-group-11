@@ -181,12 +181,12 @@
     max-width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
-.header-menu-soc-top-list {
-  position: absolute;
-  bottom: 24px;
-  left: 20px;
-}
+@media screen and (max-width: 767px) {
+  .header-menu-soc-top-list {
+    position: absolute;
+    bottom: 24px;
+    left: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -258,12 +258,12 @@
     align-items: center;
   }
   .logo-menu-link {
- font-size: 20px;
-line-height: 1.2;
+    font-size: 20px;
+    line-height: 1.2;
   }
   .header-logo-menu-text {
-font-size: 8px;
-line-height: 1.25;
+    font-size: 8px;
+    line-height: 1.25;
   }
 }
 

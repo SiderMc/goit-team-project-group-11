@@ -182,7 +182,7 @@
     max-width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-menu-soc-top-list {
     position: absolute;
     bottom: 24px;

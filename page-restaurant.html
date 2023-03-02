@@ -7,50 +7,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restaurant</title>
 
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
   
-  
-  <script type="module" crossorigin src="/goit-team-project-group-11/assets/mobile-menu-1ee49b3c.js"></script>
-  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-restaurant-8621a20d.css">
+  <script type="module" crossorigin src="/goit-team-project-group-11/assets/mobile-menu-6ced14ea.js"></script>
+  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-restaurant-19834858.css">
 </head>
 
 <body>
   <div class="wrapper">
+    <!-----------------Partials----------------------->
+
     <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
 <header class="header">
   <div class="container header-flex-container">
-    <button type="button" class="menu-btn js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu">
-      <svg class="btn-menu-open-icon" 
-           width="28" 
-           height="28">
-<path d="M4 16H28M4 8H28M4 24H20"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>      </svg>
+    <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="btn-menu-open-icon" width="28" height="28">
+        <path d="M4 16H28M4 8H28M4 24H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
     </button>
     <nav class="header-nav">
       <ul class="header-nav-list list">
         <li class="header-nav-item">
-          <a href="index.html" class="header-nav-link link current">home</a>
+          <a href="index.html" class="header-nav-link link ">home</a>
         </li>
         <li class="header-nav-item">
           <a href="page-hotel.html" class="header-nav-link link">hotel</a>
         </li>
         <li class="header-nav-item">
-          <a href="page-restaurant.html" class="header-nav-link link"
-            >restaurant</a
-          >
+          <a href="page-restaurant.html" class="header-nav-link link">restaurant</a>
         </li>
       </ul>
     </nav>
@@ -58,40 +52,37 @@
       <a href="index.html" class="logo-link link">Mimino</a>
       <p class="header-logo-text">restaurant-hotel complex</p>
     </div>
-      <ul class="header-menu-soc-top-list list">
-        <li class="header-menu-soc-item">
-          <a href="#" class="header-soc-link link"
-           target="_blank" rel="noreferrer noopener">
-            <svg class="header-menu-soc-icon soc-icon-fill">
-     <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#instagram"></use>          
-            </svg>
-          </a>
-        </li>
-        <li class="header-menu-soc-item">
-          <a href="#" class="header-soc-link link"
-           target="_blank" rel="noreferrer noopener">
-        <svg class="header-menu-soc-icon soc-icon-fill">
-    <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#facebook"></use>
+    <ul class="header-menu-soc-top-list list">
+      <li class="header-menu-soc-item">
+        <a href="#" class="header-soc-link link" target="_blank" rel="noreferrer noopener">
+          <svg class="header-menu-soc-icon soc-icon-fill">
+            <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-menu-soc-item">
+        <a href="#" class="header-soc-link link" target="_blank" rel="noreferrer noopener">
+          <svg class="header-menu-soc-icon soc-icon-fill">
+            <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#facebook"></use>
 
-            </svg>
-          </a>
-        </li>
-        <li class="header-menu-soc-item">
-          <a href="#" class="header-soc-link link"
-           target="_blank" rel="noreferrer noopener">
-        <svg class="header-menu-soc-icon soc-icon-fill">
-    <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+          </svg>
+        </a>
+      </li>
+      <li class="header-menu-soc-item">
+        <a href="#" class="header-soc-link link" target="_blank" rel="noreferrer noopener">
+          <svg class="header-menu-soc-icon soc-icon-fill">
+            <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
   <!-- -----MOB-MENU------ -->
   <div class="mob-menu js-menu-container" id="mobile-menu">
     <div class=" header-menu-container">
       <button type="button" class="menu-btn js-close-menu">
         <svg class="btn-menu-close-icon" width="28" height="28">
-       <path d="M24 8L8 24M8 8L24 24"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24 8L8 24M8 8L24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
       <div class="header-logo-container">
@@ -100,74 +91,67 @@
       </div>
       <ul class="header-menu-soc-top-list list">
         <li class="header-menu-soc-item">
-          <a href="#" class="header-menu-soc-link link"
-          target="_blank" rel="noreferrer noopener">
+          <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
             <svg class="header-menu-soc-icon">
-     <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#instagram"></use>          
+              <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="header-menu-soc-item">
-          <a href="#" class="header-menu-soc-link link"
-          target="_blank" rel="noreferrer noopener">
-        <svg class="header-menu-soc-icon">
-    <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#facebook"></use>
+          <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
+            <svg class="header-menu-soc-icon">
+              <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#facebook"></use>
 
             </svg>
           </a>
         </li>
         <li class="header-menu-soc-item">
-          <a href="#" class="header-menu-soc-link link"
-          target="_blank" rel="noreferrer noopener">
-        <svg class="header-menu-soc-icon">
-    <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#twitter"></use>
+          <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
+            <svg class="header-menu-soc-icon">
+              <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#twitter"></use>
             </svg>
           </a>
         </li>
       </ul>
     </div>
 
-      <nav class="header-menu-nav">
-        <ul class="header-menu-nav-list list">
-          <li class="header-menu-nav-item">
-            <a href="index.html" class="header-menu-nav-link link">home</a>
-          </li>
-          <li class="header-menu-nav-item">
-            <a href="page-hotel.html" class="header-menu-nav-link link"
-              >hotel</a
-            >
-          </li>
-          <li class="header-menu-nav-item">
-            <a href="page-restaurant.html" class="header-menu-nav-link link"
-              >restaurant</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <ul class="header-menu-soc-list list">
-        <li class="header-menu-soc-item">
-          <a href="#" class="header-menu-soc-link link">
-            <svg class="header-menu-soc-icon">
-     <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#instagram"></use>          
-            </svg>
-          </a>
+    <nav class="header-menu-nav">
+      <ul class="header-menu-nav-list list">
+        <li class="header-menu-nav-item">
+          <a href="index.html" class="header-menu-nav-link link">home</a>
         </li>
-        <li class="header-menu-soc-item">
-          <a href="#" class="header-menu-soc-link link">
-        <svg class="header-menu-soc-icon">
-    <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#facebook"></use>
-
-            </svg>
-          </a>
+        <li class="header-menu-nav-item">
+          <a href="page-hotel.html" class="header-menu-nav-link link">hotel</a>
         </li>
-        <li class="header-menu-soc-item">
-          <a href="#" class="header-menu-soc-link link">
-        <svg class="header-menu-soc-icon">
-    <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#twitter"></use>
-            </svg>
-          </a>
+        <li class="header-menu-nav-item">
+          <a href="page-restaurant.html" class="header-menu-nav-link link">restaurant</a>
         </li>
       </ul>
+    </nav>
+    <ul class="header-menu-soc-list list">
+      <li class="header-menu-soc-item">
+        <a href="#" class="header-menu-soc-link link">
+          <svg class="header-menu-soc-icon">
+            <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-menu-soc-item">
+        <a href="#" class="header-menu-soc-link link">
+          <svg class="header-menu-soc-icon">
+            <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#facebook"></use>
+
+          </svg>
+        </a>
+      </li>
+      <li class="header-menu-soc-item">
+        <a href="#" class="header-menu-soc-link link">
+          <svg class="header-menu-soc-icon">
+            <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
 
   </div>
 </header>
@@ -574,7 +558,8 @@
     <div class="footer-line"></div>
   </div>
 </footer>
-    <!--for modal window Book a Room-->
+  </div>
+  <!--for modal window Book a Room-->
 <div data-modal class="modal-overlay is-hidden">
     <div  class="modal">
         <button data-modal-close class="close-btn">
@@ -620,7 +605,7 @@
     </div>
 </div>
 
-    <!--for modal window Prices per Room-->
+  <!--for modal window Prices per Room-->
 <section>
     <div class="modal-prices">
         <button type="button" class="btn-prices js-modal-close" js-modal-close>
@@ -672,7 +657,7 @@
     </div>
     <div class="overlay js-modal-overlay" js-modal-overlay ></div>
 </section>
-    <!--for modal window Book a Table-->
+  <!--for modal window Book a Table-->
 <section>
     <div>
         <div class="modal js-modal" data-modal="1">
@@ -720,46 +705,16 @@
     </div>
     <div class="overlay js-modal-overlay" js-modal-overlay ></div>
 </section>
-    <!--for Mobile Menu -->
-    <style>
-   #chek:checked~.chek__conteiner {
-      display: none;
-      overflow: hidden;
-   }
 
-   #chek {
-      transform: translate(-15px, 20px);
-   }
-</style>
+  <!-----------------------java script----------------------->
 
-<div class="pages__navigation" style="position: absolute;
-bottom:100%; right: 0; transform: translateY(100%);">
-   <label for="chek" class="checker">
-      <input type="checkbox" class="chek" id="chek">
-      <div class="chek__conteiner">
-         <a href="./index.html" class="pages__link "
-            style="border-radius:10px;padding:5px 10px;font-weight: 700;border: 1px solid #000;">Main</a>
-         <a href="./page-hotel.html" class="pages__link "
-            style="border-radius:10px;padding:5px 10px;font-weight: 700;border: 1px solid #000;">Hotel</a>
-         <a href="./page-restaurant.html" class="pages__link"
-            style="border-radius:10px;padding:5px 10px;font-weight: 700;border: 1px solid #000;">Restaurant</a>
-         <a href="./page-room.html" class="pages__link"
-            style="border-radius:10px;padding:5px 10px;font-weight: 700;border: 1px solid #000;">Room</a>
-      </div>
-   </label>
-</div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-    
-  </div>
-  </div>
   
+  
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+.current {
+  position: relative;
+}
+.current:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: var(--second-color);
+}

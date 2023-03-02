@@ -1,7 +1,182 @@
 /*for page Hotel section Triple Room*/
+section {
+    background-color: #f7f7f7;
+}
+
+.triple {
+    padding-top: 64px;
+}
+
+.triple-container {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.top-pictures {
+    display: none;
+}
+
+.triple-rooms {
+    display: none;
+}
+
+.triple-titel,
+.triple-text, 
+.triple-text-below {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 0.93;
+    
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    
+    color: var(--second-color);
+
+    padding: 32px 0;
+}
+
+.triple-text, 
+.triple-text-below {
+    font-size: 10px;
+    line-height: 1.8;
+    padding: 0;
+}
+
+.triple-text-below {
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+
+.triple-wrapp-btn {
+    margin-right: auto;
+    display: flex;
+}
+.wrapp-btn {
+    display: none;
+}
+
+.triple-link-btn,
+.triple-modal-btn {
+    background-color: transparent;
+    
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.28;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--second-color);
+
+    padding: 8px 18px;
+
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+
+    transition: background-color var(--animate), color var(--animate);
+}
+
+.triple-modal-btn {
+    margin-left: 12px;
+}
+
 @media screen and (min-width: 375px) {
+    .triple-rooms {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .triple-titel {
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    .triple-kitchen {
+        margin-left: 20px;
+    }
+    .triple-text,
+    .triple-text-below {
+        font-size: 14px;
+    }
 }
+
 @media screen and (min-width: 768px) {
+    .text-wrapper {
+        display: flex;
+        gap: 32px;
+    }
+
+    .triple-pictures {
+        display: flex;
+        align-items: end;
+    }
+
+    .triple-rooms {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        row-gap: 32px;
+        margin-left: 32px;
+    }
+
+    .triple-bathroom {
+        margin-right: auto;
+    }
+
+    .triple-kitchen {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    .triple-text {
+        width: 369px;
+    }
+
+    .triple-wrapp-btn {
+        margin-top: 40px;
+        justify-content: flex-start;
+    }
+
+    .triple-text-below {
+        width: 299px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
+
 @media screen and (min-width: 1440px) {
-}
+    .triple-pictures {
+        display: none;
+    }
+    
+    .top-pictures {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    } 
+
+    .triple-titel {
+        font-size: 40px;
+
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .wrapp-btn {
+        display: flex;
+    }
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .wrapp-btn-triple {
+        position: absolute;
+        top: 59%;
+        gap: 18px;
+
+        flex-direction: row-reverse;
+    }
+}       
+

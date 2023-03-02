@@ -1,101 +1,105 @@
 <!--for Page Main section About a complex-->
 
 <section class="hero-about">
-  <div class="pic1">
-    <picture>
-      <img
-        class="pictur"
-        srcset="
-          ./img/img-main/main-mob-about1-1x.jpg 1x,
-          ./img/img-main/main-mob-about1-2x.jpg 2x
-        "
-        alt="heder-about"
-        width="442"
-        height="335"
-      />
-    </picture>
+  <div class="container about-container">
 
-    <div class="review-card maria">
-      <div class="img-review">
-        <img class="maria-back" src="./img/img-main/review-maria.png" alt="maria" />
-        <img class="maria-back" src="./img-hero/review-maria.png" alt="maria" />
+    <div class="about-content">
+
+      <div class="pic1">
+
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/img-main/main-tablet-about1-1x.jpg 1x,
+            ./img/img-main/main-tablet-about1-2x.jpg 2x">
+          <source srcset="./img/img-main/main-mob-about1-1x.jpg 1x, 
+          ./img/img-main/main-mob-about1-2x.jpg 2x" media="(max-width: 767px)" />
+          <img src="./img/img-main/main-tablet-about1-1x.jpg" alt="foto" />
+        </picture>
+
       </div>
-      <div class="give-star">
-        <p class="p-maria">Maria</p>
-        <div class="p-maria-rating">
-          <p class="give-rating">give rating</p>
-          <p class="rating">4.5</p>
+
+      <div class="pic2">
+        <picture>
+          <source media="(min-width:1440px)" srcset="./img/img-main/main-desktop-about2-1x.jpg 1x,
+            ./img/img-main/main-desktop-about2-2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/img-main/main-tablet-about2-1x.jpg 1x,
+                      ./img/img-main/main-tablet-about2-2x.jpg 2x">
+          <source srcset="./img/img-main/main-mob-about2-1x.jpg 1x, 
+                    ./img/img-main/main-mob-about2-2x.jpg 2x" media="(max-width: 767px)" />
+          <img src="./img/img-main/main-tablet-about2-1x.jpg" alt="foto" />
+        </picture>
+        <div class="review-card maria">
+          <div class="img-review">
+            <img class="maria-back" srcset="./img/img-main/maria.jpg 1x ,
+                     ./img/img-main/maria@2x.jpg 2x" alt="maria" />
+          </div>
+          <div class="give-star">
+            <p class="p-maria">Maria</p>
+            <div class="p-maria-rating">
+              <p class="give-rating">give rating</p>
+              <p class="rating">4.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-text-p">restaurant-hotel complex</p>
+        <p class="hero-paragraf-about">
+          Indulge in a taste of luxury with every bite at Hotel Mimino. From the
+          freshest seafood to the most succulent steaks, every dish is crafted with
+          care to ensure that you enjoy a truly memorable dining experience.
+        </p>
+        <p class="hero-paragraf-about second-hero-paragraf">
+          Treat yourself to a taste of the good life and come dine with us today!
+        </p>
+      </div>
+    </div>
+    <div class="about-box-container">
+
+      <div class="about-first-box">
+
+        <div class="pic3">
+          <picture>
+            <img src="./img/img-main/main-tablet-about3-1x.jpg" alt="foto" />
+            <source media="(max-width: 767px)" srcset="./img/img-main/main-mob-about3-1x.jpg 1x, 
+                    ./img/img-main/main-mob-about3-1x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="./img/img-main/main-tablet-about3-1x.jpg 1x,
+                    ./img/img-main/main-tablet-about3-2x.jpg 2x">
+          </picture>
+          <div class="review-card-alex">
+            <div class="img-review">
+              <img class="maria-back" srcset="./img/img-main/alex.jpg 1x ,
+                       ./img/img-main/alex@2x.jpg 2x" alt="alex" />
+            </div>
+            <div class="give-star">
+              <p class="p-maria">Alexander</p>
+              <div class="p-maria-rating">
+                <p class="give-rating">give rating</p>
+                <p class="rating">5.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-second-box">
+
+        <div class="hero-text business">
+          <p class="hero-text-p">business class hotel</p>
+          <p class="hero-paragraf-about">
+            The Mimino hotel features spacious and stylish double luxury rooms with
+            modern amenities for a comfortable stay.
+          </p>
+        </div>
+
+        <div class="pic4">
+          <picture>
+            <source srcset="./img/img-main/main-mob-about4-1x.jpg 1x, 
+                ./img/img-main/main-mob-about4-2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./img/img-main/main-tablet-about4-1x.jpg" alt="foto" />
+            <source media="(min-width: 768px)" srcset="./img/img-main/main-tablet-about4-1x.jpg 1x,
+                  ./img/img-main/main-tablet-about4-2x.jpg 2x">
+          </picture>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="pic2">
-    <img
-      class="pictur"
-      srcset="
-        ./img/img-main/main-mob-about2-1x.jpg 1x,
-        ./img/img-main/main-mob-about2-2x.jpg 2x
-      "
-      alt="heder-about"
-      width="153"
-      height="282"
-    />
-  </div>
-
-  <div class="hero-text">
-    <p class="hero-text-p">restaurant-hotel complex</p>
-    <p class="hero-paragraf-about">
-      Indulge in a taste of luxury with every bite at Hotel Mimino. From the
-      freshest seafood to the most succulent steaks, every dish is crafted with
-      care to ensure that you enjoy a truly memorable dining experience.
-    </p>
-    <p class="hero-paragraf-about second-hero-paragraf">
-      Treat yourself to a taste of the good life and come dine with us today!
-    </p>
-  </div>
-
-  <div class="pic3">
-    <img
-      class="pictur"
-      srcset="
-        ./img/img-main/main-mob-about3-1x.jpg 1x,
-        ./img/img-main/main-mob-about3-2x.jpg 2x
-      "
-      alt="heder-about"
-    />
-
-    <div class="review-card-alex">
-      <div class="img-review">
-        <img class="maria-back" src="./img/img-main/review-alexander.png" alt="maria" />
-        <img class="maria-back" src="./img-hero/review-maria.png" alt="maria" />
-      </div>
-      <div class="give-star">
-        <p class="p-maria">Alexander</p>
-        <div class="p-maria-rating">
-          <p class="give-rating">give rating</p>
-          <p class="rating">5.5</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-text business">
-    <p class="hero-text-p">business class hotel</p>
-    <p class="hero-paragraf-about">
-      The Mimino hotel features spacious and stylish double luxury rooms with
-      modern amenities for a comfortable stay.
-    </p>
-  </div>
-
-  <div class="pic4">
-    <img
-      class="pictur"
-      srcset="
-        ./img/img-main/main-mob-about4-1x.jpg 1x,
-        ./img/img-main/main-mob-about4-2x.jpg 2x
-      "
-      alt="heder-about"
-    />
   </div>
 </section>

@@ -1,0 +1,7 @@
+<symbol id="icon-arrow-right" viewBox="0 0 18 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 30l14-14-14-14"></path>
+</symbol>
+
+<symbol id="icon-arrow-left" viewBox="0 0 18 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M16 30l-14-14 14-14"></path>
+</symbol>

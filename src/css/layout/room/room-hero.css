@@ -85,6 +85,21 @@
   height: 429px;
 }
 
+.arrow-left {
+  position: absolute;
+  fill: rgba(18, 18, 18, 0.3);
+  right: 102px;
+  top: 682px;
+}
+
+.arrow-right {
+  position: absolute;
+  right:31px;
+  top:682px;
+  fill: #121212;
+  
+}
+
 .room-hero-text {
   max-width: 289px;
   position: absolute;
@@ -143,6 +158,16 @@
     height: 548px;
   }
 
+  .arrow-left {
+    right: 114px;
+    top: 845px;
+    }
+  
+  .arrow-right {
+    right: 47px;
+    top: 845px;
+    }
+
   .room-hero-text {
     top: 834px;
   }
@@ -195,7 +220,16 @@
     width: 436px;
     height: 580px;
   }
+.arrow-left {
+  right: 682px;
+  top: 637px;
+}
 
+.arrow-right {
+  position: absolute;
+  right: 615px;
+  top: 637px;
+}
   .room-hero-text {
     position: absolute;
     top: 542px;

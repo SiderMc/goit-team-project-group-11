@@ -55,6 +55,18 @@
   bottom: -22px;
   left: 0;
 }
+.hero-paragraf {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.second-hero-paragraf {
+  margin-top: 32px;
+}
 
 .img-review {
   width: 41px;
@@ -100,15 +112,15 @@
   height: 153px;
 }
 
-.hero-text {
+.about-text {
   margin-top: 32px;
 }
 
-.business.hero-text {
+.business.about-text {
   margin-top: 54px;
 }
 
-.hero-text-p {
+.about-text-p {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -124,7 +136,7 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #121212;
+  color: var(--second-color);
 }
 
 .second-hero-paragraf {
@@ -141,7 +153,10 @@
   width: 335px;
   height: 309px;
 }
-
+.maria-back {
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
 @media screen and (min-width: 768px) {
   .about-container {
     justify-content: flex-start;
@@ -173,7 +188,7 @@
   .review-card {
     transform: translate(-50%, -50%);
   }
-  .hero-text {
+  .about-text {
     max-width: 472px;
   }
   .about-second-box {
@@ -204,10 +219,10 @@
   .hero-about {
     padding: 100px 0;
   }
-  .business.hero-text {
+  .business.about-text {
     margin: 0;
   }
-  .hero-text {
+  .about-text {
     align-self: center;
   }
   .review-card-alex {
@@ -236,7 +251,7 @@
     column-gap: 82px;
     margin-top: 100px;
   }
-  .hero-text.business {
+  .about-text.business {
     margin: 0 0 0 -25px;
     font-size: 18px;
     line-height: 1.33;

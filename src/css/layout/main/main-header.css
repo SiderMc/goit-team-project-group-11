@@ -14,6 +14,7 @@
 
 /* ---------HEADER-Mobile-------- */
 .header {
+  position: relative;
   text-transform: uppercase;
   position: relative;
   padding-top: 20px;
@@ -255,6 +256,10 @@
   .menu-btn {
     display: none;
   }
+  .header {
+    position: relative;
+    z-index: -1;
+  }
   .header-logo-container {
     position: static;
     transform: translate(0);
@@ -291,5 +296,14 @@
     height: 4px;
     border-radius: 50%;
     background-color: var(--accent-color);
+  }
+  .header-menu-soc-top-list.list {
+    position: absolute;
+    top: -50px;
+    right: 33px;
+    display: block;
+    z-index: 90;
+    display: flex;
+    fill: transparent;
   }
 }

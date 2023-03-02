@@ -1,10 +1,19 @@
 /*for page Hotel section Triple Room*/
+section {
+    background-color: #f7f7f7;
+}
+
 .triple {
     padding-top: 64px;
 }
 
 .triple-container {
+    background-color: #f7f7f7;
     width: 100%;
+}
+
+.top-pictures {
+    display: none;
 }
 
 .triple-rooms {
@@ -41,6 +50,9 @@
 .triple-wrapp-btn {
     margin-right: auto;
     display: flex;
+}
+.wrapp-btn {
+    display: none;
 }
 
 .triple-link-btn,
@@ -121,7 +133,7 @@
 
     .triple-wrapp-btn {
         margin-top: 40px;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
 
     .triple-text-below {
@@ -132,5 +144,39 @@
 }
 
 @media screen and (min-width: 1440px) {
-}
+    .triple-pictures {
+        display: none;
+    }
+    
+    .top-pictures {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    } 
+
+    .triple-titel {
+        font-size: 40px;
+
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .wrapp-btn {
+        display: flex;
+    }
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .wrapp-btn-triple {
+        position: absolute;
+        top: 59%;
+        gap: 18px;
+
+        flex-direction: row-reverse;
+    }
+}       
 

@@ -1,12 +1,18 @@
 /*for page Hotel section Double Luxury Room*/
+section {
+    background-color: #f7f7f7;
+}
+
 .luxury {
-    padding-top: 64px;
+    padding-top: 120px;
 }
 .luxury-container {
+    background-color: #f7f7f7;
     width: 100%;
 }
 
-.luxury-rooms {
+.luxury-rooms,
+.top-pictures {
     display: none;
 }
 
@@ -46,6 +52,8 @@
 }
 
 .luxury-wrapp-btn {
+font-size: 10px;
+
     margin-right: auto;
     display: flex;
 }
@@ -130,5 +138,30 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .luxury-pictures {
+        display: none;
+    }
+    
+    .top-pictures {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    } 
 
+    .luxury-titel {
+        font-size: 40px;
+    }
+
+    .wrapp-btn {
+        display: flex;
+    }
+    
+    .luxury-titel {
+        position: relative;
+    }
+    .wrapp-btn-luxury {
+        position: absolute;
+        top: 24%;
+        right: 42px;
+    }
 }

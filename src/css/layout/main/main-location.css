@@ -6,6 +6,8 @@
     margin: 0 auto ; 
 }
 .location {
+    padding-top: 64px;
+    padding-bottom: 64px;
     color: var(--second-color);
     background-color: var(--accent-color);
 }
@@ -31,19 +33,21 @@
 /*================= M O B A I L ====================*/
 
     .location-title {
-        padding: 64px 0 32px 0;
-        margin: 0;
+        margin-bottom: 32px;
         text-transform: uppercase;
         font-size: 40px;
         line-height: 1;
         letter-spacing: -0.02em;
     }
     .map {
-        width: 335px;
+        width: 100%;
         height: 384px;
-        padding-bottom: 32px;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
+        box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+     }
+     .location-location {
+        margin-bottom: 32px;
      }
     .contact-address {
         display: block;
@@ -56,8 +60,7 @@
         text-transform: uppercase;
     }
     .contact-title {
-        padding-top: 28px;
-        padding-bottom: 12px;
+        margin-bottom: 12px;
         font-style: normal;
         font-size: 14px;
         line-height: 1.286;
@@ -70,19 +73,30 @@
         line-height: 1.286;
         letter-spacing: -0.02em;
     }
+    .tel-title {
+        margin-top: 28px;
+    }
 
 /*================= M O B A I L ====================*/
-
+@media screen and (min-width: 375px) {
+   .map {
+    width: 335px;
+   }
+       
+    }
 /*================= T A B L E T ====================*/
 @media screen and (min-width: 768px) {
+    .location {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
     .location-title {
-        padding: 80px 0 40px 0;
+        margin-bottom: 40px;
         font-size: 68px;
     }
     .map {
         width: 704px;
         height: 576px;
-        padding-bottom: 48px;
     }
     .contact-tel {
         font-style: normal;
@@ -94,46 +108,54 @@
         justify-content: space-between;
         align-items:center;
     }
+    .tel-title {
+        margin-top: 0;
+    }
 }
 /*================= T A B L E T ====================*/
 
 /*================= D E S K T O P ====================*/
 
 @media screen and (min-width: 1440px) {
-    .location-location {
-        position: relative;
+     .location {
         padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .location-container {
+        position: relative;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    .location-location {
         display: flex;
+        gap: 32px;
         flex-direction: row-reverse;
         justify-content: flex-end;
+        margin-bottom: 0;
     }
-    .location-title {
-        padding:0 0 0 32px;
-    }
+   
     .map {
-        padding-left: 64px;
         width: 640px;
         height: 524px;
-        padding-bottom: 0;
     } 
     .location-contact {
+        gap: 70px;
        justify-content: center;
+       position: absolute;
+        left: 50%;
+        bottom: 0;
     }
     .tel-title {
         display: flex;
+        gap: 12px;
         align-items: flex-start;
-        padding-left: 70px;
     }
     .contact-title {
         display: flex;
         align-items: flex-end;
         padding-top: 0;
-        padding-right: 12px;
+        margin-bottom: 0;
     }
-    .location-contact {
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-    }
+   
 }
 /*================= D E S K T O P ====================*/

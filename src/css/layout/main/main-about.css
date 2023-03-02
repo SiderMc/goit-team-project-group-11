@@ -165,7 +165,7 @@
   .pic2 {
     width: auto;
     align-self: flex-end;
-    transform: translate(48%, -160%);
+    transform: translate(55%, -160%);
   }
   .pic3 {
     align-self: flex-end;
@@ -177,7 +177,7 @@
     max-width: 472px;
   }
   .about-second-box {
-    transform: translateX(-20%);
+    transform: translateX(-25%);
   }
   .review-card-alex {
     bottom: 25%;
@@ -185,6 +185,7 @@
   }
   .about-first-box {
     display: flex;
+    align-self: flex-end;
   }
   .about-second-box {
     display: flex;
@@ -208,6 +209,7 @@
     margin: 0;
   }
   .hero-text {
+    margin-left: -70px;
     align-self: center;
   }
   .review-card-alex {

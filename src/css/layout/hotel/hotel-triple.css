@@ -156,7 +156,7 @@ section {
 
     .triple-titel {
         font-size: 40px;
-
+        margin-right: 432px;
         position: relative;
         display: flex;
         flex-direction: row-reverse;
@@ -173,7 +173,7 @@ section {
 
     .wrapp-btn-triple {
         position: absolute;
-        top: 59%;
+        top: 2770px;
         gap: 18px;
 
         flex-direction: row-reverse;

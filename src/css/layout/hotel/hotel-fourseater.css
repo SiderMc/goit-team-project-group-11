@@ -161,12 +161,13 @@ section {
 
     .fourseater-text {
         padding-bottom: 144px;
+        min-width: 475px;
     }
 
     .wrap-btn-fourseater {
         display: flex;
         position: absolute;
-        top: 87.5%;
+        top: 3780px;
         right: 42px;
     }
 }

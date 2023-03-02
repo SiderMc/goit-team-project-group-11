@@ -1,5 +1,5 @@
 const navigation = window.location.pathname;
-const current = document.querySelectorAll('.header-navigation');
+const current = document.querySelectorAll('.header-nav-link');
 
 current.forEach(page => {
   if (navigation === page.pathname) {

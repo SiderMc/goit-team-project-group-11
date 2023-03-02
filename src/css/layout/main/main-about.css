@@ -1,5 +1,9 @@
 /*for Page Main About a complex*/
-
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hero-about {
   max-width: 100%;
   min-width: 375px;
@@ -7,9 +11,10 @@
   padding: 64px 20px;
   object-fit: contain;
 }
-
+.hero-about {
+  padding: 64px 0;
+}
 .pictur {
-  max-width: 100%;
   height: auto;
   width: 100%;
 }
@@ -27,7 +32,7 @@
 }
 
 .review-card {
-  /* z-index: 2; */
+  transform: translate(25%, -50%);
   position: absolute;
   background: var(--second-color);
   width: 212px;
@@ -35,22 +40,21 @@
   box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   display: flex;
-  bottom: -38px;
+  top: 0;
   right: 0;
 }
 
-.review-card-alex{
-    /* z-index: 2; */
-    position: absolute;
-    background: var(--second-color);
-    width: 212px;
-    height: 61px;
-    box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-    display: flex;
-    bottom: -22px;
-    left: 0;
-  }
+.review-card-alex {
+  position: absolute;
+  background: var(--second-color);
+  width: 212px;
+  height: 61px;
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  bottom: -22px;
+  left: 0;
+}
 
 .img-review {
   width: 41px;
@@ -89,6 +93,7 @@
 }
 
 .pic2 {
+  position: relative;
   margin-top: 20px;
   display: block;
   width: 282px;
@@ -100,14 +105,14 @@
 }
 
 .business.hero-text {
-    margin-top: 54px;
+  margin-top: 54px;
 }
 
 .hero-text-p {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 1.28;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #484848;
 }
@@ -127,10 +132,8 @@
 }
 
 .pic3 {
-    position: relative;
+  position: relative;
   margin-top: 64px;
-  width: 335px;
-  height: 311px;
 }
 
 .pic4 {
@@ -140,6 +143,107 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-container {
+    justify-content: flex-start;
+  }
+  .about-box-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  .hero-about {
+    padding: 80px 0;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  .pic1 {
+    min-width: 482px;
+  }
+  .pic2 {
+    width: auto;
+    align-self: flex-end;
+    transform: translate(48%, -160%);
+  }
+  .pic3 {
+    align-self: flex-end;
+  }
+  .review-card {
+    transform: translate(-50%, -50%);
+  }
+  .hero-text {
+    max-width: 472px;
+  }
+  .about-second-box {
+    transform: translateX(-20%);
+  }
+  .review-card-alex {
+    bottom: 25%;
+    left: -16%;
+  }
+  .about-first-box {
+    display: flex;
+  }
+  .about-second-box {
+    display: flex;
+    column-gap: 32px;
+    align-self: flex-start;
+  }
+  .pic4 {
+    width: 266px;
+    order: 1;
+  }
+  .business {
+    width: 263px;
+    order: 2;
+  }
 }
 @media screen and (min-width: 1440px) {
+  .hero-about {
+    padding: 100px 0;
+  }
+  .business.hero-text {
+    margin: 0;
+  }
+  .hero-text {
+    align-self: center;
+  }
+  .review-card-alex {
+    left: -20%;
+  }
+  .about-content {
+    flex-direction: row;
+  }
+  .pic1 {
+    width: auto;
+    height: auto;
+  }
+  .pic2 {
+    min-width: 439px;
+    transform: translateX(-40%);
+    align-self: center;
+  }
+  .pic3,
+  .pic4 {
+    margin: 0;
+  }
+  .about-box-container {
+    display: flex;
+    min-width: 100%;
+    flex-direction: row-reverse;
+    column-gap: 82px;
+    margin-top: 100px;
+  }
+  .hero-text.business {
+    margin: 0 0 0 -25px;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+  .about-first-box {
+  }
 }

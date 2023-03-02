@@ -166,6 +166,7 @@
   }
   .hotels {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .hotels-container {
     position: relative;
@@ -179,12 +180,11 @@
     margin-bottom: 0;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 32px;
   }
   .img-details_4 {
     position: absolute;
     left: 0;
-
     bottom: 0;
   }
 }

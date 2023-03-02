@@ -1,7 +1,173 @@
 /*for page Hotel section Four-seater Room*/
+section {
+    background-color: #f7f7f7;
+}
+
+.fourseater {
+    padding-top: 64px;
+}
+.fourseater-container {
+    width: 100%;
+}
+
+.top-pictures {
+    display: none;
+}
+
+.fourseater-titel,
+.fourseater-text, 
+.fourseater-text-below {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 0.93;
+    
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    
+    color: var(--second-color);
+
+    padding: 32px 0;
+}
+
+.fourseater-rooms {
+    display: none;
+}
+
+.fourseater-text, 
+.fourseater-text-below {
+    font-size: 10px;
+    line-height: 1.8;
+    padding: 0;
+}
+
+.fourseater-text-below {
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+
+.wrapp-btn {
+    display: none;
+}
+
+.fourseater-link-btn,
+.fourseater-modal-btn {
+    /* background-color: transparent; */
+    
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.28;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--second-color);
+
+    padding: 8px 18px;
+
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+
+    transition: background-color var(--animate), color var(--animate);
+}
+
+.wrap-btn-fourseater {
+    padding-bottom: 88px;
+    padding-top: 30px;
+
+    font-size: 14px;
+}
+
+.fourseater-modal-btn {
+    margin-left: 12px;
+}
+
 @media screen and (min-width: 375px) {
+    .fourseater-titel {
+        font-size: 32px;
+        line-height: 1.25;
+    }
+    .fourseater-kitchen{
+        margin-left: 20px;
+    }
+
+    .fourseater-rooms {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .fourseater-text,
+    .fourseater-text-below {
+        font-size: 14px;
+    }
+
 }
+
 @media screen and (min-width: 768px) {
+    .fourseater-pictures {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+    }
+
+    .fourseater-rooms {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        row-gap: 32px;
+        margin-right: 32px;  
+    }
+
+    .fourseater-bathroom {
+        margin-left: auto;
+    }
+
+    .fourseater-text {
+        width: 369px;
+    }
+
+    .fourseater-wrapp-btn {
+        margin-top: 40px;
+        padding-bottom: 112px;
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .fourseater-text-below {
+        width: 299px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .top-pictures {
+        display: none;
+    }
 }
+
 @media screen and (min-width: 1440px) {
+    .fourseater-pictures {
+        display: none;
+    }
+    
+    .top-pictures {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    } 
+
+    .fourseater-titel {
+        font-size: 40px;
+        position: relative;
+    }
+
+    .fourseater-text {
+        padding-bottom: 144px;
+    }
+
+    .wrap-btn-fourseater {
+        display: flex;
+        position: absolute;
+        top: 87.5%;
+        right: 42px;
+    }
 }
+

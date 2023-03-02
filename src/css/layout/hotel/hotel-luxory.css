@@ -1,7 +1,167 @@
 /*for page Hotel section Double Luxury Room*/
+section {
+    background-color: #f7f7f7;
+}
+
+.luxury {
+    padding-top: 120px;
+}
+.luxury-container {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.luxury-rooms,
+.top-pictures {
+    display: none;
+}
+
+.luxury-img {
+    margin-right: 20px;
+}
+
+.luxury-titel,
+.luxury-text, 
+.luxury-text-below {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 0.93;
+    
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    
+    color: var(--second-color);
+
+    padding: 32px 0;
+}
+
+.luxury-titel {
+    width: 215px;
+}
+
+.luxury-text, 
+.luxury-text-below {
+    font-size: 10px;
+    line-height: 1.8;
+    padding: 0;
+}
+
+.luxury-text-below {
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+
+.luxury-wrapp-btn {
+font-size: 10px;
+
+    margin-right: auto;
+    display: flex;
+}
+
+.luxury-link-btn,
+.luxury-modal-btn {
+    background-color: transparent;
+    
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.28;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--second-color);
+
+    padding: 8px 18px;
+
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+
+    transition: background-color var(--animate), color var(--animate);
+}
+
+.luxury-modal-btn {
+    margin-left: 12px;
+}
+
 @media screen and (min-width: 375px) {
+    .luxury-rooms {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .luxury-kitchen{
+        margin-left: 20px;
+    }
+    .luxury-titel {
+        font-size: 32px;
+        line-height: 1.25;
+        width: 100%;
+    }
+    .luxury-text,
+    .luxury-text-below {
+        font-size: 14px;
+    }
 }
+
 @media screen and (min-width: 768px) {
+    .luxury-pictures {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+    }
+
+    .luxury-rooms {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        row-gap: 32px;
+        margin-right: 32px;  
+    }
+
+    .luxury-bathroom {
+        margin-left: auto;
+    }
+
+    .luxury-text {
+        width: 369px;
+    }
+
+    .luxury-wrapp-btn {
+        margin-top: 40px;
+        justify-content: flex-end;
+    }
+
+    .luxury-text-below {
+        width: 299px;
+        padding-top: 0;
+        padding-bottom: 0; 
+    }
 }
+
 @media screen and (min-width: 1440px) {
+    .luxury-pictures {
+        display: none;
+    }
+    
+    .top-pictures {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    } 
+
+    .luxury-titel {
+        font-size: 40px;
+    }
+
+    .wrapp-btn {
+        display: flex;
+    }
+    
+    .luxury-titel {
+        position: relative;
+    }
+    .wrapp-btn-luxury {
+        position: absolute;
+        top: 24%;
+        right: 42px;
+    }
 }

@@ -6,14 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restaurant</title>
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
   <link rel="stylesheet" href="./pages/page-restourant.css" />
 </head>
 
 <body>
   <div class="wrapper">
+    <!-----------------Partials----------------------->
+
     <load src="partials/header/header.html" />
     <main>
       <load src="partials/restaurant/restaurant-hero.html" />
@@ -21,11 +32,19 @@
       <load src="partials/restaurant/restaurant-menu.html" />
     </main>
     <load src="partials/footer/footer.html" />
-    <load src="partials/modals/book.html" />
-    <load src="partials/modals/prices.html" />
-    <load src="partials/modals/table.html" />
-    <load src="partials/menu/mobile-menu.html" />
-    <load src="nav-pages.html" />
+  </div>
+  <load src="partials/modals/book.html" />
+  <load src="partials/modals/prices.html" />
+  <load src="partials/modals/table.html" />
+
+  <!-----------------------java script----------------------->
+
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="/main.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 

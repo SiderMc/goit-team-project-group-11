@@ -1,6 +1,144 @@
 /*for Page Main About a complex*/
-@media screen and (min-width: 375px) {
+
+.hero-about {
+  max-width: 100%;
+  min-width: 375px;
+  background: var(--accent-color);
+  padding: 64px 20px;
+  object-fit: contain;
 }
+
+.pictur {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.hero-content {
+  margin-top: -50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.pic1 {
+  position: relative;
+  width: 335px;
+  height: 442px;
+}
+
+.review-card {
+  /* z-index: 2; */
+  position: absolute;
+  background: var(--second-color);
+  width: 212px;
+  height: 61px;
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  bottom: -38px;
+  right: 0;
+}
+
+.review-card-alex{
+    /* z-index: 2; */
+    position: absolute;
+    background: var(--second-color);
+    width: 212px;
+    height: 61px;
+    box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: flex;
+    bottom: -22px;
+    left: 0;
+  }
+
+.img-review {
+  width: 41px;
+  height: 41px;
+  margin: 10px 12px 10px 14px;
+}
+
+.p-maria {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #f7f7f7;
+}
+
+.p-maria-rating {
+  display: flex;
+}
+
+.give-rating {
+  color: #575757;
+}
+
+.rating {
+  color: var(--accent-color);
+  margin-left: 3px;
+}
+
+.give-star {
+  gap: 7px;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.pic2 {
+  margin-top: 20px;
+  display: block;
+  width: 282px;
+  height: 153px;
+}
+
+.hero-text {
+  margin-top: 32px;
+}
+
+.business.hero-text {
+    margin-top: 54px;
+}
+
+.hero-text-p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.28;
+  text-transform: uppercase;
+  color: #484848;
+}
+
+.hero-paragraf-about {
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.second-hero-paragraf {
+  margin-top: 14px;
+}
+
+.pic3 {
+    position: relative;
+  margin-top: 64px;
+  width: 335px;
+  height: 311px;
+}
+
+.pic4 {
+  margin-top: 40px;
+  width: 335px;
+  height: 309px;
+}
+
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1440px) {

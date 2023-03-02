@@ -16,7 +16,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <script type="module" crossorigin src="/goit-team-project-group-11/assets/mobile-menu-c65c1b33.js"></script>
-  <link rel="stylesheet" href="/goit-team-project-group-11/assets/index-eb0a4262.css">
+  <link rel="stylesheet" href="/goit-team-project-group-11/assets/index-d0195564.css">
 </head>
 
 <body>
@@ -156,43 +156,64 @@
   </div>
 </header>
     <main>
-      
-<!--for Page Main section Hero-->
+      <!--for Page Main section Hero-->
 <section class="hero-header">
-  <picture>
-    <img
-      class="pictur"
-      srcset="/goit-team-project-group-11/assets/main-mob-hero-bg-1x-833eec63.jpg 1x, /goit-team-project-group-11/assets/main-mob-hero-bg-2x-249b4c80.jpg 2x"
-      alt="hero-hotel"
-      width="439"
-      height="335"
-    />
-  </picture>
+  <div class="container hero-container">
 
-  <div class="hero-content">
-    <h1 class="hero-title">mimino</h1>
-    <div class="main-hero-btn">
-      <button type="button" data-modal-open class="hero-btn">
-        book a room
-      </button>
-      <button type="button" data-modal-open class="hero-btn">
-        book a table
-      </button>
+    <div class=" hero-content">
+      <picture>
+        <source media="(min-width:1440px)" srcset="/goit-team-project-group-11/assets/main-desktop-hero-bg-1x-11bd9ba6.jpg 1x, /goit-team-project-group-11/assets/main-desktop-hero-bg-2x-79faedf4.jpg 2x">
+        <source srcset="/goit-team-project-group-11/assets/main-tablet-hero-bg-1x-5b51bbe3.jpg 1x, /goit-team-project-group-11/assets/main-tablet-hero-bg-2x-6d993f9c.jpg 2x" media="(min-width: 768px)" />
+        <img class="image-hero" srcset="/goit-team-project-group-11/assets/main-mob-hero-bg-1x-833eec63.jpg 1x, /goit-team-project-group-11/assets/main-mob-hero-bg-2x-249b4c80.jpg 2x" alt="hero-main" width="439" height="335" />
+        <ul class="header-menu-soc-top-list list icon-hero">
+          <li class="header-menu-soc-item">
+            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
+              <svg class="header-menu-soc-icon">
+                <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-menu-soc-item">
+            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
+              <svg class="header-menu-soc-icon">
+                <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#facebook"></use>
+
+              </svg>
+            </a>
+          </li>
+          <li class="header-menu-soc-item">
+            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
+              <svg class="header-menu-soc-icon">
+                <use href="/goit-team-project-group-11/assets/spray-0c7a2666.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </picture>
+      <h1 class="hero-title">mimino</h1>
+      <div class="main-hero-btn">
+        <button type="button" data-modal-open class="hero-btn">
+          book a room
+        </button>
+        <button type="button" data-modal-open class="hero-btn">
+          book a table
+        </button>
+      </div>
+    </div>
+
+    <div class="text-hero-content">
+      <p class="text-hero">
+        Whether you're in the mood for a hearty breakfast, a light lunch, or a
+        romantic dinner, our menu has something for everyone.
+      </p>
+      <p class="text-hero">
+        At Hotel Mimino, we believe that great food should be available to
+        everyone, no matter the time of day.
+      </p>
     </div>
   </div>
 
-  <div class="hero-text">
-    <p class="hero-paragraf">
-      Whether you're in the mood for a hearty breakfast, a light lunch, or a
-      romantic dinner, our menu has something for everyone.
-    </p>
-    <p class="hero-paragraf second-hero-paragraf">
-      At Hotel Mimino, we believe that great food should be available to
-      everyone, no matter the time of day.
-    </p>
-  </div>
 </section>
-
       <!--for Page Main section About a complex-->
 
 <section class="hero-about">
@@ -230,8 +251,8 @@
           </div>
         </div>
       </div>
-      <div class="hero-text">
-        <p class="hero-text-p">restaurant-hotel complex</p>
+      <div class="about-text">
+        <p class="about-text-p">restaurant-hotel complex</p>
         <p class="hero-paragraf-about">
           Indulge in a taste of luxury with every bite at Hotel Mimino. From the
           freshest seafood to the most succulent steaks, every dish is crafted with
@@ -268,8 +289,8 @@
       </div>
       <div class="about-second-box">
 
-        <div class="hero-text business">
-          <p class="hero-text-p">business class hotel</p>
+        <div class="about-text business">
+          <p class="about-text-p">business class hotel</p>
           <p class="hero-paragraf-about">
             The Mimino hotel features spacious and stylish double luxury rooms with
             modern amenities for a comfortable stay.

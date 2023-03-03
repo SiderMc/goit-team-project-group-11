@@ -233,6 +233,7 @@
   }
   .about-content {
     flex-direction: row;
+    position: relative;
   }
   .pic1 {
     width: auto;
@@ -261,5 +262,19 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     align-self: flex-start;
+  }
+
+  .about-text {
+    margin-top: 199px;
+  }
+
+  .about-box-container {
+    position: relative;
+  }
+  .about-second-box {
+    position: absolute;
+    right: 520px;
+    bottom: 56px;
+    gap: 74px;
   }
 }

@@ -277,7 +277,7 @@
   }
   .header {
     position: relative;
-    z-index: 1;
+    z-index: 0;
   }
   .header-logo-container {
     position: static;
@@ -289,7 +289,7 @@
     margin-right: 370px;
   }
   .header-logo-container {
-    margin-right: 509px;
+    margin-right: 600px;
   }
   .header-nav-list {
     display: flex;

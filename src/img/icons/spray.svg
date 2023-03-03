@@ -29,6 +29,12 @@
 <symbol id="icon-prev" viewBox="0 0 18 32" >
 <path  d="M16 30l-14-14 14-14"></path>
 </symbol>
+<symbol id="main-restaurant-icon-next" viewBox="0 0 18 32" fill="none">
+<path stroke="#121212" stroke-width="4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M2 30l14-14-14-14"></path>
+</symbol>
+<symbol id="main-restaurant-icon-prev" viewBox="0 0 18 32" fill="none">
+<path stroke="#121212" stroke-width="4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M16 30l-14-14 14-14"></path>
+</symbol>
 </defs>
 </svg>
 

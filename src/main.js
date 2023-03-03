@@ -1,8 +1,10 @@
 import './js/validation-book-form';
 import './slick/slick';
 import './js/slaider';
-import './js/modal';
+import './js/book-room';
 import './js/slick-tab';
 import './js/slick';
 import './js/current';
 import './js/mobile-menu';
+import './js/book-table';
+import './js/prices-room';

@@ -110,9 +110,6 @@
   text-transform: uppercase;
   color: #d8d7d7;
 }
-/* .label-select {
-
-} */
 
 .label-num-select {
   margin-bottom: 32px;
@@ -195,10 +192,6 @@
     max-width: 274px;
     flex-basis: calc((100% -32px) / 2);
   }
-
-  /* .btn-position {
-    } */
-
   .btn-modal-submit {
     display: flex;
     flex-direction: row;

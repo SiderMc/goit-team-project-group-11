@@ -40,10 +40,19 @@
     height: 28px;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    stroke: #F7F7F7;
+    background: transparent;
     border: none;
     padding: 0;
+}
+
+.close-icon {
+    width: 14px;
+    height: 14px;
+    stroke: #F7F7F7;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: #F7F7F7;
 }
 
 .modal-header {

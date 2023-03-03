@@ -10,21 +10,23 @@
     width: 90%;
     max-width: 335px;
     max-height: 414px;
-    z-index: 20;
+    z-index: 200;
     background: #121212;
     border-radius: 2px;
-    display: none;
+    /* display: none; */
 }
 
 .overlay {
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 10;
-    display: none;
+    background-color: #2e2f4266;
+    overflow: scroll;
+    /* display: none; */
+
 }
 
 .btn-prices {
@@ -39,6 +41,16 @@
     background: transparent;
     border: none;
     padding: 0;
+}
+
+.close-icon {
+    width: 14px;
+    height: 14px;
+    stroke: #F7F7F7;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: #F7F7F7;
 }
 
 .header-prices {
@@ -154,11 +166,6 @@
     .btn-prices {
         width: 32px;
         height: 32px;
-    }
-
-    svg.modal-icon {
-        width: 13.33;
-        height: 13.33;
     }
 
     .header-prices {

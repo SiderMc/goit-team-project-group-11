@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page-Room</title>
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Page-Room</title>
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
       integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-room-51f95b3b.css">
-</head>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-room-bcc29b57.css">
+  </head>
 
-<body>
-   <div class="wrapper">
-
+  <body>
+    <div class="wrapper">
       <!-----------------Partials----------------------->
 
       <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
@@ -151,53 +153,68 @@
   </div>
 </header>
       <main>
-         <section class="room-hero">
-    <div class="container room-hero-container">
-        <h1 class="room-hero-title">Double <span>luxury</span> room</h1>
-        <button type="button" class="room-hero-btn">View prices</button>
-        <div class="slider">
-            <div class="slider-item-first">
-                <picture class="slider-img">
-                    <source srcset="/goit-team-project-group-11/assets/room-luxury-mob-1x-355dcf5c.jpg 1x, /goit-team-project-group-11/assets/room-luxury-mob-2x-53de678d.jpg 2x"
-                        media="(max-width:767px)">
-                    <source
-                        srcset="/goit-team-project-group-11/assets/room-luxury-table-1x-4b61b7b3.jpg 1x, /goit-team-project-group-11/assets/room-luxury-table-2x-85af9fc9.jpg 2x"
-                        media="(max-width:1439px)">
-                    <source
-                        srcset="/goit-team-project-group-11/assets/room-luxury-desktop-1x-8d1e2bab.jpg 1x, /goit-team-project-group-11/assets/room-luxury-desktop-2x-6ed738bb.jpg 2x"
-                        media="(min-width:1440px)">
-                    <img src="./img/img-room/room-luxury-mob-1x.jpg 1x, ./img/img-room/room-luxury-mob-2x.jpg 2x"
-                        alt="room">
-                </picture>
-            </div>
-            <div class="slider-item-second">
-                <picture class="slider-img">
-                    <source
-                        srcset="/goit-team-project-group-11/assets/room-luxury-2-mob-1x-a91fa2cb.jpg 1x, /goit-team-project-group-11/assets/room-luxury-2-mob-2x-ef47bff9.jpg 2x"
-                        media="(max-width:767px)">
-                    <source
-                        srcset="/goit-team-project-group-11/assets/room-luxury-table-2-1x-acd573f8.jpg 1x, /goit-team-project-group-11/assets/room-luxury-table-2-2x-09fae40a.jpg 2x"
-                        media="(max-width:1439px)">
-                    <source
-                        srcset="/goit-team-project-group-11/assets/room-luxury-desktop-2-1x-080b40a3.jpg 1x, /goit-team-project-group-11/assets/room-luxury-desktop-2-2x-86b033ed.jpg 2x"
-                        media="(min-width:1440px)">
-                    <img src="./img/img-room/room-luxury-2-mob-1x.jpg 1x, ./img/img-room/room-luxury-2-mob-2x.jpg 2x"
-                        alt="room">
-                </picture>
-            </div>
-        </div>
-        <svg class="arrow-left" width="7px" height="14px">
-            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-prev"></use>
-        </svg>
-        <svg class="arrow-right" width="7px" height="14px">
-            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-next"></use>
-        </svg>
-        <p class="room-hero-text">The Mimino hotel features spacious and stylish double luxury rooms with modern
-            amenities for a comfortable stay.</p>
+        <section class="room-hero">
+  <div class="container room-hero-container">
+    <h1 class="room-hero-title">Double <span>luxury</span> room</h1>
+    <button type="button" class="room-hero-btn js-modal-open-prices">
+      View prices
+    </button>
+    <div class="slider">
+      <div class="slider-item-first">
+        <picture class="slider-img">
+          <source
+            srcset="/goit-team-project-group-11/assets/room-luxury-mob-1x-355dcf5c.jpg 1x, /goit-team-project-group-11/assets/room-luxury-mob-2x-53de678d.jpg 2x"
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="/goit-team-project-group-11/assets/room-luxury-table-1x-4b61b7b3.jpg 1x, /goit-team-project-group-11/assets/room-luxury-table-2x-85af9fc9.jpg 2x"
+            media="(max-width:1439px)"
+          />
+          <source
+            srcset="/goit-team-project-group-11/assets/room-luxury-desktop-1x-8d1e2bab.jpg 1x, /goit-team-project-group-11/assets/room-luxury-desktop-2x-6ed738bb.jpg 2x"
+            media="(min-width:1440px)"
+          />
+          <img
+            src="./img/img-room/room-luxury-mob-1x.jpg 1x, ./img/img-room/room-luxury-mob-2x.jpg 2x"
+            alt="room"
+          />
+        </picture>
+      </div>
+      <div class="slider-item-second">
+        <picture class="slider-img">
+          <source
+            srcset="/goit-team-project-group-11/assets/room-luxury-2-mob-1x-a91fa2cb.jpg 1x, /goit-team-project-group-11/assets/room-luxury-2-mob-2x-ef47bff9.jpg 2x"
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="/goit-team-project-group-11/assets/room-luxury-table-2-1x-acd573f8.jpg 1x, /goit-team-project-group-11/assets/room-luxury-table-2-2x-09fae40a.jpg 2x"
+            media="(max-width:1439px)"
+          />
+          <source
+            srcset="/goit-team-project-group-11/assets/room-luxury-desktop-2-1x-080b40a3.jpg 1x, /goit-team-project-group-11/assets/room-luxury-desktop-2-2x-86b033ed.jpg 2x"
+            media="(min-width:1440px)"
+          />
+          <img
+            src="./img/img-room/room-luxury-2-mob-1x.jpg 1x, ./img/img-room/room-luxury-2-mob-2x.jpg 2x"
+            alt="room"
+          />
+        </picture>
+      </div>
     </div>
-
+    <svg class="arrow-left" width="7px" height="14px">
+      <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-prev"></use>
+    </svg>
+    <svg class="arrow-right" width="7px" height="14px">
+      <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-next"></use>
+    </svg>
+    <p class="room-hero-text">
+      The Mimino hotel features spacious and stylish double luxury rooms with
+      modern amenities for a comfortable stay.
+    </p>
+  </div>
 </section>
-         <!--for Room Page section Hero-->
+
+        <!--for Room Page section Hero-->
 <section class="amenities">
   <div class="container amenities-container">
     <h1 class="visually-hidden">Amenities</h1>
@@ -241,7 +258,7 @@
             <img src="./img/img-room/room-general-mob-1x.jpg 1x, ./img/img-room/room-general-mob-2x.jpg 2x"
               alt="bathroom">
           </picture>
-          <button type="button" class="amenities-btn" [data-modal-open]>book a room</button>
+          <button type="button" class="amenities-btn" data-modal-open>book a room</button>
         </div>
   </div>
   </div>
@@ -289,79 +306,111 @@
     <div class="footer-line"></div>
   </div>
 </footer>
-   </div>
-   <!--for modal window Prices per Room-->
-<div class="modal-prices">
-  <button type="button" class="btn-prices js-modal-close" js-modal-close>
-    <svg class="close-icon" width="12px" height="12px">
-      <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h3 class="header-prices">Prices per <span class="header-prices-room">room</span></h3>
-  <h4 class="header-double">Double suite</h4>
-  <form class="prices-form">
-    <div class="label-container-night label-calc">
-      <label class="form-label-prices" for="night">
-        <select class="prices-select" id="night" name="night">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <span class="night-text-cont">
-          <p class="option-bott-text">Number of nights</p>
-        </span>
-      </label>
     </div>
-    <div class="label-container-date label-calc">
-      <label class="form-label-prices" for="date">
-        <select class="prices-select" id="date" name="date" aria-required="true">
-          <option value="1">28/04/2023</option>
-          <option value="2">01/05/2023</option>
-          <option value="3">02/05/2023</option>
-          <option value="4">03/05/2023</option>
-        </select>
-        <span class="date-text-cont">
-          <p class="option-bott-text">Check-in date</p>
-        </span>
-      </label>
+    <!--for modal window Prices per Room-->
+<section>
+  <div class="modal-overlay is-hidden" data-modal-prices>
+    <div class="modal-prices">
+      <button type="button" class="close-btn-table" data-modal-prices-close>
+        <svg class="close-icon" width="12px" height="12px">
+          <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#close"></use>
+        </svg>
+      </button>
+      <h3 class="header-prices">
+        Prices per <span class="header-prices-room">room</span>
+      </h3>
+      <h4 class="header-double">Double suite</h4>
+      <form class="prices-form">
+        <div class="label-container-night label-calc">
+          <label class="form-label-prices" for="night">
+            <select class="prices-select" id="night" name="night">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <span class="night-text-cont">
+              <p class="option-bott-text">Number of nights</p>
+            </span>
+          </label>
+        </div>
+        <div class="label-container-date label-calc">
+          <label class="form-label-prices" for="date">
+            <select
+              class="prices-select"
+              id="date"
+              name="date"
+              aria-required="true"
+            >
+              <option value="1">28/04/2023</option>
+              <option value="2">01/05/2023</option>
+              <option value="3">02/05/2023</option>
+              <option value="4">03/05/2023</option>
+            </select>
+            <span class="date-text-cont">
+              <p class="option-bott-text">Check-in date</p>
+            </span>
+          </label>
+        </div>
+        <div class="label-calc inpun-container-uah">
+          <label
+            class="form-label-prices label-uah"
+            for="num-select"
+            pattern="[1000-2000]"
+          >
+            <input
+              class="label-input"
+              type="number"
+              name="uah select"
+              placeholder="1000"
+            />
+          </label>
+          <span class="date-text-cont">
+            <p class="option-bott-text bott-text">UAH</p>
+          </span>
+        </div>
+        <div class="btn-submit">
+          <button type="submit" class="button-dark btn-modal-prices">
+            MAKE A RESERVATION
+          </button>
+        </div>
+      </form>
     </div>
-    <div class="label-calc inpun-container-uah">
-      <label class="form-label-prices label-uah" for="num-select" pattern="[1000-2000]">
-        <input class="label-input" type="number" name="uah select" placeholder="1000">
-      </label>
-      <span class="date-text-cont">
-        <p class="option-bott-text bott-text">UAH</p>
-      </span>
-    </div>
-    <div class="btn-submit">
-      <button type="submit" class="button-dark btn-modal-prices">MAKE A RESERVATION</button>
-    </div>
-  </form>
-</div>
-<div class="overlay js-modal-overlay" js-modal-overlay>
+  </div>
+</section>
 
-</div>
-   <!--for modal window Book a Room-->
+    <!--for modal window Book a Room-->
 <!-- data-modal-amenities-open -->
 <div data-modal class="modal-overlay is-hidden">
-  <div class="modal">
-    <button data-modal-close class="close-btn">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24 8L8 24M8 8L24 24" stroke="#F7F7F7" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round" />
+  <div data-modal class="modal">
+    <!-- close-btn -->
+    <button data-modal-close class="close-btn-table">
+      <svg>
+        <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#close"></use>
       </svg>
     </button>
     <h2 class="modal-title">BOOK <span>A room</span></h2>
-    <form class="form" id="form-book">
+    <form class="form">
       <div class="form-block-wrapper">
-        <input required placeholder="Your name" class="form-input" id="user_name" type="text" name="username"
-          pattern="^(?=.{2,30}$)(?=[A-Za-zА-Яа-яІіЇїЄєҐґ']*[A-Za-zА-Яа-яІіЇїЄєҐґ])[A-ZА-ЯІЇЄҐ][a-zа-яіїєґ']*(?: [A-ZА-ЯІЇЄҐ][a-zа-яіїєґ']*)*$">
-        <label class="form-label-text" for="user_name">Who should book a table for?</label>
+        <input
+          placeholder="Your name"
+          class="form-input"
+          id="user_name"
+          type="text"
+          name="username"
+        />
+        <label class="form-label-text" for="user_name"
+          >Who should book a table for?</label
+        >
       </div>
       <div class="form-block-wrapper">
-        <input required placeholder="+ 38 ()" class="form-input" id="user_phone" type="tel" name="tel"
-          pattern="^\+38\(\d{3}\)\d{7}$|^\+380\d{9}$">
+        <input
+          placeholder="+ 38 ()"
+          class="form-input"
+          id="user_phone"
+          type="tel"
+          name="tel"
+        />
         <label class="form-label-text" for="user_phone">Phone number</label>
       </div>
       <div class="form-block-wrapper">
@@ -373,11 +422,13 @@
         <label class="form-label-text" for="select-day">Check-in date</label>
       </div>
       <div class="form-block-wrapper">
-        <input class="input-date" id="input-date" type="date" name="username">
+        <input class="input-date" id="input-date" type="date" name="username" />
         <svg class="input-date-icon" width="20" height="20">
           <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-arrowDown"></use>
         </svg>
-        <label class="form-label-text" for="user_name">Who should book a table for?</label>
+        <label class="form-label-text" for="user_name"
+          >Who should book a table for?</label
+        >
       </div>
       <div class="form-block-wrapper">
         <select class="select-room" id="select-room">
@@ -387,17 +438,18 @@
         </select>
         <label class="form-label-text" for="select-room">Number category</label>
       </div>
-      <button id="submit-btn" class="submit-btn button-dark" type="submit">MAKE A RESERVATION</button>
+      <button class="submit-btn button-dark" type="submit">
+        MAKE A RESERVATION
+      </button>
     </form>
   </div>
 </div>
 
 
-   <!-----------------------java script----------------------->
-   <script src="/js/mobile-menu.js"></script>
-   <script src="/js/room-page.js"></script>
-
-
-</body>
-
+    <!-----------------------java script----------------------->
+    <script src="/js/mobile-menu.js"></script>
+    <script src="/js/room-page.js"></script>
+    <script src="./js/book-room.js"></script>
+    <script src="./js/prices-room.js"></script>
+  </body>
 </html>

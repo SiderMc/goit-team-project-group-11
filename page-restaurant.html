@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Restaurant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    
+    <script type="module" crossorigin src="/goit-team-project-group-11/assets/prices-room-3657800d.js"></script>
+    <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-restaurant-c2bc2c48.css">
+  </head>
 
-  
-  <script type="module" crossorigin src="/goit-team-project-group-11/assets/prices-room-8ed6fc9b.js"></script>
-  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-restaurant-559ab739.css">
-</head>
+  <body>
+    <div class="wrapper">
+      <!-----------------Partials----------------------->
 
-<body>
-  <div class="wrapper">
-    <!-----------------Partials----------------------->
-
-    <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
+      <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
 <header class="header">
   <div class="container header-flex-container">
     <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -157,8 +172,8 @@
 
   </div>
 </header>
-    <main>
-      <!--for Restaurant Page section Hero-->
+      <main>
+        <!--for Restaurant Page section Hero-->
 <section class="hero">
     <div class="container hero-container">
         <div class="hero-container">
@@ -167,7 +182,7 @@
                     <div class="hero-half-thumb">
                         <h2 class="hero-title">Restaurant</h2>
                         <div class="hero-button">
-                            <button class="button-light" type="button">Book a table</button>
+                            <button class="button-light js-modal-open" type="button">Book a table</button>
                             <a class="button-light" href="#menu">View a menu</a>
                         </div>
                     </div>
@@ -214,7 +229,7 @@
             </div>
         </div>
 </section>
-      <!--for Restaurant Page section About a kitchen-->
+        <!--for Restaurant Page section About a kitchen-->
 <section class="about-a-kitchen">
     <div class="container">
         <div class="thumb">
@@ -262,7 +277,7 @@
         </div>
     </div>
 </section>
-      <!--for Restaurant Page Restaurant menu-->
+        <!--for Restaurant Page Restaurant menu-->
 <section id="menu" class="section-restaurant-menu">
   <div class="container-menu container">
     <h2 class="restaurant-menu-title">RESTAURANT MENU</h2>
@@ -499,14 +514,14 @@
         </div>
       </li>
     </ul>
-    <button type="button" class="button-dark book-table-btn">
+    <button type="button" class="button-dark book-table-btn js-modal-open">
       book a table
     </button>
   </div>
 </section>
 
-    </main>
-    <!--for footer global-->
+      </main>
+      <!--for footer global-->
 <footer class="footer">
   <div class="container">
     <div class="footer-first-content">
@@ -548,27 +563,39 @@
     <div class="footer-line"></div>
   </div>
 </footer>
-  </div>
-  <!--for modal window Book a Room-->
+    </div>
+    <!--for modal window Book a Room-->
 <!-- data-modal-amenities-open -->
 <div data-modal class="modal-overlay is-hidden">
-  <div class="modal">
-    <button data-modal-close class="close-btn">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24 8L8 24M8 8L24 24" stroke="#F7F7F7" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round" />
+  <div data-modal class="modal">
+    <!-- close-btn -->
+    <button data-modal-close class="close-btn-table">
+      <svg>
+        <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#close"></use>
       </svg>
     </button>
     <h2 class="modal-title">BOOK <span>A room</span></h2>
-    <form class="form" id="form-book">
+    <form class="form">
       <div class="form-block-wrapper">
-        <input required placeholder="Your name" class="form-input" id="user_name" type="text" name="username"
-          pattern="^(?=.{2,30}$)(?=[A-Za-zА-Яа-яІіЇїЄєҐґ']*[A-Za-zА-Яа-яІіЇїЄєҐґ])[A-ZА-ЯІЇЄҐ][a-zа-яіїєґ']*(?: [A-ZА-ЯІЇЄҐ][a-zа-яіїєґ']*)*$">
-        <label class="form-label-text" for="user_name">Who should book a table for?</label>
+        <input
+          placeholder="Your name"
+          class="form-input"
+          id="user_name"
+          type="text"
+          name="username"
+        />
+        <label class="form-label-text" for="user_name"
+          >Who should book a table for?</label
+        >
       </div>
       <div class="form-block-wrapper">
-        <input required placeholder="+ 38 ()" class="form-input" id="user_phone" type="tel" name="tel"
-          pattern="^\+38\(\d{3}\)\d{7}$|^\+380\d{9}$">
+        <input
+          placeholder="+ 38 ()"
+          class="form-input"
+          id="user_phone"
+          type="tel"
+          name="tel"
+        />
         <label class="form-label-text" for="user_phone">Phone number</label>
       </div>
       <div class="form-block-wrapper">
@@ -580,11 +607,13 @@
         <label class="form-label-text" for="select-day">Check-in date</label>
       </div>
       <div class="form-block-wrapper">
-        <input class="input-date" id="input-date" type="date" name="username">
+        <input class="input-date" id="input-date" type="date" name="username" />
         <svg class="input-date-icon" width="20" height="20">
           <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-arrowDown"></use>
         </svg>
-        <label class="form-label-text" for="user_name">Who should book a table for?</label>
+        <label class="form-label-text" for="user_name"
+          >Who should book a table for?</label
+        >
       </div>
       <div class="form-block-wrapper">
         <select class="select-room" id="select-room">
@@ -594,120 +623,183 @@
         </select>
         <label class="form-label-text" for="select-room">Number category</label>
       </div>
-      <button id="submit-btn" class="submit-btn button-dark" type="submit">MAKE A RESERVATION</button>
+      <button class="submit-btn button-dark" type="submit">
+        MAKE A RESERVATION
+      </button>
     </form>
   </div>
 </div>
-  <!--for modal window Prices per Room-->
-<div class="modal-prices">
-  <button type="button" class="btn-prices js-modal-close" js-modal-close>
-    <svg class="close-icon" width="12px" height="12px">
-      <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h3 class="header-prices">Prices per <span class="header-prices-room">room</span></h3>
-  <h4 class="header-double">Double suite</h4>
-  <form class="prices-form">
-    <div class="label-container-night label-calc">
-      <label class="form-label-prices" for="night">
-        <select class="prices-select" id="night" name="night">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <span class="night-text-cont">
-          <p class="option-bott-text">Number of nights</p>
-        </span>
-      </label>
-    </div>
-    <div class="label-container-date label-calc">
-      <label class="form-label-prices" for="date">
-        <select class="prices-select" id="date" name="date" aria-required="true">
-          <option value="1">28/04/2023</option>
-          <option value="2">01/05/2023</option>
-          <option value="3">02/05/2023</option>
-          <option value="4">03/05/2023</option>
-        </select>
-        <span class="date-text-cont">
-          <p class="option-bott-text">Check-in date</p>
-        </span>
-      </label>
-    </div>
-    <div class="label-calc inpun-container-uah">
-      <label class="form-label-prices label-uah" for="num-select" pattern="[1000-2000]">
-        <input class="label-input" type="number" name="uah select" placeholder="1000">
-      </label>
-      <span class="date-text-cont">
-        <p class="option-bott-text bott-text">UAH</p>
-      </span>
-    </div>
-    <div class="btn-submit">
-      <button type="submit" class="button-dark btn-modal-prices">MAKE A RESERVATION</button>
-    </div>
-  </form>
-</div>
-<div class="overlay js-modal-overlay" js-modal-overlay>
 
-</div>
-  <!--for modal window Book a Table-->
-<div class="overlay js-modal-overlay" js-modal-overlay>
-  <div class="modal js-modal" data-modal="1">
-    <button type="button" class="modal-cross js-modal-close" js-modal-close>
-      <svg class="close-icon" width="12px" height="12px">
-        <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-close"></use>
-      </svg>
-    </button>
-    <h3 class="modal-header">BOOK <span class="modal-header-two">A TABLE</span></h3>
-    <form class="modal-form">
-      <label class="form-label">
-        <input class="label-input" type="text" pattern="[A-Za-z]" name="userName" placeholder="Your name">
-        <span class="text-container">
-          <p class="input-bot-text">Who should book a table for?</p>
-        </span>
-      </label>
-      <label class="form-label label-num-select" for="num-select" pattern="[0-9]">
-        <select class="label-input label-select" name="pets" id="num-select">
-          <option value="one">number of people</option>
-          <option value="one">1</option>
-          <option value="two">2</option>
-          <option value="three">3</option>
-        </select>
-      </label>
-      <label class="form-label" for="num-select">
-        <select class="label-input label-select" name="date select" id="num-select">
-          <option value="today">Today</option>
-          <option value="Tomorrow">Tomorrow</option>
-        </select>
-        <span class="text-container">
-          <p class="input-bot-text">What date to book?</p>
-        </span>
-      </label>
-      <label class="form-label">
-        <input class="label-input" type="tel" pattern="2-[0-9]{3}-[0-9]{3}" name="userphone" placeholder="+ 38 () ">
-        <span class="text-container-end">
-          <p class="input-bot-text">Phone number</p>
-        </span>
-      </label>
-      <div class="btn-position">
-        <button type="submit" class="button-dark btn-modal-submit">MAKE A RESERVATION</button>
+    <!--for modal window Prices per Room-->
+<section>
+  <div class="modal-overlay is-hidden" data-modal-prices>
+    <div class="modal-prices">
+      <button type="button" class="close-btn-table" data-modal-prices-close>
+        <svg class="close-icon" width="12px" height="12px">
+          <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#close"></use>
+        </svg>
+      </button>
+      <h3 class="header-prices">
+        Prices per <span class="header-prices-room">room</span>
+      </h3>
+      <h4 class="header-double">Double suite</h4>
+      <form class="prices-form">
+        <div class="label-container-night label-calc">
+          <label class="form-label-prices" for="night">
+            <select class="prices-select" id="night" name="night">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <span class="night-text-cont">
+              <p class="option-bott-text">Number of nights</p>
+            </span>
+          </label>
+        </div>
+        <div class="label-container-date label-calc">
+          <label class="form-label-prices" for="date">
+            <select
+              class="prices-select"
+              id="date"
+              name="date"
+              aria-required="true"
+            >
+              <option value="1">28/04/2023</option>
+              <option value="2">01/05/2023</option>
+              <option value="3">02/05/2023</option>
+              <option value="4">03/05/2023</option>
+            </select>
+            <span class="date-text-cont">
+              <p class="option-bott-text">Check-in date</p>
+            </span>
+          </label>
+        </div>
+        <div class="label-calc inpun-container-uah">
+          <label
+            class="form-label-prices label-uah"
+            for="num-select"
+            pattern="[1000-2000]"
+          >
+            <input
+              class="label-input"
+              type="number"
+              name="uah select"
+              placeholder="1000"
+            />
+          </label>
+          <span class="date-text-cont">
+            <p class="option-bott-text bott-text">UAH</p>
+          </span>
+        </div>
+        <div class="btn-submit">
+          <button type="submit" class="button-dark btn-modal-prices">
+            MAKE A RESERVATION
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <!--for modal window Book a Table-->
+<section>
+  <div>
+    <div class="overlay-table is-hidden" data-modal-table>
+      <div class="modal-table">
+        <button type="button" class="modal-cross" data-modal-table-close>
+          <svg class="close-icon" width="12px" height="12px">
+            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#close"></use>
+          </svg>
+        </button>
+        <h3 class="modal-header">
+          BOOK <span class="modal-header-two">A TABLE</span>
+        </h3>
+        <form class="modal-form">
+          <label class="form-label">
+            <input
+              class="label-input"
+              type="text"
+              pattern="[A-Za-z]"
+              name="userName"
+              placeholder="Your name"
+            />
+            <span class="text-container">
+              <p class="input-bot-text">Who should book a table for?</p>
+            </span>
+          </label>
+          <label
+            class="form-label label-num-select"
+            for="num-select"
+            pattern="[0-9]"
+          >
+            <select
+              class="label-input label-select"
+              name="pets"
+              id="num-select"
+            >
+              <option value="one">number of people</option>
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+            </select>
+          </label>
+          <label class="form-label" for="num-select">
+            <select
+              class="label-input label-select"
+              name="date select"
+              id="num-select"
+            >
+              <option value="today">Today</option>
+              <option value="Tomorrow">Tomorrow</option>
+            </select>
+            <span class="text-container">
+              <p class="input-bot-text">What date to book?</p>
+            </span>
+          </label>
+          <label class="form-label">
+            <input
+              class="label-input"
+              type="tel"
+              pattern="2-[0-9]{3}-[0-9]{3}"
+              name="userphone"
+              placeholder="+ 38 () "
+            />
+            <span class="text-container-end">
+              <p class="input-bot-text">Phone number</p>
+            </span>
+          </label>
+          <div class="btn-position">
+            <button type="submit" class="button-dark btn-modal-submit">
+              MAKE A RESERVATION
+            </button>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
   </div>
-</div>
+</section>
 
+    <!-----------------------java script----------------------->
 
-  <!-----------------------java script----------------------->
+    
+    <script src="/js/mobile-menu.js"></script>
+    <script src="/js/current.js"></script>
+    <script src="./js/book-room.js"></script>
+    <script src="./js/prices-room.js"></script>
+    <script src="./js/book-table.js"></script>
 
-  
-  <script src="/js/mobile-menu.js"></script>
-  <script src="/js/current.js"></script>
-
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-</body>
-
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
 </html>

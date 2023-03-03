@@ -105,7 +105,7 @@ option {
   position: relative;
   color: var(--accent-color);
   background-color: var(--second-color);
-  background-image: url(./img/icons/arrowDown.svg);
+  background-image: url(./img/icons/arrowdown.svg);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -300,7 +300,7 @@ option {
   position: relative;
   color: var(--accent-color);
   background-color: var(--second-color);
-  background-image: url(../../../img/icons/arrowDown.svg);
+  background-image: url(./img/icons/arrowdown.svg);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -499,7 +499,7 @@ option {
   position: relative;
   color: var(--accent-color);
   background-color: var(--second-color);
-  background-image: url(./img/icons/arrowDown.svg);
+  background-image: url(./img/icons/arrowdown.svg);
   background-repeat: no-repeat;
   background-position: right;
 }

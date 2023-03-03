@@ -7,7 +7,7 @@
   display: flex;
 }
 .welcome-title {
-  width: 335px;
+  
   font-family: 'DM Sans Medium', sans-serif;
   font-size: 36px;
   line-height: 1.12;
@@ -29,26 +29,27 @@
   padding-right: 0;
   color: #000000;
 }
-.welcome-description {
-  width: 335px;
-}
+
 .welcome-block-text {
   display: flex;
 }
-
-@media screen and (min-width: 375px) {
   .welcome-container {
     flex-direction: column;
     gap: 32px;
     padding: 0 20px;
-  }
-  .welcome-text {
-    width: 306px;
-  }
-  .welcome-block-text {
+  } 
+   .welcome-block-text {
     flex-direction: column;
     gap: 32px;
   }
+@media screen and (min-width: 375px) {
+.welcome-description {
+  width: 335px;
+}
+  .welcome-text {
+    width: 306px;
+  }
+
 }
 @media screen and (min-width: 768px) {
   .welcome {

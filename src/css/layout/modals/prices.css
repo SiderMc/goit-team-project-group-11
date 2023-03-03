@@ -74,6 +74,11 @@
   width: 100%;
 }
 
+/* .form-label-prices {
+    
+    
+} */
+
 .label-container-night {
   margin-bottom: 32px;
 }
@@ -217,3 +222,6 @@
 }
 
 /* --------------------media Descktop styles ----------------------*/
+
+@media screen and (min-width: 1439px) {
+}

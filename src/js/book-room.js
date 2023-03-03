@@ -1,4 +1,4 @@
-() => {
+(() => {
   const refs = {
     openModalBtn: document.querySelectorAll('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
@@ -17,4 +17,4 @@
 
   //current data for input
   document.getElementById('input-date').valueAsDate = new Date();
-};
+})();

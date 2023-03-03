@@ -1,7 +1,7 @@
-() => {
-  // .js-modal-open
+(() => {
+  //
   const refs = {
-    openModalBtn: document.querySelectorAll('[data-modal-table-open]'),
+    openModalBtn: document.querySelectorAll('.js-modal-open'),
     closeModalBtn: document.querySelector('[data-modal-table-close]'),
     modal: document.querySelector('[data-modal-table]'),
   };
@@ -17,4 +17,4 @@
 
   //current data for input
   document.getElementById('input-date').valueAsDate = new Date();
-};
+})();

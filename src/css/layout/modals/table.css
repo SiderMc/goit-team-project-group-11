@@ -1,5 +1,5 @@
 /*for modal window Book a Table*/
-.modal {
+.modal-table {
   position: absolute;
   top: 20px;
   left: 50%;
@@ -13,13 +13,17 @@
   z-index: 20;
   background: #121212;
   border-radius: 2px;
+  /* display: none; */
 }
-
-.modal.is-show {
+.overlay-table.is-show {
   display: block;
 }
 
-.overlay {
+.modal-table.is-show {
+  display: block;
+}
+
+.overlay-table {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +31,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
-  display: none;
+  /* display: none; */
 }
 
 .modal-cross {
@@ -110,6 +114,9 @@
   text-transform: uppercase;
   color: #d8d7d7;
 }
+/* .label-select {
+
+} */
 
 .label-num-select {
   margin-bottom: 32px;
@@ -148,7 +155,7 @@
 /* ------------------Media tablet styles------------------ */
 
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-table {
     display: flex;
     flex-wrap: wrap;
     width: 628px;
@@ -156,6 +163,7 @@
     padding-bottom: 60px;
     height: 476px;
     max-height: 476px;
+    /* display: none; */
   }
 
   .modal-cross {
@@ -192,6 +200,10 @@
     max-width: 274px;
     flex-basis: calc((100% -32px) / 2);
   }
+
+  /* .btn-position {
+    } */
+
   .btn-modal-submit {
     display: flex;
     flex-direction: row;

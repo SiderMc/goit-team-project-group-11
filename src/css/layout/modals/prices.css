@@ -13,7 +13,7 @@
   z-index: 20;
   background: #121212;
   border-radius: 2px;
-  display: none;
+  /* display: none; */
 }
 
 .overlay {
@@ -24,7 +24,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
-  display: none;
+  /* display: none; */
 }
 
 .btn-prices {
@@ -73,6 +73,11 @@
 .prices-form {
   width: 100%;
 }
+
+/* .form-label-prices {
+    
+    
+} */
 
 .label-container-night {
   margin-bottom: 32px;
@@ -143,7 +148,7 @@
     padding-bottom: 60px;
     height: 430px;
     max-height: 430px;
-    display: none;
+    /* display: none; */
   }
 
   .btn-prices {
@@ -217,3 +222,6 @@
 }
 
 /* --------------------media Descktop styles ----------------------*/
+
+@media screen and (min-width: 1439px) {
+}

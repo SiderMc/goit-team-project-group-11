@@ -1,4 +1,4 @@
-import './js/validation-book-form';
+// import './js/validation-book-form';
 import './slick/slick';
 import './js/slaider';
 import './js/book-room';

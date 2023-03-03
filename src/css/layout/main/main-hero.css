@@ -1,7 +1,6 @@
 .hero-header {
   position: relative;
   max-width: 100%;
-  min-width: 375px;
   background: var(--second-color);
   object-fit: contain;
 }
@@ -22,6 +21,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+  margin-top: 0;
   justify-content: center;
   text-align: center;
 }
@@ -84,6 +84,7 @@
 @media screen and (min-width: 768px) {
   .hero-container {
     padding: 50px 38px;
+    padding-top: 0;
   }
 
   .hero-title {

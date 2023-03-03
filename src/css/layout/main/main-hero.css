@@ -1,9 +1,14 @@
 .hero-header {
+  position: relative;
   max-width: 100%;
-  min-width: 375px;
   background: var(--second-color);
-  padding: 118px 20px 40px;
   object-fit: contain;
+}
+.hero-container {
+  padding: 40px 20px;
+}
+.icon-hero {
+  display: none;
 }
 
 .pictur {
@@ -13,13 +18,16 @@
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-top: 0;
   justify-content: center;
   text-align: center;
 }
 
 .hero-title {
   color: var(--accent-color);
-  font-style: normal;
   font-weight: 400;
   font-size: 80px;
   line-height: 1;
@@ -28,7 +36,6 @@
 }
 
 .main-hero-btn {
-  margin-top: 24px;
   display: flex;
   justify-content: center;
   gap: 14px;
@@ -51,25 +58,95 @@
   padding: 8px 10px;
 }
 
-.hero-text {
+.about-text {
   margin-top: 66px;
   color: var(--accent-color);
 }
-
-.hero-paragraf {
-  font-style: italic;
-  font-weight: 400;
+.text-hero-content {
+  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.text-hero {
+  color: var(--accent-color);
+  font-family: 'DM Sans Regular';
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-
-.second-hero-paragraf {
-  margin-top: 32px;
+.image-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 @media screen and (min-width: 768px) {
+  .hero-container {
+    padding: 50px 38px;
+    padding-top: 0;
+  }
+
+  .hero-title {
+    color: var(--accent-color);
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+  .hero-content {
+    margin: 0 92px;
+  }
+  .text-hero-content {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+  .text-hero {
+    flex: 0 0 calc((100% - 32px) / 2);
+  }
 }
 @media screen and (min-width: 1440px) {
+  .hero-content {
+    display: flex;
+    margin: 0;
+  }
+  .image-hero {
+    max-width: 542px;
+    height: 770px;
+    display: block;
+    position: absolute;
+    top: -78px;
+    right: 0;
+    z-index: 0;
+  }
+  .hero-title {
+    color: var(--accent-color);
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    padding: 162px 0;
+    text-align: left;
+  }
+  .main-hero-btn {
+    position: absolute;
+    bottom: 100px;
+    right: 130px;
+  }
+  .hero-btn {
+    background-color: transparent;
+  }
+  .text-hero-content {
+    max-width: 684px;
+  }
+  /*.header-menu-soc-top-list.list {
+    display: flex;
+    position: absolute;
+    max-width: 110px;
+    top: 20px;
+    right: 0;
+    display: block;
+  }*/
 }

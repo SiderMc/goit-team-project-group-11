@@ -1,77 +1,45 @@
 <!--for modal window Book a Table-->
-<section>
-  <div>
-    <div class="overlay-table is-hidden" data-modal-table>
-      <div class="modal-table" data-modal-table>
-        <button type="button" class="modal-cross" data-modal-table-close>
-          <svg class="close-icon" width="12px" height="12px">
-            <use href="./img/icons/spray.svg#close"></use>
-          </svg>
-        </button>
-        <h3 class="modal-header">
-          BOOK <span class="modal-header-two">A TABLE</span>
-        </h3>
-        <form class="modal-form">
-          <label class="form-label">
-            <input
-              class="label-input"
-              type="text"
-              pattern="[A-Za-z]"
-              name="userName"
-              placeholder="Your name"
-            />
-            <span class="text-container">
-              <p class="input-bot-text">Who should book a table for?</p>
-            </span>
-          </label>
-          <label
-            class="form-label label-num-select"
-            for="num-select"
-            pattern="[0-9]"
-          >
-            <select
-              class="label-input label-select"
-              name="pets"
-              id="num-select"
-            >
-              <option value="one">number of people</option>
-              <option value="one">1</option>
-              <option value="two">2</option>
-              <option value="three">3</option>
-            </select>
-          </label>
-          <label class="form-label" for="num-select">
-            <select
-              class="label-input label-select"
-              name="date select"
-              id="num-select"
-            >
-              <option value="today">Today</option>
-              <option value="Tomorrow">Tomorrow</option>
-            </select>
-            <span class="text-container">
-              <p class="input-bot-text">What date to book?</p>
-            </span>
-          </label>
-          <label class="form-label">
-            <input
-              class="label-input"
-              type="tel"
-              pattern="2-[0-9]{3}-[0-9]{3}"
-              name="userphone"
-              placeholder="+ 38 () "
-            />
-            <span class="text-container-end">
-              <p class="input-bot-text">Phone number</p>
-            </span>
-          </label>
-          <div class="btn-position">
-            <button type="submit" class="button-dark btn-modal-submit">
-              MAKE A RESERVATION
-            </button>
-          </div>
-        </form>
+<div class="overlay js-modal-overlay" js-modal-overlay>
+  <div class="modal js-modal" data-modal="1">
+    <button type="button" class="modal-cross js-modal-close" js-modal-close>
+      <svg class="close-icon" width="12px" height="12px">
+        <use href="./img/icons/spray.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-header">BOOK <span class="modal-header-two">A TABLE</span></h3>
+    <form class="modal-form">
+      <label class="form-label">
+        <input class="label-input" type="text" pattern="[A-Za-z]" name="userName" placeholder="Your name">
+        <span class="text-container">
+          <p class="input-bot-text">Who should book a table for?</p>
+        </span>
+      </label>
+      <label class="form-label label-num-select" for="num-select" pattern="[0-9]">
+        <select class="label-input label-select" name="pets" id="num-select">
+          <option value="one">number of people</option>
+          <option value="one">1</option>
+          <option value="two">2</option>
+          <option value="three">3</option>
+        </select>
+      </label>
+      <label class="form-label" for="num-select">
+        <select class="label-input label-select" name="date select" id="num-select">
+          <option value="today">Today</option>
+          <option value="Tomorrow">Tomorrow</option>
+        </select>
+        <span class="text-container">
+          <p class="input-bot-text">What date to book?</p>
+        </span>
+      </label>
+      <label class="form-label">
+        <input class="label-input" type="tel" pattern="2-[0-9]{3}-[0-9]{3}" name="userphone" placeholder="+ 38 () ">
+        <span class="text-container-end">
+          <p class="input-bot-text">Phone number</p>
+        </span>
+      </label>
+      <div class="btn-position">
+        <button type="submit" class="button-dark btn-modal-submit">MAKE A RESERVATION</button>
       </div>
-    </div>
+    </form>
   </div>
-</section>
+</div>

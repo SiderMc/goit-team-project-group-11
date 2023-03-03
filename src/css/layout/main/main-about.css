@@ -1,33 +1,33 @@
 /*for Page Main About a complex*/
-
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hero-about {
   max-width: 100%;
-  min-width: 375px;
   background: var(--accent-color);
   padding: 64px 20px;
   object-fit: contain;
 }
-
+.hero-about {
+  padding: 64px 0;
+}
 .pictur {
-  max-width: 100%;
   height: auto;
   width: 100%;
 }
 
 .hero-content {
-  margin-top: -50px;
+  /* margin-top: -50px; */
   justify-content: center;
   text-align: center;
 }
 
-.pic1 {
-  position: relative;
-  width: 335px;
-  height: 442px;
-}
+
 
 .review-card {
-  /* z-index: 2; */
+  transform: translate(25%, -50%);
   position: absolute;
   background: var(--second-color);
   width: 212px;
@@ -35,22 +35,33 @@
   box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   display: flex;
-  bottom: -38px;
-  right: 0;
+  top: 0;
+  right: 40;
 }
 
-.review-card-alex{
-    /* z-index: 2; */
-    position: absolute;
-    background: var(--second-color);
-    width: 212px;
-    height: 61px;
-    box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-    display: flex;
-    bottom: -22px;
-    left: 0;
-  }
+.review-card-alex {
+  position: absolute;
+  background: var(--second-color);
+  width: 212px;
+  height: 61px;
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  bottom: -22px;
+  left: 0;
+}
+.hero-paragraf {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.second-hero-paragraf {
+  margin-top: 32px;
+}
 
 .img-review {
   width: 41px;
@@ -89,25 +100,26 @@
 }
 
 .pic2 {
+  position: relative;
   margin-top: 20px;
   display: block;
   width: 282px;
   height: 153px;
 }
 
-.hero-text {
+.about-text {
   margin-top: 32px;
 }
 
-.business.hero-text {
-    margin-top: 54px;
+.business.about-text {
+  margin-top: 54px;
 }
 
-.hero-text-p {
+.about-text-p {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 1.28;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #484848;
 }
@@ -119,7 +131,7 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #121212;
+  color: var(--second-color);
 }
 
 .second-hero-paragraf {
@@ -127,19 +139,155 @@
 }
 
 .pic3 {
-    position: relative;
+  width: 100%;
+  position: relative;
   margin-top: 64px;
-  width: 335px;
-  height: 311px;
 }
 
 .pic4 {
   margin-top: 40px;
-  width: 335px;
+  width: 100%;
   height: 309px;
+}
+.maria-back {
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+@media screen and (min-width: 375px) {
+  .hero-about {
+  min-width: 375px;
+  }
+.pic1 {
+  position: relative;
+  width: 335px;
+  height: 442px;
+}
+.review-card {
+  right: 0;
+}
+.pic4 {
+  width: 335px;
+}
 }
 
 @media screen and (min-width: 768px) {
+  .about-container {
+    justify-content: flex-start;
+  }
+  .about-box-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  .hero-about {
+    padding: 80px 0;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  .pic1 {
+    min-width: 482px;
+  }
+  .pic2 {
+    width: auto;
+    align-self: flex-end;
+    transform: translate(55%, -160%);
+  }
+  .pic3 {
+    align-self: flex-end;
+  }
+  .review-card {
+    transform: translate(-50%, -50%);
+  }
+  .about-text {
+    max-width: 472px;
+  }
+  .about-second-box {
+    transform: translateX(-25%);
+  }
+  .review-card-alex {
+    bottom: 25%;
+    left: -16%;
+  }
+  .about-first-box {
+    display: flex;
+    align-self: flex-end;
+  }
+  .about-second-box {
+    display: flex;
+    column-gap: 32px;
+    align-self: flex-start;
+  }
+  .pic4 {
+    width: 266px;
+    order: 1;
+  }
+  .business {
+    width: 263px;
+    order: 2;
+  }
 }
 @media screen and (min-width: 1440px) {
+  .hero-about {
+    padding: 100px 0;
+  }
+  .business.about-text {
+    margin: 0;
+  }
+
+  .hero-text {
+    margin-left: -70px;
+    align-self: center;
+  }
+  .review-card-alex {
+    left: -20%;
+  }
+  .about-content {
+    flex-direction: row;
+    position: relative;
+  }
+  .pic1 {
+    width: auto;
+    height: auto;
+  }
+  .pic2 {
+    min-width: 439px;
+    transform: translateX(-40%);
+    align-self: center;
+  }
+  .pic3,
+  .pic4 {
+    margin: 0;
+  }
+  .about-box-container {
+    display: flex;
+    min-width: 100%;
+    flex-direction: row-reverse;
+    column-gap: 82px;
+    margin-top: 100px;
+  }
+  .about-text.business {
+    margin: 0 0 0 -25px;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+
+  .about-text {
+    margin-top: 199px;
+  }
+
+  .about-box-container {
+    position: relative;
+  }
+  .about-second-box {
+    position: absolute;
+    right: 520px;
+    bottom: 56px;
+    gap: 74px;
+  }
 }

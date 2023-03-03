@@ -1,5 +1,5 @@
 /*for modal window Book a Table*/
-.modal {
+.modal-table {
   position: absolute;
   top: 20px;
   left: 50%;
@@ -19,7 +19,7 @@
   display: block;
 }
 
-.overlay {
+.overlay-table {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
-  display: none;
+  /* display: none; */
 }
 
 .modal-cross {

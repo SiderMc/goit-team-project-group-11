@@ -1,10 +1,11 @@
 () => {
+  // .js-modal-open
   const refs = {
-    openModalBtn: document.querySelectorAll('.js-modal-open'),
+    openModalBtn: document.querySelectorAll('[data-modal-table-open]'),
     closeModalBtn: document.querySelector('[data-modal-table-close]'),
     modal: document.querySelector('[data-modal-table]'),
   };
-
+  console.log('sadsfsd');
   refs.openModalBtn.forEach(function (item) {
     item.addEventListener('click', toggleModal);
   });

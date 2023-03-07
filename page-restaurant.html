@@ -1,64 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/goit-team-project-group-11/assets/favicon-aaf31209.svg" />
+  <title>Restaurant</title>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
-    <script type="module" crossorigin src="/goit-team-project-group-11/assets/prices-room-3657800d.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-restaurant-c2bc2c48.css">
-  </head>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-  <body>
-    <div class="wrapper">
-      <!-----------------Partials----------------------->
+  
+  <script type="module" crossorigin src="/goit-team-project-group-11/assets/modulepreload-polyfill-ec808ebb.js"></script>
+  <script type="module" crossorigin src="/goit-team-project-group-11/assets/slaider-a2aee33b.js"></script>
+  <script type="module" crossorigin src="/goit-team-project-group-11/assets/book-table-f2116bb7.js"></script>
+  <link rel="stylesheet" href="/goit-team-project-group-11/assets/page-restaurant-20d451c4.css">
+</head>
 
-      <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
+<body>
+  <div class="wrapper">
+    <!-----------------Partials----------------------->
+
+    <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
 <header class="header">
   <div class="container header-flex-container">
-    <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button type="button" class="menu-btn js-open-menu" aria-expanded="false">
       <svg class="btn-menu-open-icon" width="28" height="28">
         <path d="M4 16H28M4 8H28M4 24H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <svg class="btn-menu-close-icon" width="28" height="28">
+        <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#close"></use>
       </svg>
     </button>
     <nav class="header-nav">
       <ul class="header-nav-list list">
         <li class="header-nav-item">
-          <a href="index.html" class="header-nav-link link ">home</a>
+          <a href="index.html" class="header-nav-link link">home</a>
         </li>
         <li class="header-nav-item">
           <a href="page-hotel.html" class="header-nav-link link">hotel</a>
         </li>
         <li class="header-nav-item">
-          <a href="page-restaurant.html" class="header-nav-link link">restaurant</a>
+          <a href="page-restaurant.html" class="header-nav-link link ">restaurant</a>
         </li>
       </ul>
     </nav>
@@ -78,7 +69,6 @@
         <a href="#" class="header-soc-link link" target="_blank" rel="noreferrer noopener">
           <svg class="header-menu-soc-icon soc-icon-fill">
             <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
-
           </svg>
         </a>
       </li>
@@ -91,89 +81,9 @@
       </li>
     </ul>
   </div>
-  <!-- -----MOB-MENU------ -->
-  <div class="mob-menu js-menu-container" id="mobile-menu">
-    <div class="header-menu-container">
-      <div class="container container-flex-menu">
-        <button type="button" class="menu-btn js-close-menu">
-          <svg class="btn-menu-close-icon" width="28" height="28">
-            <path d="M24 8L8 24M8 8L24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="header-logo-container">
-          <a href="index.html" class="logo-menu-link link">Mimino</a>
-          <p class="header-logo-menu-text">restaurant-hotel complex</p>
-        </div>
-      
-        <ul class="header-menu-soc-top-list list">
-          <li class="header-menu-soc-item">
-            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
-              <svg class="header-menu-soc-icon">
-                <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header-menu-soc-item">
-            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
-              <svg class="header-menu-soc-icon">
-                <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
-  
-              </svg>
-            </a>
-          </li>
-          <li class="header-menu-soc-item">
-            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
-              <svg class="header-menu-soc-icon">
-                <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div >
-    </div>
-
-    <nav class="header-menu-nav">
-      <ul class="header-menu-nav-list list">
-        <li class="header-menu-nav-item">
-          <a href="index.html" class="header-menu-nav-link link">home</a>
-        </li>
-        <li class="header-menu-nav-item">
-          <a href="page-hotel.html" class="header-menu-nav-link link">hotel</a>
-        </li>
-        <li class="header-menu-nav-item">
-          <a href="page-restaurant.html" class="header-menu-nav-link link">restaurant</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="header-menu-soc-list list">
-      <li class="header-menu-soc-item">
-        <a href="#" class="header-menu-soc-link link">
-          <svg class="header-menu-soc-icon">
-            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-menu-soc-item">
-        <a href="#" class="header-menu-soc-link link">
-          <svg class="header-menu-soc-icon">
-            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
-
-          </svg>
-        </a>
-      </li>
-      <li class="header-menu-soc-item">
-        <a href="#" class="header-menu-soc-link link">
-          <svg class="header-menu-soc-icon">
-            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-
-  </div>
 </header>
-      <main>
-        <!--for Restaurant Page section Hero-->
+    <main>
+      <!--for Restaurant Page section Hero-->
 <section class="hero">
     <div class="container hero-container">
         <div class="hero-container">
@@ -229,7 +139,7 @@
             </div>
         </div>
 </section>
-        <!--for Restaurant Page section About a kitchen-->
+      <!--for Restaurant Page section About a kitchen-->
 <section class="about-a-kitchen">
     <div class="container">
         <div class="thumb">
@@ -277,7 +187,7 @@
         </div>
     </div>
 </section>
-        <!--for Restaurant Page Restaurant menu-->
+      <!--for Restaurant Page Restaurant menu-->
 <section id="menu" class="section-restaurant-menu">
   <div class="container-menu container">
     <h2 class="restaurant-menu-title">RESTAURANT MENU</h2>
@@ -520,15 +430,15 @@
   </div>
 </section>
 
-      </main>
-      <!--for footer global-->
+    </main>
+    <!--for footer global-->
 <footer class="footer">
   <div class="container">
     <div class="footer-first-content">
       <ul class="footer-nav ">
-        <li class="footer-item"><a class="footer-link" href="index.html">Home</a></li>
-        <li class="footer-item"><a class="footer-link" href="page-hotel.html">Hotel</a></li>
-        <li class="footer-item"><a class="footer-link" href="page-restaurant.html">Restaurant</a></li>
+        <li class="footer-item"><a class="footer-link " href="index.html">Home</a></li>
+        <li class="footer-item"><a class="footer-link " href="page-hotel.html">Hotel</a></li>
+        <li class="footer-item"><a class="footer-link " href="page-restaurant.html">Restaurant</a></li>
       </ul>
       <div class="footer-title ">
         <a class="footer-logo" href="">Mimino</a>
@@ -563,8 +473,8 @@
     <div class="footer-line"></div>
   </div>
 </footer>
-    </div>
-    <!--for modal window Book a Room-->
+  </div>
+  <!--for modal window Book a Room-->
 <!-- data-modal-amenities-open -->
 <div data-modal class="modal-overlay is-hidden">
   <div data-modal class="modal">
@@ -577,25 +487,11 @@
     <h2 class="modal-title">BOOK <span>A room</span></h2>
     <form class="form">
       <div class="form-block-wrapper">
-        <input
-          placeholder="Your name"
-          class="form-input"
-          id="user_name"
-          type="text"
-          name="username"
-        />
-        <label class="form-label-text" for="user_name"
-          >Who should book a table for?</label
-        >
+        <input placeholder="Your name" class="form-input" id="user_name" type="text" name="username" />
+        <label class="form-label-text" for="user_name">Who should book a table for?</label>
       </div>
       <div class="form-block-wrapper">
-        <input
-          placeholder="+ 38 ()"
-          class="form-input"
-          id="user_phone"
-          type="tel"
-          name="tel"
-        />
+        <input placeholder="+ 38 ()" class="form-input" id="user_phone" type="tel" name="tel" />
         <label class="form-label-text" for="user_phone">Phone number</label>
       </div>
       <div class="form-block-wrapper">
@@ -611,9 +507,7 @@
         <svg class="input-date-icon" width="20" height="20">
           <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-arrowDown"></use>
         </svg>
-        <label class="form-label-text" for="user_name"
-          >Who should book a table for?</label
-        >
+        <label class="form-label-text" for="user_name">Who should book a table for?</label>
       </div>
       <div class="form-block-wrapper">
         <select class="select-room" id="select-room">
@@ -629,8 +523,7 @@
     </form>
   </div>
 </div>
-
-    <!--for modal window Prices per Room-->
+  <!--for modal window Prices per Room-->
 <section>
   <div class="modal-overlay is-hidden" data-modal-prices>
     <div class="modal-prices">
@@ -659,12 +552,7 @@
         </div>
         <div class="label-container-date label-calc">
           <label class="form-label-prices" for="date">
-            <select
-              class="prices-select"
-              id="date"
-              name="date"
-              aria-required="true"
-            >
+            <select class="prices-select" id="date" name="date" aria-required="true">
               <option value="1">28/04/2023</option>
               <option value="2">01/05/2023</option>
               <option value="3">02/05/2023</option>
@@ -676,17 +564,8 @@
           </label>
         </div>
         <div class="label-calc inpun-container-uah">
-          <label
-            class="form-label-prices label-uah"
-            for="num-select"
-            pattern="[1000-2000]"
-          >
-            <input
-              class="label-input"
-              type="number"
-              name="uah select"
-              placeholder="1000"
-            />
+          <label class="form-label-prices label-uah" for="num-select" pattern="[1000-2000]">
+            <input class="label-input" type="number" name="uah select" placeholder="1000" />
           </label>
           <span class="date-text-cont">
             <p class="option-bott-text bott-text">UAH</p>
@@ -701,8 +580,7 @@
     </div>
   </div>
 </section>
-
-    <!--for modal window Book a Table-->
+  <!--for modal window Book a Table-->
 <section>
   <div>
     <div class="overlay-table is-hidden" data-modal-table>
@@ -779,27 +657,53 @@
     </div>
   </div>
 </section>
+  <div class="mobile-menu">
+   <div class="mobile-menu-container">
+      <nav class="navigation navigation-mobile">
+         <ul class="navigation-menu navigation-mobile-menu">
+            <li class="navigation-mobile-item">
+               <a href="index.html" class="navigation-mobile-link hover-line-light">home</a>
+            </li>
+            <li class="navigation-mobile-item">
+               <a href="page-hotel.html" class="navigation-mobile-link hover-line-light">hotel</a>
+            </li>
+            <li class="navigation-mobile-item">
+               <a href="page-restaurant.html" class="navigation-mobile-link hover-line-light">restaurant</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="mobile-social-icons">
+         <ul class="social-icons-list ">
+            <li class="social-icon-item">
+               <a href="" class="social-icon-link "><svg class="mobile-icon" target="_blank" rel="noreferrer noopener">
+                     <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#instagram"></use>
+                  </svg></a>
+            </li>
+            <li class="social-icon_item">
+               <a href="" class="social-icon-link"><svg class="mobile-icon" target="_blank" rel="noreferrer noopener">
+                     <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
+                  </svg></a>
+            </li>
+            <li class="social-icon_item">
+               <a href="" class="social-icon-link"><svg class="mobile-icon" target="_blank" rel="noreferrer noopener">
+                     <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#twitter"></use>
+                  </svg></a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
 
-    <!-----------------------java script----------------------->
+  <!-----------------------java script----------------------->
 
-    
-    <script src="/js/mobile-menu.js"></script>
-    <script src="/js/current.js"></script>
-    <script src="./js/book-room.js"></script>
-    <script src="./js/prices-room.js"></script>
-    <script src="./js/book-table.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="/js/current.js"></script>
+  
+  
 
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-  </body>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
 </html>

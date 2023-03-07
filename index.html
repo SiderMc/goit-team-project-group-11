@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-team-project-group-11/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MIMINO</title>
-    <!-- ---------------------------Slick -->
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    
-    <script type="module" crossorigin src="/goit-team-project-group-11/assets/prices-room-3657800d.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-group-11/assets/index-908762e0.css">
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <!-----------------Partials----------------------->
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/goit-team-project-group-11/assets/favicon-aaf31209.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIMINO</title>
+  <!-- ---------------------------Slick -->
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script type="module" crossorigin src="/goit-team-project-group-11/assets/index-a2f7c8a6.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-team-project-group-11/assets/modulepreload-polyfill-ec808ebb.js">
+  <link rel="modulepreload" crossorigin href="/goit-team-project-group-11/assets/book-room-d20b1518.js">
+  <link rel="modulepreload" crossorigin href="/goit-team-project-group-11/assets/book-table-f2116bb7.js">
+  <link rel="stylesheet" href="/goit-team-project-group-11/assets/index-fb81d7b2.css">
+</head>
 
-      <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
+<body>
+  <div class="wrapper">
+    <!-----------------Partials----------------------->
+
+    <!--Header for pages Main Restaurant Page , Hotel Page , Room Page-->
 <header class="header">
   <div class="container header-flex-container">
-    <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button type="button" class="menu-btn js-open-menu" aria-expanded="false">
       <svg class="btn-menu-open-icon" width="28" height="28">
         <path d="M4 16H28M4 8H28M4 24H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <svg class="btn-menu-close-icon" width="28" height="28">
+        <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#close"></use>
       </svg>
     </button>
     <nav class="header-nav">
       <ul class="header-nav-list list">
         <li class="header-nav-item">
-          <a href="index.html" class="header-nav-link link ">home</a>
+          <a href="index.html" class="header-nav-link link">home</a>
         </li>
         <li class="header-nav-item">
           <a href="page-hotel.html" class="header-nav-link link">hotel</a>
         </li>
         <li class="header-nav-item">
-          <a href="page-restaurant.html" class="header-nav-link link">restaurant</a>
+          <a href="page-restaurant.html" class="header-nav-link link ">restaurant</a>
         </li>
       </ul>
     </nav>
@@ -71,7 +66,6 @@
         <a href="#" class="header-soc-link link" target="_blank" rel="noreferrer noopener">
           <svg class="header-menu-soc-icon soc-icon-fill">
             <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
-
           </svg>
         </a>
       </li>
@@ -84,140 +78,33 @@
       </li>
     </ul>
   </div>
-  <!-- -----MOB-MENU------ -->
-  <div class="mob-menu js-menu-container" id="mobile-menu">
-    <div class="header-menu-container">
-      <div class="container container-flex-menu">
-        <button type="button" class="menu-btn js-close-menu">
-          <svg class="btn-menu-close-icon" width="28" height="28">
-            <path d="M24 8L8 24M8 8L24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="header-logo-container">
-          <a href="index.html" class="logo-menu-link link">Mimino</a>
-          <p class="header-logo-menu-text">restaurant-hotel complex</p>
-        </div>
-      
-        <ul class="header-menu-soc-top-list list">
-          <li class="header-menu-soc-item">
-            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
-              <svg class="header-menu-soc-icon">
-                <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header-menu-soc-item">
-            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
-              <svg class="header-menu-soc-icon">
-                <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
-  
-              </svg>
-            </a>
-          </li>
-          <li class="header-menu-soc-item">
-            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
-              <svg class="header-menu-soc-icon">
-                <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div >
-    </div>
-
-    <nav class="header-menu-nav">
-      <ul class="header-menu-nav-list list">
-        <li class="header-menu-nav-item">
-          <a href="index.html" class="header-menu-nav-link link">home</a>
-        </li>
-        <li class="header-menu-nav-item">
-          <a href="page-hotel.html" class="header-menu-nav-link link">hotel</a>
-        </li>
-        <li class="header-menu-nav-item">
-          <a href="page-restaurant.html" class="header-menu-nav-link link">restaurant</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="header-menu-soc-list list">
-      <li class="header-menu-soc-item">
-        <a href="#" class="header-menu-soc-link link">
-          <svg class="header-menu-soc-icon">
-            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-menu-soc-item">
-        <a href="#" class="header-menu-soc-link link">
-          <svg class="header-menu-soc-icon">
-            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
-
-          </svg>
-        </a>
-      </li>
-      <li class="header-menu-soc-item">
-        <a href="#" class="header-menu-soc-link link">
-          <svg class="header-menu-soc-icon">
-            <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-
-  </div>
 </header>
-      <main>
-        <!--for Page Main section Hero-->
+    <main>
+      <!--for Page Main section Hero-->
 <section class="hero-header">
   <div class="container hero-container">
     <div class="hero-content">
       <picture>
-        <source
-          media="(min-width:1440px)"
-          srcset="/goit-team-project-group-11/assets/main-desktop-hero-bg-1x-11bd9ba6.jpg 1x, /goit-team-project-group-11/assets/main-desktop-hero-bg-2x-79faedf4.jpg 2x"
-        />
-        <source
-          srcset="/goit-team-project-group-11/assets/main-tablet-hero-bg-1x-5b51bbe3.jpg 1x, /goit-team-project-group-11/assets/main-tablet-hero-bg-2x-6d993f9c.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <img
-          class="image-hero"
-          srcset="/goit-team-project-group-11/assets/main-mob-hero-bg-1x-833eec63.jpg 1x, /goit-team-project-group-11/assets/main-mob-hero-bg-2x-249b4c80.jpg 2x"
-          alt="hero-main"
-          width="439"
-          height="335"
-        />
+        <source media="(min-width:1440px)" srcset="/goit-team-project-group-11/assets/main-desktop-hero-bg-1x-11bd9ba6.jpg 1x, /goit-team-project-group-11/assets/main-desktop-hero-bg-2x-79faedf4.jpg 2x" />
+        <source srcset="/goit-team-project-group-11/assets/main-tablet-hero-bg-1x-5b51bbe3.jpg 1x, /goit-team-project-group-11/assets/main-tablet-hero-bg-2x-6d993f9c.jpg 2x" media="(min-width: 768px)" />
+        <img class="image-hero" srcset="/goit-team-project-group-11/assets/main-mob-hero-bg-1x-833eec63.jpg 1x, /goit-team-project-group-11/assets/main-mob-hero-bg-2x-249b4c80.jpg 2x" alt="hero-main" width="439" height="335" />
         <ul class="header-menu-soc-top-list list icon-hero">
           <li class="header-menu-soc-item">
-            <a
-              href="#"
-              class="header-menu-soc-link link"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
               <svg class="header-menu-soc-icon">
                 <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="header-menu-soc-item">
-            <a
-              href="#"
-              class="header-menu-soc-link link"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
               <svg class="header-menu-soc-icon">
                 <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="header-menu-soc-item">
-            <a
-              href="#"
-              class="header-menu-soc-link link"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <a href="#" class="header-menu-soc-link link" target="_blank" rel="noreferrer noopener">
               <svg class="header-menu-soc-icon">
                 <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#twitter"></use>
               </svg>
@@ -227,10 +114,10 @@
       </picture>
       <h1 class="hero-title">mimino</h1>
       <div class="main-hero-btn">
-        <button type="button" data-modal-open class="hero-btn">
+        <button type="button" data-modal-open class="button-dark hero-btn">
           book a room
         </button>
-        <button type="button" class="hero-btn js-modal-open">
+        <button type="button" class="button-dark hero-btn js-modal-open">
           book a table
         </button>
       </div>
@@ -248,8 +135,7 @@
     </div>
   </div>
 </section>
-
-        <!--for Page Main section About a complex-->
+      <!--for Page Main section About a complex-->
 
 <section class="hero-about">
   <div class="container about-container">
@@ -343,7 +229,7 @@
     </div>
   </div>
 </section>
-        <!--for Page Main section  Restaurant’s details-->
+      <!--for Page Main section  Restaurant’s details-->
 <section class="restaurants">
   <div class="container restaurants-container">
     <div class="block-restaurant-title">
@@ -357,106 +243,25 @@
       <div class="block-responsive">
         <div class="responsive">
           <div class="responsive-item">
-            <img
-              srcset="/goit-team-project-group-11/assets/slider-img-1-2x-e62ffe84.jpg 2x"
-              src="/goit-team-project-group-11/assets/slider-img-1-1x-56e087af.jpg"
-              alt="slick photo"
-              class="responsive-img"
-              width="266"
-            />
+            <img srcset="/goit-team-project-group-11/assets/slider-img-1-2x-e62ffe84.jpg 2x" src="/goit-team-project-group-11/assets/slider-img-1-1x-56e087af.jpg"
+              alt="slick photo" class="responsive-img" width="266" />
           </div>
           <div class="responsive-item">
-            <img
-              srcset="/goit-team-project-group-11/assets/slider-img-2-2x-6c193747.jpg 2x"
-              src="/goit-team-project-group-11/assets/slider-img-2-1x-43b4b469.jpg"
-              alt="slick photo"
-              class="responsive-img"
-              width="266"
-            />
+            <img srcset="/goit-team-project-group-11/assets/slider-img-2-2x-6c193747.jpg 2x" src="/goit-team-project-group-11/assets/slider-img-2-1x-43b4b469.jpg"
+              alt="slick photo" class="responsive-img" width="266" />
           </div>
           <div class="responsive-item">
-            <img
-              srcset="/goit-team-project-group-11/assets/slider-img-3-2x-9661944f.jpg 2x"
-              src="/goit-team-project-group-11/assets/slider-img-3-1x-25189b19.jpg"
-              alt="slick photo"
-              class="responsive-img"
-              width="266"
-            />
+            <img srcset="/goit-team-project-group-11/assets/slider-img-3-2x-9661944f.jpg 2x" src="/goit-team-project-group-11/assets/slider-img-3-1x-25189b19.jpg"
+              alt="slick photo" class="responsive-img" width="266" />
           </div>
 
           <div class="responsive-item">
-            <img
-              srcset="/goit-team-project-group-11/assets/slider-img-4-2x-6f834980.jpg 2x"
-              src="/goit-team-project-group-11/assets/slider-img-4-1x-7491e3ea.jpg"
-              alt="slick photo"
-              class="responsive-img"
-              width="266"
-            />
+            <img srcset="/goit-team-project-group-11/assets/slider-img-4-2x-6f834980.jpg 2x" src="/goit-team-project-group-11/assets/slider-img-4-1x-7491e3ea.jpg"
+              alt="slick photo" class="responsive-img" width="266" />
           </div>
           <div class="responsive-item">
-            <img
-              srcset="/goit-team-project-group-11/assets/slider-img-5-2x-ccdd6ebe.jpg 2x"
-              src="/goit-team-project-group-11/assets/slider-img-5-1x-7e6b4813.jpg"
-              alt="slick photo"
-              class="responsive-img"
-              width="266"
-            />
-          </div>
-        </div>
-        <div class="restaurant-slick-arrow-block">
-          <button type="button" class="restaurant-btn-prev">
-            <svg class="restaurant-slick-icon">
-              <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#main-restaurant-icon-prev"></use>
-            </svg>
-          </button>
-          <button type="button" class="restaurant-btn-next">
-            <svg class="restaurant-slick-icon">
-              <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#main-restaurant-icon-next"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="block-responsive-tab">
-        <div class="responsive-tab">
-          <div class="responsive-item">
-            <picture class="responsive-img">
-              <source
-                srcset="/goit-team-project-group-11/assets/slider-img-mob-1-1x-bdc85fe6.jpg 1x, /goit-team-project-group-11/assets/slider-img-mob-1-2x-7a1303d3.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="/goit-team-project-group-11/assets/slider-img-tab-1-1x-134b3773.jpg 1x, /goit-team-project-group-11/assets/slider-img-tab-1-2x-b5c0a40e.jpg 2x"
-                media="(min-width: 768px) and (max-width: 1439px)"
-              />
-              <source
-                srcset="/goit-team-project-group-11/assets/slider-img-1-1x-56e087af.jpg 1x, /goit-team-project-group-11/assets/slider-img-1-2x-e62ffe84.jpg 2x"
-                media="(min-width: 1440px)"
-              />
-              <img
-                src="/goit-team-project-group-11/assets/slider-img-1-1x-56e087af.jpg"
-                alt="slick photo"
-              />
-            </picture>
-          </div>
-          <div class="responsive-item">
-            <picture class="responsive-img">
-              <source
-                srcset="/goit-team-project-group-11/assets/slider-img-mob-2-1x-0d65ad04.jpg 1x, /goit-team-project-group-11/assets/slider-img-mob-2-2x-6ce80821.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="/goit-team-project-group-11/assets/slider-img-tab-2-1x-eb49d8b1.jpg 1x, /goit-team-project-group-11/assets/slider-img-tab-2-2x-70c5859d.jpg 2x"
-                media="(min-width: 768px) and (max-width: 1439px)"
-              />
-              <source
-                srcset="/goit-team-project-group-11/assets/slider-img-2-1x-43b4b469.jpg 1x, /goit-team-project-group-11/assets/slider-img-2-2x-6c193747.jpg 2x"
-                media="(min-width: 1440px)"
-              />
-              <img
-                src="/goit-team-project-group-11/assets/slider-img-2-1x-43b4b469.jpg"
-                alt="slick photo"
-              />
-            </picture>
+            <img srcset="/goit-team-project-group-11/assets/slider-img-5-2x-ccdd6ebe.jpg 2x" src="/goit-team-project-group-11/assets/slider-img-5-1x-7e6b4813.jpg"
+              alt="slick photo" class="responsive-img" width="266" />
           </div>
         </div>
         <div class="restaurant-slick-arrow-block">
@@ -481,8 +286,7 @@
     </div>
   </div>
 </section>
-
-        <section class="welcome">
+      <section class="welcome">
   <div class="container welcome-container">
     <div class="welcome-block-title">
       <h2 class="welcome-title">
@@ -513,7 +317,7 @@
     </picture>
   </div>
 </section>
-        <!--for Page Main section  Hotel’s details-->
+      <!--for Page Main section  Hotel’s details-->
 <section class="hotels">
   <div class="hotels-container">
     <div class="hotel-book">
@@ -584,7 +388,7 @@
       <a href="page-room.html" data-modal-open type="button" class="button-dark button-hotel">View rooms</a>
     </div>
 </section>
-        <!--for Page Main section Location & contacts-->
+      <!--for Page Main section Location & contacts-->
 <section class="location">
   <div class="location-container">
     <div class="location-location">
@@ -631,15 +435,15 @@
   </div>
 </section>
 
-      </main>
-      <!--for footer global-->
+    </main>
+    <!--for footer global-->
 <footer class="footer">
   <div class="container">
     <div class="footer-first-content">
       <ul class="footer-nav ">
-        <li class="footer-item"><a class="footer-link" href="index.html">Home</a></li>
-        <li class="footer-item"><a class="footer-link" href="page-hotel.html">Hotel</a></li>
-        <li class="footer-item"><a class="footer-link" href="page-restaurant.html">Restaurant</a></li>
+        <li class="footer-item"><a class="footer-link " href="index.html">Home</a></li>
+        <li class="footer-item"><a class="footer-link " href="page-hotel.html">Hotel</a></li>
+        <li class="footer-item"><a class="footer-link " href="page-restaurant.html">Restaurant</a></li>
       </ul>
       <div class="footer-title ">
         <a class="footer-logo" href="">Mimino</a>
@@ -674,8 +478,45 @@
     <div class="footer-line"></div>
   </div>
 </footer>
-    </div>
-    <!--for modal window Book a Room-->
+  </div>
+  <div class="mobile-menu">
+   <div class="mobile-menu-container">
+      <nav class="navigation navigation-mobile">
+         <ul class="navigation-menu navigation-mobile-menu">
+            <li class="navigation-mobile-item">
+               <a href="index.html" class="navigation-mobile-link hover-line-light">home</a>
+            </li>
+            <li class="navigation-mobile-item">
+               <a href="page-hotel.html" class="navigation-mobile-link hover-line-light">hotel</a>
+            </li>
+            <li class="navigation-mobile-item">
+               <a href="page-restaurant.html" class="navigation-mobile-link hover-line-light">restaurant</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="mobile-social-icons">
+         <ul class="social-icons-list ">
+            <li class="social-icon-item">
+               <a href="" class="social-icon-link "><svg class="mobile-icon" target="_blank" rel="noreferrer noopener">
+                     <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#instagram"></use>
+                  </svg></a>
+            </li>
+            <li class="social-icon_item">
+               <a href="" class="social-icon-link"><svg class="mobile-icon" target="_blank" rel="noreferrer noopener">
+                     <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#facebook"></use>
+                  </svg></a>
+            </li>
+            <li class="social-icon_item">
+               <a href="" class="social-icon-link"><svg class="mobile-icon" target="_blank" rel="noreferrer noopener">
+                     <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#twitter"></use>
+                  </svg></a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+  <!--for modal window Book a Room-->
 <!-- data-modal-amenities-open -->
 <div data-modal class="modal-overlay is-hidden">
   <div data-modal class="modal">
@@ -688,25 +529,11 @@
     <h2 class="modal-title">BOOK <span>A room</span></h2>
     <form class="form">
       <div class="form-block-wrapper">
-        <input
-          placeholder="Your name"
-          class="form-input"
-          id="user_name"
-          type="text"
-          name="username"
-        />
-        <label class="form-label-text" for="user_name"
-          >Who should book a table for?</label
-        >
+        <input placeholder="Your name" class="form-input" id="user_name" type="text" name="username" />
+        <label class="form-label-text" for="user_name">Who should book a table for?</label>
       </div>
       <div class="form-block-wrapper">
-        <input
-          placeholder="+ 38 ()"
-          class="form-input"
-          id="user_phone"
-          type="tel"
-          name="tel"
-        />
+        <input placeholder="+ 38 ()" class="form-input" id="user_phone" type="tel" name="tel" />
         <label class="form-label-text" for="user_phone">Phone number</label>
       </div>
       <div class="form-block-wrapper">
@@ -722,9 +549,7 @@
         <svg class="input-date-icon" width="20" height="20">
           <use href="/goit-team-project-group-11/assets/spray-0db20431.svg#icon-arrowDown"></use>
         </svg>
-        <label class="form-label-text" for="user_name"
-          >Who should book a table for?</label
-        >
+        <label class="form-label-text" for="user_name">Who should book a table for?</label>
       </div>
       <div class="form-block-wrapper">
         <select class="select-room" id="select-room">
@@ -740,8 +565,7 @@
     </form>
   </div>
 </div>
-
-    <!--for modal window Prices per Room-->
+  <!--for modal window Prices per Room-->
 <section>
   <div class="modal-overlay is-hidden" data-modal-prices>
     <div class="modal-prices">
@@ -770,12 +594,7 @@
         </div>
         <div class="label-container-date label-calc">
           <label class="form-label-prices" for="date">
-            <select
-              class="prices-select"
-              id="date"
-              name="date"
-              aria-required="true"
-            >
+            <select class="prices-select" id="date" name="date" aria-required="true">
               <option value="1">28/04/2023</option>
               <option value="2">01/05/2023</option>
               <option value="3">02/05/2023</option>
@@ -787,17 +606,8 @@
           </label>
         </div>
         <div class="label-calc inpun-container-uah">
-          <label
-            class="form-label-prices label-uah"
-            for="num-select"
-            pattern="[1000-2000]"
-          >
-            <input
-              class="label-input"
-              type="number"
-              name="uah select"
-              placeholder="1000"
-            />
+          <label class="form-label-prices label-uah" for="num-select" pattern="[1000-2000]">
+            <input class="label-input" type="number" name="uah select" placeholder="1000" />
           </label>
           <span class="date-text-cont">
             <p class="option-bott-text bott-text">UAH</p>
@@ -812,8 +622,7 @@
     </div>
   </div>
 </section>
-
-    <!--for modal window Book a Table-->
+  <!--for modal window Book a Table-->
 <section>
   <div>
     <div class="overlay-table is-hidden" data-modal-table>
@@ -891,28 +700,24 @@
   </div>
 </section>
 
-    <!-----------------------java script----------------------->
+  <!-----------------------java script----------------------->
 
-    <!-- <script type="module" src="./main.js"></script> -->
-    <!-- <script type="module" src="./js/slick.js"></script> -->
+  <!--<script type="module" src="./main.js"></script>-->
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/current.js"></script>
+  
+  
+  
 
-    <!-----------------------java script----------------------->
 
-    
-    <!-- <script type="module" src="./js/slick.js"></script> -->
 
-    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-  </body>
+
+
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
 </html>

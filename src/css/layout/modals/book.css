@@ -139,7 +139,7 @@ input[id='input-date']::-webkit-calendar-picker-indicator {
 @media (min-width: 375px) {
   .modal {
     min-width: auto;
-    max-width: 335px;
+    width: 375px;
     top: 20px;
     left: 50%;
     transform: scale(1) translate(-50%) scale(1);
@@ -163,7 +163,7 @@ input[id='input-date']::-webkit-calendar-picker-indicator {
   .modal {
     height: auto;
     min-width: auto;
-    max-width: 628px;
+    width: 628px;
     background-color: var(--second-color);
     padding-top: 32px;
     padding-left: 32px;

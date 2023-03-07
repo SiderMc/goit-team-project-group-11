@@ -1,5 +1,5 @@
 .restaurant-container {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 .restaurant-title {
@@ -9,6 +9,11 @@
   text-transform: uppercase;
   color: var(--second-color);
   font-weight: 500;
+}
+.responsive-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .restaurant-text {
   width: 221px;
@@ -25,19 +30,15 @@
   position: relative;
 }
 .block-responsive {
-  width: 1408px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.block-responsive-tab {
-  margin-top: 32px;
 }
 
 .responsive {
   display: flex;
   width: 100%;
   height: auto;
-  margin: 0 0 82px 0;
 }
 .responsive-tab {
   display: flex;
@@ -61,7 +62,7 @@
   color: var(--second-color);
 }
 .restaurant-btn-prev:is(:hover, :focus) {
-  opacity: 0.3;
+  opacity: 1;
 }
 .restaurant-btn-next {
   width: 24px;
@@ -74,67 +75,19 @@
   width: 7px;
   height: 14px;
 }
-.restaurant-btn-next:is(:hover, :focus) {
-  opacity: 0.3;
-}
-
 .restaurant-btn-block {
   display: flex;
   column-gap: 12px;
+  align-self: flex-end;
   justify-content: center;
-}
-.block-responsive {
-  display: none;
-}
-.block-responsive {
-  display: none;
 }
 .responsive-tab {
   width: 345px;
 }
-@media screen and (min-width: 375px) {
-  /* .slick-arrow.slick-hidden {
-    display: block;
-  } */
-  .responsive-item {
-    margin-right: 20px;
-  }
-  .block-restaurant-title {
-    display: block;
-  }
-  .restaurant-text {
-    margin: 24px 0 0 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .restaurant-container {
-    padding: 0 32px;
-  }
-  .block-responsive {
-    display: none;
-  }
-  .responsive-item {
-    margin-right: 32px;
-  }
-  .responsive-tab {
-    width: 748px;
-    column-gap: 32px;
-    justify-content: center;
-  }
-  .block-restaurant-title {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin-bottom: 87px;
-  }
-  .restaurant-text {
-    margin: 0;
-  }
-}
 .restaurant-slick-arrow-block {
   width: 104px;
   height: 36px;
-  margin: 32px 0 40px 0;
+  margin: 25px 0 47px 0;
 }
 .restaurant-btn-prev {
   width: 36px;
@@ -153,27 +106,33 @@
 .restaurant-text {
   margin: 0;
 }
-.responsive-item {
-  margin-right: 20px;
+.slick-track {
+  display: flex;
+  column-gap: 20px;
 }
 @media screen and (min-width: 375px) {
-  /* .slick-arrow.slick-hidden {
+  .responsive-img {
+    width: 158px;
+    height: 201px;
+    object-fit: cover;
+  }
+
+  .block-restaurant-title {
     display: block;
-  } */
-  .responsive-tab {
-    width: 345px;
+  }
+  .restaurant-text {
+    margin: 24px 0 0 0;
   }
 }
 @media screen and (min-width: 768px) {
   .restaurant-container {
     padding: 0 32px;
   }
-  .block-responsive {
-    display: none;
+  .slick-track {
+    display: flex;
+    column-gap: 30px;
   }
-  .responsive-item {
-    margin-right: 32px;
-  }
+
   .responsive-tab {
     width: 748px;
     column-gap: 32px;
@@ -185,22 +144,41 @@
   .restaurant-title {
     font-size: 64px;
   }
+  .responsive-img {
+    width: 336px;
+    height: 309px;
+    object-fit: cover;
+  }
+  .responsive-tab {
+    width: 748px;
+    column-gap: 32px;
+    justify-content: center;
+  }
+  .block-restaurant-title {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 87px;
+  }
+  .restaurant-text {
+    margin: 0;
+  }
+  .restaurant-slick-arrow-block {
+    width: 104px;
+    height: 36px;
+    margin: 43px 0 51px 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .responsive-img {
-    min-width: 266px;
+    width: 266px;
+    height: 309px;
+    object-fit: cover;
   }
 
   .restaurant-container {
     padding: 44px 32px 0;
-  }
-  .block-responsive-tab {
-    display: none;
-  }
-  .block-responsive {
-    /* overflow: hidden; */
-    display: block;
   }
 
   .responsive {
@@ -231,5 +209,8 @@
   .restaurant-btn-next {
     width: 36px;
     height: 36px;
+  }
+  .restaurant-slick-arrow-block {
+    margin: 62px auto 0 auto;
   }
 }

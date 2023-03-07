@@ -1,0 +1,8 @@
+.animate:hover {
+  display: block;
+  transform: scaleX(1.2);
+  transition: transform var(--animate);
+}
+.animate {
+  transition: transform var(--animate);
+}

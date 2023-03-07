@@ -19,12 +19,9 @@
 }
 
 .hero-content {
-  /* margin-top: -50px; */
   justify-content: center;
   text-align: center;
 }
-
-
 
 .review-card {
   transform: translate(25%, -50%);
@@ -155,19 +152,19 @@
 }
 @media screen and (min-width: 375px) {
   .hero-about {
-  min-width: 375px;
+    min-width: 375px;
   }
-.pic1 {
-  position: relative;
-  width: 335px;
-  height: 442px;
-}
-.review-card {
-  right: 0;
-}
-.pic4 {
-  width: 335px;
-}
+  .pic1 {
+    position: relative;
+    width: 335px;
+    height: 442px;
+  }
+  .review-card {
+    right: 0;
+  }
+  .pic4 {
+    width: 335px;
+  }
 }
 
 @media screen and (min-width: 768px) {

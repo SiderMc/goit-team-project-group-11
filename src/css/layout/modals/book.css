@@ -1,15 +1,16 @@
 .modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  top: 20px;
+  left: 24px;
+  min-width: calc(100vw - 48px);
   background-color: var(--second-color);
   padding: 24px 24px 40px;
   z-index: 10000;
-  overflow: scroll;
+  overflow: auto;
 }
-
+.close-btn-table {
+  fill: var(--accent-color);
+}
 .close-btn-table svg,
 .close-btn-table {
   display: block;
@@ -130,7 +131,20 @@ input[id='input-date']::-webkit-calendar-picker-indicator {
   margin-left: 26px;
   margin-right: 26px;
 }
-
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 375px) {
+  .modal {
+    min-width: auto;
+    max-width: 335px;
+    top: 20px;
+    left: 50%;
+    transform: scale(1) translate(-50%) scale(1);
+  }
+}
 @media (min-width: 768px) {
   .modal-overlay {
     position: fixed;
@@ -147,9 +161,9 @@ input[id='input-date']::-webkit-calendar-picker-indicator {
   }
 
   .modal {
-    position: relative;
     height: auto;
-    width: 628px;
+    min-width: auto;
+    max-width: 628px;
     background-color: var(--second-color);
     padding-top: 32px;
     padding-left: 32px;

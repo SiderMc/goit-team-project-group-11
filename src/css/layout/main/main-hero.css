@@ -5,7 +5,7 @@
   object-fit: contain;
 }
 .hero-container {
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
 }
 .icon-hero {
   display: none;
@@ -16,7 +16,6 @@
   height: auto;
   width: 100%;
 }
-
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -42,20 +41,14 @@
 }
 
 .hero-btn {
-  flex-direction: row;
-  background: var(--second-color);
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  font-family: 'DM Sans Regular', sans-serif;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.3;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   border: 0.8px solid var(--accent-color);
   border-radius: 32px;
-  padding: 8px 10px;
+  padding: 10px 22px;
 }
 
 .about-text {
@@ -63,10 +56,11 @@
   color: var(--accent-color);
 }
 .text-hero-content {
-  margin-top: 66px;
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+  margin-top: 66px;
+  padding-bottom: 54px;
 }
 .text-hero {
   color: var(--accent-color);
@@ -83,10 +77,11 @@
 }
 @media screen and (min-width: 768px) {
   .hero-container {
-    padding: 50px 38px;
-    padding-top: 0;
+    padding: 50px 38px 0 38px;
   }
-
+  .text-hero-content {
+    padding-bottom: 72px;
+  }
   .hero-title {
     color: var(--accent-color);
     font-weight: 400;
@@ -107,7 +102,11 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .hero-header {
+    padding-top: 0;
+  }
   .hero-content {
+    position: relative;
     display: flex;
     margin: 0;
   }
@@ -116,8 +115,8 @@
     height: 770px;
     display: block;
     position: absolute;
-    top: -78px;
-    right: 0;
+    top: -138px;
+    right: -33px;
     z-index: 0;
   }
   .hero-title {
@@ -132,8 +131,8 @@
   }
   .main-hero-btn {
     position: absolute;
-    bottom: 100px;
-    right: 130px;
+    bottom: -47px;
+    right: 92px;
   }
   .hero-btn {
     background-color: transparent;
@@ -141,12 +140,8 @@
   .text-hero-content {
     max-width: 684px;
   }
-  /*.header-menu-soc-top-list.list {
-    display: flex;
-    position: absolute;
-    max-width: 110px;
-    top: 20px;
-    right: 0;
-    display: block;
-  }*/
+  .text-hero-content {
+    margin-top: 0;
+    padding-bottom: 55px;
+  }
 }

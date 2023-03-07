@@ -1,27 +1,27 @@
+//document.addEventListener('DOMContentLoaded', function () {
+//  const menu = document.querySelector('.mobile__menu');
+//  const openButton = document.querySelector('.js-open-menu');
+//  const closeButton = document.querySelector('.js-open-menu');
+
+//  // Обработчик события для открытия меню
+//  openButton.addEventListener('click', function () {
+//    menu.classList.add('menu__open');
+//  });
+
+//  // Обработчик события для закрытия меню
+//  closeButton.addEventListener('click', function () {
+//    menu.classList.remove('menu__open');
+//  });
+//});
+
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
+
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    document.body.classList.toggle('menu-open');
   };
   openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
-
-  // Закрываем мобильное меню на более широких экранах
-  // в случае изменения ориентации устройства.
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
 })();

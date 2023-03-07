@@ -64,40 +64,22 @@
 }
 
 .slider {
-}
-
-.slider-item-first {
   position: absolute;
   top: 218px;
-  left: 0;
 }
-
-.slider-item-second {
-  display: block;
+.slick-track {
+  display: flex;
+  column-gap: 20px;
+}
+.arrows-conainer {
   position: absolute;
-  left: 290px;
-  top: 218px;
+  top: 162px;
+  right: 35px;
 }
-
 .slider-img {
   display: block;
   width: 250px;
   height: 429px;
-}
-
-.arrow-left {
-  position: absolute;
-  fill: rgba(18, 18, 18, 0.3);
-  right: 102px;
-  top: 682px;
-}
-
-.arrow-right {
-  position: absolute;
-  right:31px;
-  top:682px;
-  fill: #121212;
-  
 }
 
 .room-hero-text {
@@ -113,7 +95,17 @@
   text-transform: uppercase;
   color: var(--second-color);
 }
-
+.arrows-container {
+  display: flex;
+  column-gap: 60px;
+  position: absolute;
+  bottom: 162px;
+  right: 35px;
+}
+.prev-arrow-container,
+.next-arrow-container {
+  stroke: var(--second-color);
+}
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -125,9 +117,11 @@
     padding: 0 32px;
   }
   .room-hero {
-    padding-bottom: 120px;
+    padding-bottom: 0;
   }
-
+  .slider {
+    top: 258px;
+  }
   .room-hero-container {
     min-height: 1026px;
   }
@@ -161,15 +155,18 @@
   .arrow-left {
     right: 114px;
     top: 845px;
-    }
-  
+  }
+
   .arrow-right {
     right: 47px;
     top: 845px;
-    }
+  }
 
   .room-hero-text {
-    top: 834px;
+    top: 800px;
+  }
+  .arrows-container {
+    bottom: 150px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -192,7 +189,11 @@
     max-width: 580px;
     font-size: 80px;
   }
-
+  .arrows-container {
+    bottom: 72px;
+    right: 39%;
+    transform: translateX(-100%);
+  }
   .room-hero-btn {
     position: absolute;
     top: 331px;
@@ -204,6 +205,10 @@
   }
 
   .slider {
+    max-width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   .slider-item-first {
@@ -220,16 +225,16 @@
     width: 436px;
     height: 580px;
   }
-.arrow-left {
-  right: 682px;
-  top: 637px;
-}
+  .arrow-left {
+    right: 682px;
+    top: 637px;
+  }
 
-.arrow-right {
-  position: absolute;
-  right: 615px;
-  top: 637px;
-}
+  .arrow-right {
+    position: absolute;
+    right: 615px;
+    top: 637px;
+  }
   .room-hero-text {
     position: absolute;
     top: 542px;

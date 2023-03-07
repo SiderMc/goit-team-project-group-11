@@ -215,6 +215,7 @@
     height: 52px;
     left: 92px;
     top: 364px;
+    white-space: nowrap;
 
     font-weight: 400;
     font-size: 18px;
